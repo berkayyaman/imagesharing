@@ -1,19 +1,21 @@
 package common;
 
 public interface Fields {
-    //common fields
-    String type = "type"; //operation type
-
     //fields
-    String username = "username";
-    String publicKey = "public_key";
-    String requestType = "request_type";
-    String responseType = "response_type";
-    String certificate = "certificate";
+    String fType = "TYPE"; //operation fType
+    String fUsername = "USERNAME";
+    String fPublicKey = "PUBLIC_KEY";
+    String fRequestType = "REQUEST_TYPE";
+    String fCertificate = "CERTIFICATE";
+
 
     //values
-    String register = "register";
-    String registerAccepted = "accepted";
-    String request = "request";
-    String response = "response";
+    String fPostImage = "POST_IMAGE";
+    String fRegister = "REGISTER";
+    String fRegisterAccepted = "ACCEPTED";
+    String fImageName = "IMAGE_NAME";
+    String fEncryptedImage = "ENCRYPTED_IMAGE";
+    String fSignature = "SIGNATURE";
+    String fEncryptedKey = "ENCRYPTED_KEY";
+    String fIV = "IV";
 }

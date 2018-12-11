@@ -1,0 +1,18 @@
+Dec 11, 2018 9:19:23 PM server.Server listen
+INFO: Port 4444 is listening.
+
+Dec 11, 2018 9:21:11 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:55930 is connected.
+
+Dec 11, 2018 9:21:15 PM server.Server listen
+INFO: Message Received: {"public_key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAutRvKzYEJRh2bSCm\/sxYrQ4XOZXY41mbcPcIGKkJxwqDgYodcmuIPLIuyJKdREiLgx3f\/baEGgLrBnv2fN\/RRiHEAF9LJk2Yqse48ND+w89GcL7hVxb3y7GBqInVupWO7qVmFziv58+prkDFcNosoOLk4bLHw91JQKh7sn3s0j4AhwcXmABdMEjlEcXz\/XTfSBft768kCfMau8Gs2Rp7k7aaJ7V6x4L+JYafazgcJbhIo3luF9OHl6dVVfnPz0AgizY6qKXHnDoBgishc9k79isl02\/KWPW\/vKbHGkdU7gO7TxW3y6vpImj59aGvU9R0T3XFrd515p1Hz6yU8b\/mNQIDAQAB","fUsername":"user","type":"fRegister"}
+
+Dec 11, 2018 9:21:15 PM server.MessagingProtocol interpret
+INFO: Certificate is generated from:
+Username: user
+Client Public Key:MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAutRvKzYEJRh2bSCm/sxYrQ4XOZXY41mbcPcIGKkJxwqDgYodcmuIPLIuyJKdREiLgx3f/baEGgLrBnv2fN/RRiHEAF9LJk2Yqse48ND+w89GcL7hVxb3y7GBqInVupWO7qVmFziv58+prkDFcNosoOLk4bLHw91JQKh7sn3s0j4AhwcXmABdMEjlEcXz/XTfSBft768kCfMau8Gs2Rp7k7aaJ7V6x4L+JYafazgcJbhIo3luF9OHl6dVVfnPz0AgizY6qKXHnDoBgishc9k79isl02/KWPW/vKbHGkdU7gO7TxW3y6vpImj59aGvU9R0T3XFrd515p1Hz6yU8b/mNQIDAQAB
+Generated fCertificate: [-4, -124, 88, 118, 112, 45, -53, 39, -110, -97, 108, 12, 69, -115, -47, 81, -39, 51, 56, -20, -89, -11, -127, -53, 7, -103, -77, -37, -17, 15, 54, -61]
+
+Dec 11, 2018 9:21:15 PM server.Server listen
+INFO: Response sent: {"fCertificate":"[-4, -124, 88, 118, 112, 45, -53, 39, -110, -97, 108, 12, 69, -115, -47, 81, -39, 51, 56, -20, -89, -11, -127, -53, 7, -103, -77, -37, -17, 15, 54, -61]","type":"accepted"}
+
