@@ -5,9 +5,8 @@ public interface Fields {
     String fType = "TYPE"; //operation fType
     String fUsername = "USERNAME";
     String fPublicKey = "PUBLIC_KEY";
-    String fRequestType = "REQUEST_TYPE";
     String fCertificate = "CERTIFICATE";
-
+    String OVER = "OVER";
 
     //values
     String fPostImage = "POST_IMAGE";

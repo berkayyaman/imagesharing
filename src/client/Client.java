@@ -1,7 +1,9 @@
 package client;
 
+import common.Fields;
 import common.KeyGeneration;
 import common.Util;
+import server.Server;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -21,25 +23,20 @@ public class Client extends KeyGeneration {
     private Socket socket;
     private DataOutputStream out;
     private DataInputStream in;
-    private PublicKey serverPublicKey;
     private PublicKey publicKey;
     private PrivateKey privateKey;
     private String userName;
-
+    public static PublicKey serverPublicKey;
     Client() throws IOException, NoSuchAlgorithmException, InvalidKeySpecException {
-        serverPublicKey = Util.getServerPublicKey();
         socket = new Socket(address,port);
         in = new DataInputStream(socket.getInputStream());
         out = new DataOutputStream(socket.getOutputStream());
         KeyPair keyPair = generateKeyPair();
         publicKey = keyPair.getPublic();
         privateKey = keyPair.getPrivate();
+        serverPublicKey = Util.readServerKeyPair().getPublic();
     }
-    void sendData(String message) throws IOException {
-        out.writeUTF(message);
-        //out.close();
-        //socket.close();
-    }
+
     String readData() throws IOException {
         return in.readUTF();
     }
@@ -50,15 +47,19 @@ public class Client extends KeyGeneration {
         return publicKey;
     }
 
-    public PublicKey getServerPublicKey() {
-        return serverPublicKey;
-    }
-
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
     public String getUserName() {
         return userName;
+    }
+
+    public DataOutputStream getOut() {
+        return out;
+    }
+
+    public DataInputStream getIn() {
+        return in;
     }
 }

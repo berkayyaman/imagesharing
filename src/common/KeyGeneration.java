@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
 
 public abstract class KeyGeneration {
 
-    protected KeyPair generateKeyPair() throws NoSuchAlgorithmException {
+    public static KeyPair generateKeyPair() throws NoSuchAlgorithmException {
         KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("RSA");
         keyPairGen.initialize(2048);
         return keyPairGen.generateKeyPair();

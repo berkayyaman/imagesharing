@@ -4,14 +4,18 @@ import common.CryptoStandarts;
 import common.Fields;
 import common.Util;
 import org.json.simple.parser.ParseException;
+import server.Server;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SecretKey;
+import java.io.File;
 import java.io.IOException;
+import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.security.SignatureException;
+import java.security.spec.InvalidKeySpecException;
 import java.util.Scanner;
 
 public class Terminal implements Fields {
@@ -23,15 +27,16 @@ public class Terminal implements Fields {
         input = new Scanner(System.in);
     }
     boolean start() throws InvalidKeyException, NoSuchAlgorithmException,
-            ParseException, IOException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException {
+            ParseException, IOException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException, SignatureException, InvalidKeySpecException {
         if(registration()){
             System.out.println("Registration completed.");
-            System.out.print("Welcome to the image sharing platform.\n" +
+            System.out.println("Welcome to the image sharing platform.\n" +
                     "These are the commands that you can use:\n" +
                     "upload : for uploading an image to server\n" +
                     "list : for listing available images in the server\n" +
                     "cancel : to cancel current operation\n" +
                     "exit : for exiting from the platform\n");
+            System.out.print("Please Enter Your Command:");
             String command = input.nextLine();
             if(command.equals("upload")){
                 sendImage();
@@ -44,29 +49,39 @@ public class Terminal implements Fields {
         return true;
     }
 
-    private boolean registration() throws IOException, ParseException, NoSuchAlgorithmException, InvalidKeyException {
+    private boolean registration() throws IOException, ParseException, NoSuchAlgorithmException, InvalidKeyException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException, SignatureException, InvalidKeySpecException {
         System.out.print("Please enter a username:");
         protocol.client.setUserName(input.nextLine());
-        protocol.client.sendData(protocol.registration(protocol.client.getUserName()));
-        String in = protocol.client.readData();
+        Util.sendData(protocol.registration(protocol.client.getUserName()),protocol.client.getOut());
+        String in = Util.receiveData(protocol.client.getIn());
         return protocol.verify(in);
     }
-    private void sendImage() throws NoSuchAlgorithmException, IllegalBlockSizeException,
-            InvalidKeyException, BadPaddingException, NoSuchPaddingException {
+    private void sendImage() {
         //noinspection InfiniteLoopStatement
         while(true){
-            System.out.print("Please Enter Path of the Image:");
+            System.out.print("Please Enter the Path of the Image:");
             try {
                 String imagePath = input.nextLine();
-                SecretKey secretKey = protocol.generateAESKey();
-                String encodedImage = Util.encodeImage(imagePath);
-                CryptoStandarts.CipherTextAttributes cta = protocol.encryptData(secretKey,encodedImage);
-                String digest = protocol.hashData(encodedImage);
-                String sign = protocol.sign(digest,protocol.client.getPrivateKey());
-                String encryptedKey = protocol.encryptKey(secretKey,protocol.client.getServerPublicKey());
-
-            } catch (IOException | ArrayIndexOutOfBoundsException e) {
+                String extension  = imagePath.split("\\.")[1];
+                File file = new File(imagePath);
+                byte[] imageInBytes = Util.encodeImage(file,extension);
+                protocol.sendImage(file.getName(),imageInBytes);
+            } catch (IOException e) {
                 System.out.println("Image cannot be read, please check the path.");
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("There is a problem with the extension of the file.");
+            } catch (NoSuchPaddingException e) {
+                e.printStackTrace();
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            } catch (InvalidKeyException e) {
+                e.printStackTrace();
+            } catch (SignatureException e) {
+                e.printStackTrace();
+            } catch (IllegalBlockSizeException e) {
+                e.printStackTrace();
+            } catch (BadPaddingException e) {
+                e.printStackTrace();
             }
         }
     }
