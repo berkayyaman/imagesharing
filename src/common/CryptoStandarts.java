@@ -94,15 +94,6 @@ public class CryptoStandarts extends KeyGeneration{
         byte[] encryptedImageBytes = Base64.getDecoder().decode(encryptedImage);
         byte[] decryptedImage = decryptData(aesKey,encryptedImageBytes,iv);
         String hashedImage = hashData(decryptedImage);
-        System.out.println("Name "+ name);
-        System.out.println("ei "+encryptedImage);
-        System.out.println("sign "+signature);
-        System.out.println("ek "+ encryptedKey);
-        if(userAttributes == null){
-            System.out.println("YES");
-        }
-        System.out.println("un "+userAttributes.getUsername());
-        System.out.println("upk "+ userAttributes.getPublicKey());
         if(verifySignature(hashedImage,signature,userAttributes.getPublicKey())){
             String serverSignature = sign(hashedImage,privateKey);
             return new Server.ImageAttributes(name,userAttributes.getUsername(),encryptedImage,serverSignature,
