@@ -80,24 +80,15 @@ public class Communicator implements Runnable {
             }
         }
     }
-    public void addToNotificationBuffer(String imageName){
-        notificationBuffer[notificationBufferIndex++] = imageName;
-        if(notificationBufferIndex == notificationBuffer.length-1){
-            String[] newBuffer = new String[notificationBuffer.length*2];
-            System.arraycopy(notificationBuffer,0,newBuffer,0,notificationBuffer.length);
-            notificationBuffer = newBuffer;
-        }
-    }
-    public void emptyNotificationBuffer(){
-        while (notificationBufferIndex != 0){
-            //notifyUser(notificationBuffer[--notificationBufferIndex]);
-        }
-        notificationBuffer = new String[notificationBufferSize];
-    }
-    private void notifyUsers(String newImageName) throws IOException {
+    private void notifyUsers(String newImageName) {
         for(Communicator c:Server.communicators){
             if(c!=null){
-                c.messagingProtocol.notifyUser(newImageName,c.out);
+                try {
+                    c.messagingProtocol.notifyUser(newImageName,c.out);
+                } catch (IOException e) {
+                    System.out.println("Cant send notification");
+                    e.printStackTrace();
+                }
             }
         }
     }

@@ -49,14 +49,6 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
 
             return verifySignature(client.getUserName()+cpk,certificate,Client.serverPublicKey);
 
-            /*Signature publicSignature = Signature.getInstance("SHA256withRSA");
-            publicSignature.initVerify(Client.serverPublicKey);
-
-            publicSignature.update((client.getUserName()+cpk).getBytes(UTF_8));
-            byte[] signatureBytes = Base64.getDecoder().decode(certificate);
-
-            return publicSignature.verify(signatureBytes);*/
-
 
         }
         return false;
@@ -80,10 +72,23 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         try {
             Util.sendData(jsonObject.toString(),client.getOut());
         } catch (IOException e) {
-            Terminal.printMessageln("Image cannot be sent.",Terminal.writing);
+            System.out.println("Image cannot be sent.");
             e.printStackTrace();
 
         }
-
+    }
+    NotificationListener.NameFormatting checkIfNotification(String message) throws ParseException {
+        JSONObject messageReceived = (JSONObject)parser.parse(message);
+        String name="",username="";
+        if(messageReceived.get(fType).equals(fNewImage)){
+            name = (String)messageReceived.get(fImageName);
+            username = (String)messageReceived.get(fUsername);
+        }
+        if((name != null) && (username!=null)){
+            return new NotificationListener.NameFormatting(name,username);
+        }
+        else{
+            return null;
+        }
     }
 }

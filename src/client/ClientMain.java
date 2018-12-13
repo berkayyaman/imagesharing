@@ -13,18 +13,20 @@ import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
 
 public class ClientMain {
-
+    public static NotificationListener notificationListener;
     public static void main(String[] args){
+
         //noinspection InfiniteLoopStatement
         while(true){
+            Terminal terminal = null;
             try {
                 Client client = new Client();
                 ClientMessagingProtocol protocol = new ClientMessagingProtocol(client);
-                Terminal terminal = new Terminal(protocol);
+                terminal = new Terminal(protocol);
                 if(terminal.start()){ //if returns false, connect again
                     break;
                 }
-
+                
             } catch (IOException e) {
                 cantConnect();
             } catch (NoSuchAlgorithmException | InvalidKeyException | ParseException
@@ -37,6 +39,9 @@ public class ClientMain {
             } catch (InvalidKeySpecException e) {
                 e.printStackTrace();
             }
+            if (terminal != null && terminal.thread != null) {
+                terminal.thread.interrupt();
+            }
         }
     }
     private static void cantConnect(){
@@ -45,16 +50,6 @@ public class ClientMain {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
-    }
-    public static void lock(boolean locked){
-        synchronized ((Object)locked){
-            locked = true;
-        }
-    }
-    public static void unlock(boolean locked){
-        synchronized ((Object)locked){
-            locked = false;
         }
     }
 }

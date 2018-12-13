@@ -95,7 +95,6 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
 
         String[] parts = imageName.split("_");
         int lnt = parts.length;
-        System.out.println(parts[0]+" "+parts[lnt-1]);
         String imageField = parts[lnt-1];
         if(lnt==3) imageField +=parts[1];
 
