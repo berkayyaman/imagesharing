@@ -1,6 +1,5 @@
 package server;
 
-import client.Client;
 import common.CryptoStandarts;
 import common.Fields;
 import common.Util;
@@ -11,27 +10,27 @@ import org.json.simple.parser.ParseException;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
-import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 
-import static java.nio.charset.StandardCharsets.UTF_8;
-
 class MessagingProtocol extends CryptoStandarts implements Fields {
     private JSONParser parser = new JSONParser();
     private Server server;
+    private Communicator communicator;
     private Path userRecordsPath;
     private Logger logger;
-    MessagingProtocol(Server server, ConsoleHandler consoleHandler, FileHandler fileHandler) throws IOException {
+    MessagingProtocol(Server server,Communicator communicator, ConsoleHandler consoleHandler, FileHandler fileHandler) throws IOException {
         this.server = server;
+        this.communicator = communicator;
         logger = Util.generateLogger(consoleHandler,fileHandler,MessagingProtocol.class.getName());
     }
     class ReturnProtocol{
@@ -68,7 +67,7 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             String publicKey = (String)messageReceived.get(this.fPublicKey);
             String certificate  = sign(username,publicKey,server.getPrivateKey());
             PublicKey pk = Util.convertToPublicKey(Base64.getDecoder().decode(publicKey));
-            server.userAttributes = new Server.UserAttributes(username,pk);
+            communicator.userAttributes = new Server.UserAttributes(username,pk);
             String recordContent = username+" "+certificate+"\n";
             Files.write(userRecordsPath,recordContent.getBytes());//Certificate is recorded with fUsername
             logger.info("Certificate is generated from:"+"\n"+
@@ -82,13 +81,26 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             String name = (String)messageReceived.get(fImageName),
                     encryptedImage = (String)messageReceived.get(fEncryptedImage),
                     signature  = (String)messageReceived.get(fSignature),
-                    encryptedKey = (String)messageReceived.get(fEncryptedKey),
+                    encryptedKey = (String)messageReceived.get(fSymmetricKey),
                     iv = (String)messageReceived.get(fIV);
             Server.ImageAttributes ia = getVerifiedImage(server.getPrivateKey(),name,
-                    encryptedImage,signature,encryptedKey,iv,server.userAttributes);
+                    encryptedImage,signature,encryptedKey,iv,communicator.userAttributes);
             answer = new ReturnProtocol(null,ia);
         }
         return answer;
     }
+    void notifyUser(String imageName, DataOutputStream out) throws IOException {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(fType,fNewImage);
 
+        String[] parts = imageName.split("_");
+        int lnt = parts.length;
+        System.out.println(parts[0]+" "+parts[lnt-1]);
+        String imageField = parts[lnt-1];
+        if(lnt==3) imageField +=parts[1];
+
+        jsonObject.put(fImageName,imageField);
+        jsonObject.put(fUsername,parts[0]);
+        Util.sendData(jsonObject.toString(),out);
+    }
 }

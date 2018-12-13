@@ -47,4 +47,14 @@ public class ClientMain {
             e.printStackTrace();
         }
     }
+    public static void lock(boolean locked){
+        synchronized ((Object)locked){
+            locked = true;
+        }
+    }
+    public static void unlock(boolean locked){
+        synchronized ((Object)locked){
+            locked = false;
+        }
+    }
 }

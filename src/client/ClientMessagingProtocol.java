@@ -6,7 +6,6 @@ import common.Util;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import server.Server;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -15,9 +14,6 @@ import javax.crypto.SecretKey;
 import java.io.IOException;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
-import java.util.Base64;
-
-import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
     Client client;
@@ -78,14 +74,15 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         jsonObject.put(fImageName,name);
         jsonObject.put(fEncryptedImage,cta.getCipherText());
         jsonObject.put(fSignature,signature);
-        jsonObject.put(fEncryptedKey,encryptedKey);
+        jsonObject.put(fSymmetricKey,encryptedKey);
         jsonObject.put(fIV,cta.getIv());
 
         try {
             Util.sendData(jsonObject.toString(),client.getOut());
         } catch (IOException e) {
-            System.out.println("Image cannot be sent.");
+            Terminal.printMessageln("Image cannot be sent.",Terminal.writing);
             e.printStackTrace();
+
         }
 
     }

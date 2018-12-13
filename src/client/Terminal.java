@@ -21,7 +21,7 @@ import java.util.Scanner;
 public class Terminal implements Fields {
     private Scanner input;
     private ClientMessagingProtocol protocol;
-
+    public static boolean writing = false;
     Terminal(ClientMessagingProtocol protocol){
         this.protocol = protocol;
         input = new Scanner(System.in);
@@ -29,6 +29,8 @@ public class Terminal implements Fields {
     boolean start() throws InvalidKeyException, NoSuchAlgorithmException,
             ParseException, IOException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException, SignatureException, InvalidKeySpecException {
         if(registration()){
+
+            ClientMain.lock(writing);
             System.out.println("Registration completed.");
             System.out.println("Welcome to the image sharing platform.\n" +
                     "These are the commands that you can use:\n" +
@@ -38,6 +40,7 @@ public class Terminal implements Fields {
                     "exit : for exiting from the platform\n");
             System.out.print("Please Enter Your Command:");
             String command = input.nextLine();
+            ClientMain.unlock(writing);
             if(command.equals("upload")){
                 sendImage();
             }
@@ -59,30 +62,34 @@ public class Terminal implements Fields {
     private void sendImage() {
         //noinspection InfiniteLoopStatement
         while(true){
-            System.out.print("Please Enter the Path of the Image:");
+
+            printMessage("Please Enter the Path of the Image:",writing);
+
             try {
+                ClientMain.lock(writing);
                 String imagePath = input.nextLine();
+                ClientMain.unlock(writing);
                 String extension  = imagePath.split("\\.")[1];
                 File file = new File(imagePath);
                 byte[] imageInBytes = Util.encodeImage(file,extension);
                 protocol.sendImage(file.getName(),imageInBytes);
             } catch (IOException e) {
-                System.out.println("Image cannot be read, please check the path.");
+                printMessageln("Image cannot be read, please check the path.",writing);
             } catch (ArrayIndexOutOfBoundsException e) {
-                System.out.println("There is a problem with the extension of the file.");
-            } catch (NoSuchPaddingException e) {
-                e.printStackTrace();
-            } catch (NoSuchAlgorithmException e) {
-                e.printStackTrace();
-            } catch (InvalidKeyException e) {
-                e.printStackTrace();
-            } catch (SignatureException e) {
-                e.printStackTrace();
-            } catch (IllegalBlockSizeException e) {
-                e.printStackTrace();
-            } catch (BadPaddingException e) {
+                printMessageln("There is a problem with the extension of the file.",writing);
+            } catch (NoSuchPaddingException | NoSuchAlgorithmException | InvalidKeyException | SignatureException | BadPaddingException | IllegalBlockSizeException e) {
                 e.printStackTrace();
             }
         }
+    }
+    static void printMessageln(String messsage,boolean lock){
+        ClientMain.lock(lock);
+        System.out.println(messsage);
+        ClientMain.unlock(lock);
+    }
+    static void printMessage(String messsage,boolean lock){
+        ClientMain.lock(lock);
+        System.out.print(messsage);
+        ClientMain.unlock(lock);
     }
 }
