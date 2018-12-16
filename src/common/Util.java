@@ -1,17 +1,11 @@
 package common;
 
 import server.Server;
-
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
-import java.net.URL;
+import java.net.SocketException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
@@ -25,8 +19,7 @@ public class Util {
         logger.setLevel(Level.ALL);
         fileHandler.setLevel(Level.ALL);
         consoleHandler.setLevel(Level.FINE);
-        logger.addHandler(fileHandler);
-        //logger.addHandler(consoleHandler);
+        //logger.addHandler(fileHandler);
         SimpleFormatter formatter = new SimpleFormatter();
         fileHandler.setFormatter(formatter);
         return logger;
@@ -53,15 +46,6 @@ public class Util {
         //byte[] privateKeyAsBytes = privateKeyAsString.getBytes();//Base64.getDecoder().decode(privateKeyAsString);
         return KeyFactory.getInstance("RSA").generatePrivate(new PKCS8EncodedKeySpec(privateKey));
     }
-
-    public static byte[] convertToBytes(String data){
-        String[] byteValues = data.substring(1, data.length() - 1).split(",");
-        byte[] bytes = new byte[byteValues.length];
-        for (int i=0, len=bytes.length; i<len; i++) {
-            bytes[i] = Byte.parseByte(byteValues[i].trim());
-        }
-        return bytes;
-    }
     public static byte[] encodeImage(File file,String extension) throws ArrayIndexOutOfBoundsException, IOException {
         BufferedImage image = ImageIO.read(file);
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
@@ -75,24 +59,22 @@ public class Util {
         return Base64.getDecoder().decode(base64String);
     }
 
-    public static void sendData(String message, DataOutputStream out) throws IOException {
-        int limit = 65500;
-        String firstPart;
-        while(true){
-            firstPart = message.substring(0,Math.min(limit,message.length()));
-            if(message.length() != firstPart.length()) {
-                message = message.substring(firstPart.length());
-                out.writeUTF(firstPart);
-            }else{
+    public static void sendData(String message, DataOutputStream out) throws IOException, SocketException {
+            int limit = 65500;
+            String firstPart;
+            while(true){
+                firstPart = message.substring(0,Math.min(limit,message.length()));
+                if(message.length() != firstPart.length()) {
+                    message = message.substring(firstPart.length());
+                    out.writeUTF(firstPart);
+                }else{
 
-                out.writeUTF(firstPart);
-                out.writeUTF(Fields.OVER);
-                break;
+                    out.writeUTF(firstPart);
+                    out.writeUTF(Fields.OVER);
+                    break;
+                }
+
             }
-
-        }
-        //out.close();
-        //socket.close();
     }
     public static String receiveData(DataInputStream in) throws IOException {
         String input;

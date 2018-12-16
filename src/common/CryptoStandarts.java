@@ -96,7 +96,8 @@ public class CryptoStandarts extends KeyGeneration{
         String hashedImage = hashData(decryptedImage);
         if(verifySignature(hashedImage,signature,userAttributes.getPublicKey())){
             String serverSignature = sign(hashedImage,privateKey);
-            return new Server.ImageAttributes(name,userAttributes.getUsername(),encryptedImage,serverSignature,
+            String pk = Base64.getEncoder().encodeToString(userAttributes.getPublicKey().getEncoded());
+            return new Server.ImageAttributes(name,pk,userAttributes.getUsername(),encryptedImage,
                     Util.convertToBase64String(aesKey.getEncoded()),iv);
         }
         else{

@@ -13,18 +13,27 @@ import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
 
 public class ClientMain {
+    public static NotificationListener notificationListener;
+
+    public static final boolean EXIT = false;
+    public static final boolean REPEAT = true;
 
     public static void main(String[] args){
+
         //noinspection InfiniteLoopStatement
         while(true){
+            Terminal terminal = null;
             try {
                 Client client = new Client();
                 ClientMessagingProtocol protocol = new ClientMessagingProtocol(client);
-                Terminal terminal = new Terminal(protocol);
-                if(terminal.start()){ //if returns false, connect again
-                    break;
+                terminal = new Terminal(protocol);
+                if(terminal.start() == EXIT){ //if returns false, connect again
+                    client.in.close();
+                    client.out.close();
+                    client.socket.close();
+                    System.exit(0);
                 }
-
+                
             } catch (IOException e) {
                 cantConnect();
             } catch (NoSuchAlgorithmException | InvalidKeyException | ParseException
@@ -36,6 +45,9 @@ public class ClientMain {
                 e.printStackTrace();
             } catch (InvalidKeySpecException e) {
                 e.printStackTrace();
+            }
+            if (terminal != null && terminal.thread != null) {
+                terminal.thread.interrupt();
             }
         }
     }

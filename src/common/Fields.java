@@ -15,6 +15,7 @@ public interface Fields {
     String fImageName = "IMAGE_NAME";
     String fEncryptedImage = "ENCRYPTED_IMAGE";
     String fSignature = "SIGNATURE";
-    String fEncryptedKey = "ENCRYPTED_KEY";
+    String fSymmetricKey = "ENCRYPTED_KEY";
     String fIV = "IV";
+    String fNewImage = "NEW_IMAGE";
 }

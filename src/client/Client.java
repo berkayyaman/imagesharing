@@ -20,13 +20,13 @@ import java.util.Base64;
 public class Client extends KeyGeneration {
     private String address = "localhost";
     private int port = 4444;
-    private Socket socket;
-    private DataOutputStream out;
-    private DataInputStream in;
+    Socket socket;
+    DataOutputStream out;
+    DataInputStream in;
     private PublicKey publicKey;
     private PrivateKey privateKey;
     private String userName;
-    public static PublicKey serverPublicKey;
+    static PublicKey serverPublicKey;
     Client() throws IOException, NoSuchAlgorithmException, InvalidKeySpecException {
         socket = new Socket(address,port);
         in = new DataInputStream(socket.getInputStream());
@@ -35,10 +35,6 @@ public class Client extends KeyGeneration {
         publicKey = keyPair.getPublic();
         privateKey = keyPair.getPrivate();
         serverPublicKey = Util.readServerKeyPair().getPublic();
-    }
-
-    String readData() throws IOException {
-        return in.readUTF();
     }
     public PrivateKey getPrivateKey(){
         return privateKey;

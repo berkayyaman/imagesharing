@@ -6,7 +6,6 @@ import common.Util;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import server.Server;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -15,9 +14,6 @@ import javax.crypto.SecretKey;
 import java.io.IOException;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
-import java.util.Base64;
-
-import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
     Client client;
@@ -53,14 +49,6 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
 
             return verifySignature(client.getUserName()+cpk,certificate,Client.serverPublicKey);
 
-            /*Signature publicSignature = Signature.getInstance("SHA256withRSA");
-            publicSignature.initVerify(Client.serverPublicKey);
-
-            publicSignature.update((client.getUserName()+cpk).getBytes(UTF_8));
-            byte[] signatureBytes = Base64.getDecoder().decode(certificate);
-
-            return publicSignature.verify(signatureBytes);*/
-
 
         }
         return false;
@@ -78,7 +66,7 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         jsonObject.put(fImageName,name);
         jsonObject.put(fEncryptedImage,cta.getCipherText());
         jsonObject.put(fSignature,signature);
-        jsonObject.put(fEncryptedKey,encryptedKey);
+        jsonObject.put(fSymmetricKey,encryptedKey);
         jsonObject.put(fIV,cta.getIv());
 
         try {
@@ -86,7 +74,25 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         } catch (IOException e) {
             System.out.println("Image cannot be sent.");
             e.printStackTrace();
-        }
 
+        }
+    }
+    NotificationListener.NameFormatting checkIfNotification(String message) throws ParseException {
+        JSONObject messageReceived = (JSONObject)parser.parse(message);
+        String name="",username="";
+        if(messageReceived.get(fType).equals(fNewImage)){
+            name = (String)messageReceived.get(fImageName);
+            username = (String)messageReceived.get(fUsername);
+        }
+        if((name != null) && (username!=null)){
+            if(username.equals(client.getUserName())){
+                return new NotificationListener.NameFormatting(name,username,false);
+            } else {
+                return new NotificationListener.NameFormatting(name,username,true);
+            }
+        }
+        else{
+            return null;
+        }
     }
 }

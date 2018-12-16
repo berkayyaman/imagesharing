@@ -2,8 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02869bca-1b9e-4e90-94fd-d63cd62b324e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/as_1_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/as_2_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/as_3_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/as_4_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/as_5_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/as_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/bal_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay _moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_10_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_10_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_11_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_11_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_1_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_1_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_2_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_2_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_3_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_3_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_4_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_4_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_5_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_5_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_6_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_6_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_7_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_7_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_8_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_8_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_9_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_9_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkay_moon.jpg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerImages/berkay_moon.jpg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkayy_1_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkayy_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkayyaman_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/berkayyamana_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerImages/upload_moon.jpg.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/client/ClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/client/ClientMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/client/ClientMessagingProtocol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/client/ClientMessagingProtocol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/client/NotificationListener$NameFormatting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/client/NotificationListener$NameFormatting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/client/NotificationListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/client/NotificationListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/client/Terminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/client/Terminal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/common/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/common/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/server/Server$ImageAttributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/server/Server$ImageAttributes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/server/Server$UserAttributes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/server/Server$UserAttributes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Client4057/server/ServerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client4057/server/ServerMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serverLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/serverLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/CryptoStandarts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/CryptoStandarts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/serverLog.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.10.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.11.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.12.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.13.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.14.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.15.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.16.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/serverLog.log.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/serverLog.log.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.4.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.5.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.6.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.7.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.8.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverLog.log.9.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/ClientMessagingProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientMessagingProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/NotificationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/NotificationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Communicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Communicator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/MessagingProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/MessagingProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userRecords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/userRecords.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,22 +125,152 @@
     <session id="-955800074">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="17" />
+          <entry key="jpg" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="7044" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="7044" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/common/CryptoStandarts.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/ClientMessagingProtocol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="95" column="54" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
+            <state relative-caret-position="85">
+              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-403">
+              <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1554#1555#0" expanded="true" />
+                <element signature="e#1594#1595#0" expanded="true" />
+                <element signature="e#1764#1765#0" expanded="true" />
+                <element signature="e#1789#1790#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/NotificationListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/ClientMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/server/Communicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/ServerMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/Terminal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/MessagingProtocol.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="103" column="48" lean-forward="true" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -75,8 +280,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,6 +295,7 @@
       <find>syst</find>
       <find>in.re</find>
       <find>userAttributes</find>
+      <find>file</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,17 +312,19 @@
         <option value="$PROJECT_DIR$/src/server/Main.java" />
         <option value="$PROJECT_DIR$/src/common/KeyGenerator.java" />
         <option value="$PROJECT_DIR$/src/client/InsideProcess.java" />
-        <option value="$PROJECT_DIR$/src/server/ServerMain.java" />
         <option value="$PROJECT_DIR$/src/common/KeyGeneration.java" />
-        <option value="$PROJECT_DIR$/src/client/ClientMain.java" />
-        <option value="$PROJECT_DIR$/src/common/Fields.java" />
-        <option value="$PROJECT_DIR$/src/client/Client.java" />
-        <option value="$PROJECT_DIR$/src/client/Terminal.java" />
-        <option value="$PROJECT_DIR$/src/common/Util.java" />
-        <option value="$PROJECT_DIR$/src/client/ClientMessagingProtocol.java" />
-        <option value="$PROJECT_DIR$/src/server/Server.java" />
-        <option value="$PROJECT_DIR$/src/server/MessagingProtocol.java" />
         <option value="$PROJECT_DIR$/src/common/CryptoStandarts.java" />
+        <option value="$PROJECT_DIR$/src/common/Fields.java" />
+        <option value="$PROJECT_DIR$/src/client/ClientMessagingProtocol.java" />
+        <option value="$PROJECT_DIR$/src/server/ServerMain.java" />
+        <option value="$PROJECT_DIR$/src/client/Client.java" />
+        <option value="$PROJECT_DIR$/src/client/ClientMain.java" />
+        <option value="$PROJECT_DIR$/src/common/Util.java" />
+        <option value="$PROJECT_DIR$/src/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/client/Terminal.java" />
+        <option value="$PROJECT_DIR$/src/server/MessagingProtocol.java" />
+        <option value="$PROJECT_DIR$/src/client/NotificationListener.java" />
+        <option value="$PROJECT_DIR$/src/server/Communicator.java" />
       </list>
     </option>
   </component>
@@ -133,10 +341,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="32" />
-    <option name="y" value="-24" />
-    <option name="width" value="1346" />
-    <option name="height" value="722" />
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="392" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -163,8 +370,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,24 +392,20 @@
               <item name="imagesharing" type="b2602c69:ProjectViewProjectNode" />
               <item name="imagesharing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imagesharing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imagesharing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544656686254" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544977477406" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -275,19 +476,20 @@
       <workItem from="1544300378261" duration="10867000" />
       <workItem from="1544450015775" duration="18466000" />
       <workItem from="1544549019040" duration="56041000" />
-      <workItem from="1544656564006" duration="114000" />
+      <workItem from="1544656564006" duration="19555000" />
+      <workItem from="1544964224979" duration="12229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85488000" />
+    <option name="totallyTimeSpent" value="117158000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978166" visible="true" weight="0.2647504" />
+      <window_info id="Structure" order="1" sideWeight="0.5021834" side_tool="true" weight="0.2647504" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -295,7 +497,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.26615384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -335,30 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-          <folding>
-            <element signature="e#1452#1453#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ClientMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/ClientMessagingProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -372,29 +550,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/common/CryptoStandarts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="18" />
+        <state relative-caret-position="143">
+          <caret line="100" column="72" selection-start-line="100" selection-start-column="72" selection-end-line="100" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1764#1765#0" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Fields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/Terminal.java">
+    <entry file="file://$PROJECT_DIR$/moon.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ClientMessagingProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+        <state relative-caret-position="85">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1789#1790#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/ClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/ServerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -403,25 +616,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="99" column="59" selection-start-line="99" selection-start-column="59" selection-end-line="99" selection-end-column="59" />
+        <state relative-caret-position="136">
+          <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MessagingProtocol.java">
+    <entry file="file://$PROJECT_DIR$/src/client/Terminal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/ServerMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="209">
+          <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -430,15 +636,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="-403">
+          <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/CryptoStandarts.java">
+    <entry file="file://$PROJECT_DIR$/src/server/MessagingProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="95" column="54" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
+        <state relative-caret-position="1258">
+          <caret line="103" column="48" lean-forward="true" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/NotificationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="40" column="44" lean-forward="true" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Communicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
