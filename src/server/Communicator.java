@@ -30,18 +30,15 @@ public class Communicator implements Runnable {
     private Socket clientSocket;
     private Logger logger;
     private FileHandler logFileHandler;
-    private String[] notificationBuffer;
     private DataOutputStream out;
     private DataInputStream in;
     private MessagingProtocol messagingProtocol;
     Communicator(Server server, Socket clientSocket, String threadName) throws IOException {
         this.server = server;
         this.clientSocket = clientSocket;
-        logFileHandler = new FileHandler("serverLog.log");
+        logFileHandler = new FileHandler("ServerLog.log");
         consoleHandler = new ConsoleHandler();
         logger = Util.generateLogger(consoleHandler,logFileHandler,Server.class.getName());
-        int notificationBufferSize = 10;
-        notificationBuffer = new String[notificationBufferSize];
         thread = new Thread(this,threadName);
         thread.start();
     }

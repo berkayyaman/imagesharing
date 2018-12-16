@@ -1,15 +1,12 @@
 package client;
 
-import common.Fields;
 import common.KeyGeneration;
 import common.Util;
-import server.Server;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.*;
 import java.net.Socket;
-import java.nio.charset.StandardCharsets;
 import java.security.KeyPair;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
@@ -26,7 +23,8 @@ public class Client extends KeyGeneration {
     private PublicKey publicKey;
     private PrivateKey privateKey;
     private String userName;
-    static PublicKey serverPublicKey;
+    public static PublicKey serverPublicKey;
+    private static final String clientImagesDirectory = "ClientImages";
     Client() throws IOException, NoSuchAlgorithmException, InvalidKeySpecException {
         socket = new Socket(address,port);
         in = new DataInputStream(socket.getInputStream());
@@ -57,5 +55,18 @@ public class Client extends KeyGeneration {
 
     public DataInputStream getIn() {
         return in;
+    }
+
+    public void saveImage(String fileName,String extension,String encodedImage) throws IOException {
+        File dir=new File(clientImagesDirectory);
+        if(!dir.exists()){
+            dir.mkdir();
+        }
+        File file = new File(dir,fileName+"."+extension);
+        byte[] bytes = Base64.getDecoder().decode(encodedImage);
+        InputStream in = new ByteArrayInputStream(bytes);
+        BufferedImage bufferedImage = ImageIO.read(in);
+
+        ImageIO.write(bufferedImage, extension,file);
     }
 }

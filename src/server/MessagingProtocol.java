@@ -35,15 +35,15 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
     }
     class ReturnProtocol{
         private final String answer;
-        private final Server.ImageAttributes imageAttributes;
+        private final Util.ImageAttributes imageAttributes;
 
-        ReturnProtocol(String answer, Server.ImageAttributes imageAttributes){
+        ReturnProtocol(String answer, Util.ImageAttributes imageAttributes){
 
             this.answer = answer;
             this.imageAttributes = imageAttributes;
         }
 
-        public Server.ImageAttributes getImageAttributes() {
+        public Util.ImageAttributes getImageAttributes() {
             return imageAttributes;
         }
 
@@ -59,7 +59,10 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
         return answer;
     }
 
-    private ReturnProtocol interpret(JSONObject messageReceived) throws InvalidKeyException, NoSuchAlgorithmException, IOException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException, SignatureException, InvalidKeySpecException, InvalidAlgorithmParameterException {
+    private ReturnProtocol interpret(JSONObject messageReceived) throws InvalidKeyException,
+            NoSuchAlgorithmException, IOException, NoSuchPaddingException,
+            BadPaddingException, IllegalBlockSizeException, SignatureException,
+            InvalidKeySpecException, InvalidAlgorithmParameterException, ParseException {
         ReturnProtocol answer = null;
         JSONObject answerJSON = new JSONObject();
         if(messageReceived.get(fType).equals(fRegister)){
@@ -83,9 +86,31 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
                     signature  = (String)messageReceived.get(fSignature),
                     encryptedKey = (String)messageReceived.get(fSymmetricKey),
                     iv = (String)messageReceived.get(fIV);
-            Server.ImageAttributes ia = getVerifiedImage(server.getPrivateKey(),name,
-                    encryptedImage,signature,encryptedKey,iv,communicator.userAttributes);
+            Util.ImageAttributes ia = getVerifiedImage(server.getPrivateKey(),name,
+                    encryptedImage,signature,encryptedKey,iv,
+                    communicator.userAttributes.getPublicKey(),communicator.userAttributes.getUsername(),true);
             answer = new ReturnProtocol(null,ia);
+        }else if(messageReceived.get(fType).equals(fDownload)){
+            String imageName = (String)messageReceived.get(fImageName);
+            String userName = (String)messageReceived.get(fUsername);
+            Util.ImageAttributes ia = server.readImageAttributes(imageName,userName);
+
+
+            String signature = sign(ia.getHashedImage(),server.getPrivateKey());
+            String certified = sign(ia.getUsername(),
+                    ia.getPublicKeyOfUser(),server.getPrivateKey());
+
+            byte[] sk = Base64.getDecoder().decode(ia.getSymmetricKey());
+            String encryptedKey = encrypyWithPublicKey(sk, communicator.userAttributes.getPublicKey());
+            answerJSON.put(fType,fPostImage);
+            answerJSON.put(fImageName,ia.getName());
+            answerJSON.put(fEncryptedImage,ia.getImage());
+            answerJSON.put(fSignature,signature);
+            answerJSON.put(fSymmetricKey,encryptedKey);
+            answerJSON.put(fPublicKey,certified);
+            answerJSON.put(fIV,ia.getIv());
+
+            answer = new ReturnProtocol(answerJSON.toString(),null);
         }
         return answer;
     }
@@ -94,11 +119,8 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
         jsonObject.put(fType,fNewImage);
 
         String[] parts = imageName.split("_");
-        int lnt = parts.length;
-        String imageField = parts[lnt-1];
-        if(lnt==3) imageField +=parts[1];
 
-        jsonObject.put(fImageName,imageField);
+        jsonObject.put(fImageName,parts[1]);
         jsonObject.put(fUsername,parts[0]);
         Util.sendData(jsonObject.toString(),out);
         System.out.println("Notification Sent");

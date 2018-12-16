@@ -14,6 +14,54 @@ import java.util.Base64;
 import java.util.logging.*;
 
 public class Util {
+    public static class ImageAttributes{
+        private final String name;
+        private String username;
+        private String publicKeyOfUser;
+        public final String image;
+        private final String symmetricKey;
+        private final String iv;
+        private String hashedImage;
+
+        public ImageAttributes(String name, String publicKeyOfUser, String username,
+                               String image, String symmetricKey, String iv, String hashedImage){
+            this.name = name;
+            this.publicKeyOfUser = publicKeyOfUser;
+            this.username = username;
+            this.image = image;
+            this.symmetricKey = symmetricKey;
+            this.iv = iv;
+            this.hashedImage = hashedImage;
+        }
+
+        public String getIv() {
+            return iv;
+        }
+
+        public String getImage() {
+            return image;
+        }
+
+        public String getSymmetricKey() {
+            return symmetricKey;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getPublicKeyOfUser() {
+            return publicKeyOfUser;
+        }
+
+        public String getUsername() {
+            return username;
+        }
+
+        public String getHashedImage() {
+            return hashedImage;
+        }
+    }
     public static Logger generateLogger(ConsoleHandler consoleHandler,FileHandler fileHandler, String name) throws IOException {
         Logger logger = Logger.getLogger(name);
         logger.setLevel(Level.ALL);

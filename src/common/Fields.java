@@ -18,4 +18,6 @@ public interface Fields {
     String fSymmetricKey = "ENCRYPTED_KEY";
     String fIV = "IV";
     String fNewImage = "NEW_IMAGE";
+    String fDownload = "DOWNLOAD";
+    String fHashedImage = "HASHED_IMAGE";
 }

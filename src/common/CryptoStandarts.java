@@ -84,9 +84,10 @@ public class CryptoStandarts extends KeyGeneration{
         MessageDigest digest = MessageDigest.getInstance("SHA-256");
         return new String(Base64.getEncoder().encode(digest.digest(data)));
     }
-    protected Server.ImageAttributes getVerifiedImage(PrivateKey privateKey, String name,
-                                                      String encryptedImage, String signature,
-                                                      String encryptedKey, String iv, Server.UserAttributes userAttributes)
+    protected Util.ImageAttributes getVerifiedImage(PrivateKey privateKey, String name,
+                                                     String encryptedImage, String signature,
+                                                     String encryptedKey, String iv, PublicKey publicKey,
+                                                     String userName,boolean giveEncryptedImage)
             throws NoSuchAlgorithmException, InvalidKeyException,
             BadPaddingException, NoSuchPaddingException,
             IllegalBlockSizeException, InvalidKeySpecException, InvalidAlgorithmParameterException, SignatureException {
@@ -94,11 +95,17 @@ public class CryptoStandarts extends KeyGeneration{
         byte[] encryptedImageBytes = Base64.getDecoder().decode(encryptedImage);
         byte[] decryptedImage = decryptData(aesKey,encryptedImageBytes,iv);
         String hashedImage = hashData(decryptedImage);
-        if(verifySignature(hashedImage,signature,userAttributes.getPublicKey())){
+        if(verifySignature(hashedImage,signature,publicKey)){
             String serverSignature = sign(hashedImage,privateKey);
-            String pk = Base64.getEncoder().encodeToString(userAttributes.getPublicKey().getEncoded());
-            return new Server.ImageAttributes(name,pk,userAttributes.getUsername(),encryptedImage,
-                    Util.convertToBase64String(aesKey.getEncoded()),iv);
+            String pk = Base64.getEncoder().encodeToString(publicKey.getEncoded());
+            String imageToReturn;
+            if(giveEncryptedImage){
+                imageToReturn = encryptedImage;
+            }else{
+                imageToReturn = Base64.getEncoder().encodeToString(decryptedImage);
+            }
+            return new Util.ImageAttributes(name,pk,userName,imageToReturn,
+                    Util.convertToBase64String(aesKey.getEncoded()),iv,hashedImage);
         }
         else{
             return null;

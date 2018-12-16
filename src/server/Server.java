@@ -1,9 +1,9 @@
 package server;
 
 import common.Fields;
-import common.KeyGeneration;
 import common.Util;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
@@ -11,11 +11,9 @@ import javax.crypto.NoSuchPaddingException;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketException;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
@@ -58,46 +56,8 @@ public class Server implements Fields {
 
 
     }
-    public static class ImageAttributes{
-        private final String name;
-        private String username;
-        private String publicKeyOfUser;
-        private final String encrypted;
-        private final String symmetricKey;
-        private final String iv;
-        public ImageAttributes(String name,String publicKeyOfUser,String username, String encrypted, String symmetricKey, String iv){
-            this.name = name;
-            this.publicKeyOfUser = publicKeyOfUser;
-            this.username = username;
-            this.encrypted = encrypted;
-            this.symmetricKey = symmetricKey;
-            this.iv = iv;
-        }
 
-        public String getIv() {
-            return iv;
-        }
 
-        public String getEncrypted() {
-            return encrypted;
-        }
-
-        String getSymmetricKey() {
-            return symmetricKey;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public String getPublicKeyOfUser() {
-            return publicKeyOfUser;
-        }
-
-        public String getUsername() {
-            return username;
-        }
-    }
     Server() throws IOException, InvalidKeySpecException, NoSuchAlgorithmException {
         KeyPair keyPair = Util.readServerKeyPair();
         publicKey = keyPair.getPublic();
@@ -120,7 +80,7 @@ public class Server implements Fields {
                 communicators.add(communicator);
             }
     }
-    public String saveImage(ImageAttributes ia) throws IOException {
+    public String saveImage(Util.ImageAttributes ia) throws IOException {
         File dir=new File(serverImagesDirectory);
         if(!dir.exists()){
             dir.mkdir();
@@ -133,11 +93,12 @@ public class Server implements Fields {
         while(true){
 
             if(i>0){
-                index = "_"+String.valueOf(i);
+                index = String.valueOf(i);
             }else{
                 index = "";
             }
-            name = ia.getUsername()+index+"_"+ia.getName();
+            String[] nameParts = ia.getName().split("\\.");
+            name = ia.getUsername()+"_"+nameParts[0]+index+"."+nameParts[1];
 
             file=new File(dir,name+".txt");
             if(!file.exists()){
@@ -153,8 +114,25 @@ public class Server implements Fields {
         jsonObject.put(fPublicKey,ia.getPublicKeyOfUser());
         jsonObject.put(fIV,ia.getIv());
         jsonObject.put(fSymmetricKey,ia.getSymmetricKey());
-        jsonObject.put(fEncryptedImage,ia.encrypted);
+        jsonObject.put(fEncryptedImage,ia.getImage());
+        jsonObject.put(fHashedImage,ia.getHashedImage());
+
         writer.write(jsonObject.toString());
+        writer.close();
         return name;
+    }
+    public Util.ImageAttributes readImageAttributes(String name,String userName) throws IOException, ParseException {
+        File dir=new File(serverImagesDirectory);
+        File file = new File(dir,userName+"_"+name+".txt");
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        String data = "";
+        data =reader.readLine();
+        System.out.println(data.substring(data.length()-30));
+        JSONParser parser = new JSONParser();
+        JSONObject jsonObject = (JSONObject)parser.parse(data);
+        return new Util.ImageAttributes(name,
+                (String)jsonObject.get(fPublicKey),
+                userName,(String)jsonObject.get(fEncryptedImage),
+                (String)jsonObject.get(fSymmetricKey),(String)jsonObject.get(fIV),(String)jsonObject.get(fHashedImage));
     }
 }

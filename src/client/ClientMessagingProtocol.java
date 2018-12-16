@@ -77,22 +77,53 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
 
         }
     }
+    Util.ImageAttributes giveSecureImage(String message) throws ParseException,
+            BadPaddingException, InvalidAlgorithmParameterException,
+            NoSuchAlgorithmException, NoSuchPaddingException, SignatureException,
+            IllegalBlockSizeException, InvalidKeyException, InvalidKeySpecException {
+        JSONObject messageReceived = (JSONObject)parser.parse(message);
+        if(messageReceived.get(fType).equals(fPostImage)){
+            String imageName = (String)messageReceived.get(fImageName);
+            String certificate = (String)messageReceived.get(fPublicKey);
+            String userName = (String)messageReceived.get(fUsername);
+            String encrypted = (String)messageReceived.get(fEncryptedImage);
+            String iv = (String)messageReceived.get(fIV);
+            String signature = (String)messageReceived.get(fSignature);
+            String encryptedKey = (String)messageReceived.get(fSymmetricKey);
+
+            return getVerifiedImage(client.getPrivateKey(),imageName,
+                    encrypted,signature,encryptedKey,iv,Client.serverPublicKey,userName,false);
+        }
+        return null;
+
+    }
     NotificationListener.NameFormatting checkIfNotification(String message) throws ParseException {
         JSONObject messageReceived = (JSONObject)parser.parse(message);
-        String name="",username="";
-        if(messageReceived.get(fType).equals(fNewImage)){
-            name = (String)messageReceived.get(fImageName);
-            username = (String)messageReceived.get(fUsername);
-        }
-        if((name != null) && (username!=null)){
-            if(username.equals(client.getUserName())){
-                return new NotificationListener.NameFormatting(name,username,false);
-            } else {
-                return new NotificationListener.NameFormatting(name,username,true);
+        String name,username;
+        if(messageReceived.get(fType).equals(fNewImage)) {
+            name = (String) messageReceived.get(fImageName);
+            username = (String) messageReceived.get(fUsername);
+
+            if ((name != null) && (username != null)) {
+                if (username.equals(client.getUserName())) {
+                    return new NotificationListener.NameFormatting(name, username, false);
+                } else {
+                    return new NotificationListener.NameFormatting(name, username, true);
+                }
             }
         }
-        else{
-            return null;
+        return null;
+    }
+    void sendDownloadRequest(String userName,String name){
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put(fType,fDownload);
+        jsonObject.put(fUsername,userName);
+        jsonObject.put(fImageName,name);
+        try {
+            Util.sendData(jsonObject.toString(),client.getOut());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
+
 }

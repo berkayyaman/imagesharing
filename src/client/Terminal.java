@@ -2,6 +2,7 @@ package client;
 
 import common.Fields;
 import common.Util;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 import javax.crypto.BadPaddingException;
@@ -112,7 +113,7 @@ public class Terminal implements Fields {
         try{
             int index = Integer.parseInt(keyInput);
             NotificationListener.NameFormatting image = notificationListener.imageList.get(index);
-            System.out.println(image.getName()+" "+image.getUsername());
+            protocol.sendDownloadRequest(image.getUsername(),image.getName());
         } catch (NumberFormatException n){
             printMessage("Wrong entry.\n");
             try {
