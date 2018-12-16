@@ -14,6 +14,10 @@ import java.security.spec.InvalidKeySpecException;
 
 public class ClientMain {
     public static NotificationListener notificationListener;
+
+    public static final boolean EXIT = false;
+    public static final boolean REPEAT = true;
+
     public static void main(String[] args){
 
         //noinspection InfiniteLoopStatement
@@ -23,8 +27,11 @@ public class ClientMain {
                 Client client = new Client();
                 ClientMessagingProtocol protocol = new ClientMessagingProtocol(client);
                 terminal = new Terminal(protocol);
-                if(terminal.start()){ //if returns false, connect again
-                    break;
+                if(terminal.start() == EXIT){ //if returns false, connect again
+                    client.in.close();
+                    client.out.close();
+                    client.socket.close();
+                    System.exit(0);
                 }
                 
             } catch (IOException e) {

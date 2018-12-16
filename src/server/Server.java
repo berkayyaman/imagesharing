@@ -14,6 +14,7 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
@@ -28,13 +29,10 @@ public class Server implements Fields {
     private ServerSocket serverSocket = null;
     private Logger logger;
     private FileHandler logFileHandler;
-    private ConsoleHandler consoleHandler;
     private String serverImagesDirectory = "ServerImages";
 
     private int threadNumber = 0;
-    public static Communicator[] communicators;
-    private static int communicatorsIndex = 0;
-    private static int communicatorsCount = 10;
+    public static ArrayList<Communicator> communicators;
 
     public PrivateKey getPrivateKey() {
         return privateKey;
@@ -84,7 +82,7 @@ public class Server implements Fields {
             return encrypted;
         }
 
-        public String getSymmetricKey() {
+        String getSymmetricKey() {
             return symmetricKey;
         }
 
@@ -105,10 +103,10 @@ public class Server implements Fields {
         publicKey = keyPair.getPublic();
         privateKey = keyPair.getPrivate();
         logFileHandler = new FileHandler("serverLog.log");
-        consoleHandler = new ConsoleHandler();
+        ConsoleHandler consoleHandler = new ConsoleHandler();
         serverSocket = new ServerSocket(portNumber);
         logger = Util.generateLogger(consoleHandler,logFileHandler,Server.class.getName());
-        communicators = new Communicator[communicatorsCount];
+        communicators = new ArrayList<>();
     }
     void listen() throws IOException, ParseException, InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException, InvalidKeySpecException, InvalidAlgorithmParameterException {
         //noinspection InfiniteLoopStatement
@@ -117,19 +115,10 @@ public class Server implements Fields {
                 Socket clientSocket = serverSocket.accept();
                 logger.info("Client with IP address "+clientSocket.getRemoteSocketAddress().toString()+
                         " is connected."+"\n");
-                Communicator communicator = new Communicator(this,clientSocket);
-                Thread t = new Thread(communicator,"Communicator"+String.valueOf(threadNumber++));
-                t.start();
-                addCommunicator(communicator);
+                Communicator communicator = new Communicator(this,clientSocket,
+                        "Communicator"+String.valueOf(threadNumber++));
+                communicators.add(communicator);
             }
-    }
-    private void addCommunicator(Communicator communicator){
-        communicators[communicatorsIndex++] = communicator;
-        if(communicatorsIndex == communicators.length-1){
-            Communicator[] newBuffer = new Communicator[communicators.length*2];
-            System.arraycopy(communicators,0,newBuffer,0,communicators.length);
-            communicators = newBuffer;
-        }
     }
     public String saveImage(ImageAttributes ia) throws IOException {
         File dir=new File(serverImagesDirectory);

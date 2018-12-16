@@ -101,5 +101,6 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
         jsonObject.put(fImageName,imageField);
         jsonObject.put(fUsername,parts[0]);
         Util.sendData(jsonObject.toString(),out);
+        System.out.println("Notification Sent");
     }
 }

@@ -85,7 +85,11 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
             username = (String)messageReceived.get(fUsername);
         }
         if((name != null) && (username!=null)){
-            return new NotificationListener.NameFormatting(name,username);
+            if(username.equals(client.getUserName())){
+                return new NotificationListener.NameFormatting(name,username,false);
+            } else {
+                return new NotificationListener.NameFormatting(name,username,true);
+            }
         }
         else{
             return null;

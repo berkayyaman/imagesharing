@@ -4,6 +4,7 @@ import server.Server;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.net.SocketException;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
@@ -18,8 +19,7 @@ public class Util {
         logger.setLevel(Level.ALL);
         fileHandler.setLevel(Level.ALL);
         consoleHandler.setLevel(Level.FINE);
-        logger.addHandler(fileHandler);
-        //logger.addHandler(consoleHandler);
+        //logger.addHandler(fileHandler);
         SimpleFormatter formatter = new SimpleFormatter();
         fileHandler.setFormatter(formatter);
         return logger;
@@ -59,7 +59,7 @@ public class Util {
         return Base64.getDecoder().decode(base64String);
     }
 
-    public static void sendData(String message, DataOutputStream out) throws IOException {
+    public static void sendData(String message, DataOutputStream out) throws IOException, SocketException {
             int limit = 65500;
             String firstPart;
             while(true){
