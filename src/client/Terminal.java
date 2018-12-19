@@ -2,7 +2,6 @@ package client;
 
 import common.Fields;
 import common.Util;
-import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 import javax.crypto.BadPaddingException;
@@ -16,16 +15,19 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class Terminal implements Fields {
     private Scanner input;
     private ClientMessagingProtocol protocol;
     public static String lastMessage = "";
     Thread thread = null;
+    Logger logger;
     NotificationListener notificationListener;
-    Terminal(ClientMessagingProtocol protocol){
+    Terminal(ClientMessagingProtocol protocol,Logger logger){
         this.protocol = protocol;
         input = new Scanner(System.in);
+        this.logger = logger;
     }
     boolean start() throws InvalidKeyException, NoSuchAlgorithmException,
             ParseException, IOException, NoSuchPaddingException, BadPaddingException,
@@ -33,8 +35,10 @@ public class Terminal implements Fields {
         //noinspection LoopStatementThatDoesntLoop
 
             if(registration()){
+                logger.info("\n Certificate is verified.. Notification listener is starting...\n");
                 printMessage("Registration completed.\n");
-                notificationListener = new NotificationListener(protocol, protocol.client);
+
+                notificationListener = new NotificationListener(protocol, protocol.client,logger);
                 thread = new Thread(notificationListener);
                 thread.start();
                 while(true) {
@@ -88,6 +92,7 @@ public class Terminal implements Fields {
         printMessage("Please enter a username:");
         protocol.client.setUserName(input.nextLine());
         Util.sendData(protocol.registration(protocol.client.getUserName()),protocol.client.getOut());
+
         String in = Util.receiveData(protocol.client.getIn());
         return protocol.verify(in);
     }
@@ -147,11 +152,17 @@ public class Terminal implements Fields {
                     default:
                         break;
                 }
+
                 String extension  = imagePath.split("\\.")[1];
                 File file = new File(imagePath);
                 byte[] imageInBytes = Util.encodeImage(file,extension);
-                protocol.sendImage(file.getName(),imageInBytes);
-                System.out.println("Image Sent.");
+                try{
+                    protocol.sendImage(file.getName(),imageInBytes);
+                }catch (IOException i){
+                    System.out.println("\n Server is closed... Program is closing...\n");
+                    return false;
+                }
+                System.out.println("\nImage Sent.\n");
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {

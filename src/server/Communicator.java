@@ -6,10 +6,7 @@ import org.json.simple.parser.ParseException;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 import java.security.InvalidAlgorithmParameterException;
@@ -27,18 +24,18 @@ public class Communicator implements Runnable {
     Server.UserAttributes userAttributes;
     private ConsoleHandler consoleHandler;
     private Server server;
-    private Socket clientSocket;
+    Socket clientSocket;
     private Logger logger;
     private FileHandler logFileHandler;
-    private DataOutputStream out;
-    private DataInputStream in;
+    DataOutputStream out;
+    public DataInputStream in;
     private MessagingProtocol messagingProtocol;
-    Communicator(Server server, Socket clientSocket, String threadName) throws IOException {
+    Communicator(Server server, Socket clientSocket, String threadName,FileHandler logFileHandler) throws IOException {
         this.server = server;
         this.clientSocket = clientSocket;
-        logFileHandler = new FileHandler("ServerLog.log");
         consoleHandler = new ConsoleHandler();
-        logger = Util.generateLogger(consoleHandler,logFileHandler,Server.class.getName());
+        this.logFileHandler = logFileHandler;
+        logger = Util.generateLogger(consoleHandler,logFileHandler,threadName);
         thread = new Thread(this,threadName);
         thread.start();
     }
@@ -59,7 +56,6 @@ public class Communicator implements Runnable {
             messagingProtocol = new MessagingProtocol(server,this,consoleHandler,logFileHandler);
             try{
                 String message = Util.receiveData(in);
-                logger.info("Message Received: " + message+"\n");
                 MessagingProtocol.ReturnProtocol answer = messagingProtocol.processInput(message);
                 if(answer.getImageAttributes() != null){
                     String savedImageName = server.saveImage(answer.getImageAttributes());
@@ -68,12 +64,11 @@ public class Communicator implements Runnable {
                 }
                 if(answer.getAnswer() != null){
                     Util.sendData(answer.getAnswer(),out);
-                    logger.info("Response sent: "+ answer.getAnswer()+"\n");
                 }
 
-            }catch(SocketException s){
-                logger.info("Client with IP address "+clientSocket.getRemoteSocketAddress().toString()+
-                        " is disconnected.\n");
+            }catch(SocketException |EOFException s){
+                logger.info("\n\nClient with IP address "+clientSocket.getRemoteSocketAddress().toString()+
+                        " is disconnected.\n\n");
                 break;
             } catch (SignatureException | ParseException | NoSuchAlgorithmException | InvalidKeyException | NoSuchPaddingException | BadPaddingException | IllegalBlockSizeException | InvalidKeySpecException | InvalidAlgorithmParameterException e) {
                 e.printStackTrace();
@@ -86,8 +81,10 @@ public class Communicator implements Runnable {
             if(c!=null){
                 try {
                     c.messagingProtocol.notifyUser(newImageName,c.out);
+                    logger.info("\n\nNotification has been sent to user "+"\""+userAttributes.getUsername()+"\"\n\n");
                 } catch (IOException e) {
-                    System.out.println("Cant send notification ");
+                    logger.info("\n\nIt looks like user "+"\""+userAttributes.getUsername()+"\"\n" + "disconnected...\n"+
+                            "Notification can't be sent.\n\n");
                     try {
                         c.out.close();
                         c.in.close();

@@ -1,5 +1,6 @@
 package client;
 
+import common.Util;
 import org.json.simple.parser.ParseException;
 
 import javax.crypto.BadPaddingException;
@@ -11,26 +12,35 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
 
 public class ClientMain {
-    public static NotificationListener notificationListener;
 
     public static final boolean EXIT = false;
     public static final boolean REPEAT = true;
 
     public static void main(String[] args){
-
+        Logger logger = null;
+        try {
+            logger = Util.generateLogger(new ConsoleHandler(),new FileHandler("ClientLogs/ClientLog.log"),ClientMain.class.getName());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         //noinspection InfiniteLoopStatement
         while(true){
             Terminal terminal = null;
             try {
                 Client client = new Client();
-                ClientMessagingProtocol protocol = new ClientMessagingProtocol(client);
-                terminal = new Terminal(protocol);
+                ClientMessagingProtocol protocol = new ClientMessagingProtocol(client,logger);
+                terminal = new Terminal(protocol,logger);
                 if(terminal.start() == EXIT){ //if returns false, connect again
+                    terminal.thread.interrupt();
                     client.in.close();
                     client.out.close();
                     client.socket.close();
+                    logger.info("\nProgram is closing...\n");
                     System.exit(0);
                 }
                 

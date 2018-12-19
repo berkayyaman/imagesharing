@@ -1,5 +1,7 @@
 package common;
 
+import client.ClientMain;
+import client.Terminal;
 import server.Server;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -64,10 +66,18 @@ public class Util {
     }
     public static Logger generateLogger(ConsoleHandler consoleHandler,FileHandler fileHandler, String name) throws IOException {
         Logger logger = Logger.getLogger(name);
+
+        if(name.equals(ClientMain.class.getName())){
+            logger.setUseParentHandlers(false);
+            Handler[] handlers = logger.getHandlers();
+            for(Handler h:handlers){
+                logger.removeHandler(h);
+            }
+        }
         logger.setLevel(Level.ALL);
         fileHandler.setLevel(Level.ALL);
         consoleHandler.setLevel(Level.FINE);
-        //logger.addHandler(fileHandler);
+        logger.addHandler(fileHandler);
         SimpleFormatter formatter = new SimpleFormatter();
         fileHandler.setFormatter(formatter);
         return logger;
@@ -107,7 +117,7 @@ public class Util {
         return Base64.getDecoder().decode(base64String);
     }
 
-    public static void sendData(String message, DataOutputStream out) throws IOException, SocketException {
+    public static void sendData(String message, DataOutputStream out) throws IOException {
             int limit = 65500;
             String firstPart;
             while(true){
@@ -129,7 +139,7 @@ public class Util {
         StringBuilder message = new StringBuilder();
         while(!(input = in.readUTF()).equals(Fields.OVER)){
             message.append(input);
-        }
+        }//TODO eof hatası alınıyor
         return message.toString();
     }
 }

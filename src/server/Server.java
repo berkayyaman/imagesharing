@@ -62,7 +62,7 @@ public class Server implements Fields {
         KeyPair keyPair = Util.readServerKeyPair();
         publicKey = keyPair.getPublic();
         privateKey = keyPair.getPrivate();
-        logFileHandler = new FileHandler("serverLog.log");
+        logFileHandler = new FileHandler("ServerLogs/serverLog.log");
         ConsoleHandler consoleHandler = new ConsoleHandler();
         serverSocket = new ServerSocket(portNumber);
         logger = Util.generateLogger(consoleHandler,logFileHandler,Server.class.getName());
@@ -76,7 +76,7 @@ public class Server implements Fields {
                 logger.info("Client with IP address "+clientSocket.getRemoteSocketAddress().toString()+
                         " is connected."+"\n");
                 Communicator communicator = new Communicator(this,clientSocket,
-                        "Communicator"+String.valueOf(threadNumber++));
+                        "Communicator"+String.valueOf(threadNumber++),logFileHandler);
                 communicators.add(communicator);
             }
     }
@@ -127,7 +127,6 @@ public class Server implements Fields {
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String data = "";
         data =reader.readLine();
-        System.out.println(data.substring(data.length()-30));
         JSONParser parser = new JSONParser();
         JSONObject jsonObject = (JSONObject)parser.parse(data);
         return new Util.ImageAttributes(name,

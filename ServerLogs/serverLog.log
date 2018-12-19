@@ -1,0 +1,34 @@
+Dec 20, 2018 12:29:45 AM server.Server listen
+INFO: Port 4444 is listening.
+
+Dec 20, 2018 12:29:45 AM server.Server listen
+INFO: Client with IP address /127.0.0.1:50644 is connected.
+
+Dec 20, 2018 12:29:45 AM server.Server listen
+INFO: Port 4444 is listening.
+
+Dec 20, 2018 12:29:50 AM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 20, 2018 12:29:50 AM server.MessagingProtocol interpret
+INFO: 
+{"PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlRv3DfqYReQ67ldej23S4m\/PojgIlTFagYlcZW9O9yUNXPOgx2oEeTXPhxJfoC1KfF1H2q8fxtUDTWTwzIR3z7ZsMiNAwkbxHWdPH8RxOtKI56sfEQK8r1KgcclzrQ\/H6onOfEdNly8ieqCWL4rLU98Q6ZD6ElzFAg2LDkPlm3bAZ1h2UzdUEIZwE\/9UDhc76YnY2a9OcazUeGAf6eqX5816Asy+vvBYiQdBNLBkWMR+8ugsYyvKTh+Xgh07kshODRi56oEn2IujexzNtKqgz1S7pPkF\/ElEw\/wvzxITa5xGwujGgynkGD7Ui8nBpmvlE01+1c7X\/0H\/lTsggpQ5ewIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 20, 2018 12:29:50 AM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: hJBTO75b4+pYDZNY1+82ZkMoUNtSgT329oXvlukI4IuqjOR6vDR7z9YMSnRT6K2+oHz34qL7QDn7xhdRdnNoxZYNjg8UyG8QVuux0VaKQjg1+rg2ca3Wt+Fevt8pmWhaqv0ihjwgaHALQFi3zGAmrw251d561XED+0cuPx/P73qirbbH4xAGuAO2Tce8SpJq/JJhXvbfGi1Axi6pCtyHqAteYIaIm/Ff3huKRU9ettKL5uyqrVE71c2s5p3drI0+aH9ubvTISnMkyLFJJvT62LlmcTq6I1krxav6VT1kI/EtiNJn7z2ZxqT1Wnf+bca0ZLe2wgW2fCPXQV0TeMp87w==
+
+Dec 20, 2018 12:29:50 AM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 20, 2018 12:29:50 AM server.MessagingProtocol interpret
+INFO: {"CERTIFICATE":"hJBTO75b4+pYDZNY1+82ZkMoUNtSgT329oXvlukI4IuqjOR6vDR7z9YMSnRT6K2+oHz34qL7QDn7xhdRdnNoxZYNjg8UyG8QVuux0VaKQjg1+rg2ca3Wt+Fevt8pmWhaqv0ihjwgaHALQFi3zGAmrw251d561XED+0cuPx\/P73qirbbH4xAGuAO2Tce8SpJq\/JJhXvbfGi1Axi6pCtyHqAteYIaIm\/Ff3huKRU9ettKL5uyqrVE71c2s5p3drI0+aH9ubvTISnMkyLFJJvT62LlmcTq6I1krxav6VT1kI\/EtiNJn7z2ZxqT1Wnf+bca0ZLe2wgW2fCPXQV0TeMp87w==","TYPE":"ACCEPTED"}
+
+Dec 20, 2018 12:29:52 AM server.Communicator communicate
+INFO: 
+
+Client with IP address /127.0.0.1:50644 is disconnected.
+
+

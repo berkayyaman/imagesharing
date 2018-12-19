@@ -7,16 +7,19 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import java.io.IOException;
+import java.net.SocketException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class NotificationListener implements Runnable{
     private ClientMessagingProtocol protocol;
     private Client client;
+    private Logger logger;
     ArrayList<NameFormatting> imageList;
     static class NameFormatting{
         private final boolean notifyUser;
@@ -37,9 +40,10 @@ public class NotificationListener implements Runnable{
         }
     }
 
-    NotificationListener(ClientMessagingProtocol protocol,Client client){
+    NotificationListener(ClientMessagingProtocol protocol, Client client, Logger logger){
         this.protocol = protocol;
         this.client = client;
+        this.logger = logger;
         imageList = new ArrayList<>();
     }
 
@@ -49,7 +53,15 @@ public class NotificationListener implements Runnable{
         //noinspection InfiniteLoopStatement
         while(true){
             try {
-                String message = Util.receiveData(client.getIn());
+                String message;
+                try{
+                     message = Util.receiveData(client.getIn());
+                }catch (SocketException s){
+                    System.out.println(Terminal.lastMessage);
+                    System.out.println("It looks like server is closed... Notification listener is closing...");
+                    break;
+                }
+
                 NameFormatting info;
                 Util.ImageAttributes ia;
                 if(((info=protocol.checkIfNotification(message))!=null)){
@@ -59,6 +71,7 @@ public class NotificationListener implements Runnable{
                                 +info.getName()+"\"\n\n";
                         System.out.println(print);
                         System.out.print(Terminal.lastMessage);
+                        logger.info("\nMessage Received: "+message+"\n");
                     }
                     imageList.add(info);
                 }else if((ia=protocol.giveSecureImage(message))!=null){
@@ -66,6 +79,7 @@ public class NotificationListener implements Runnable{
                     client.saveImage(ia.getUsername()+"_"+nameParts[0],nameParts[1],ia.getImage());
                     System.out.println("\n\nImage Saved.\n\n");
                     System.out.print(Terminal.lastMessage);
+                    logger.info("\nImage Received with name: "+ia.getName()+" from "+ia.getUsername()+"\n");
                 }
             } catch (IOException | ParseException | BadPaddingException |
                     InvalidAlgorithmParameterException | NoSuchAlgorithmException |

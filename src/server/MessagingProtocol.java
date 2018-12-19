@@ -71,14 +71,16 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             String certificate  = sign(username,publicKey,server.getPrivateKey());
             PublicKey pk = Util.convertToPublicKey(Base64.getDecoder().decode(publicKey));
             communicator.userAttributes = new Server.UserAttributes(username,pk);
+            logger.info("\nRegister request received:\n");
+            logger.info("\n"+messageReceived+"\n");
+
             String recordContent = username+" "+certificate+"\n";
             Files.write(userRecordsPath,recordContent.getBytes());//Certificate is recorded with fUsername
-            logger.info("Certificate is generated from:"+"\n"+
-                    "Username: "+username+"\n"+
-                    "Client Public Key:"+publicKey+"\n"+
-                    "Generated fCertificate: " + certificate+"\n");
+            logger.info("\nGenerated Certificate: " + certificate+"\n");
             answerJSON.put(fType, fRegisterAccepted);
             answerJSON.put(this.fCertificate,certificate);
+            logger.info("\nMessage is sending to user "+"\""+communicator.userAttributes.getUsername()+"\"\n");
+            logger.info(answerJSON.toString()+"\n");
             answer = new ReturnProtocol(answerJSON.toString(),null);
         }else if(messageReceived.get(fType).equals(fPostImage)){
             String name = (String)messageReceived.get(fImageName),
@@ -86,15 +88,18 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
                     signature  = (String)messageReceived.get(fSignature),
                     encryptedKey = (String)messageReceived.get(fSymmetricKey),
                     iv = (String)messageReceived.get(fIV);
+            logger.info("\nImage with name \""+ name +"\""+"received from user "+"\""+communicator.userAttributes.getUsername()+"\"\n");
             Util.ImageAttributes ia = getVerifiedImage(server.getPrivateKey(),name,
                     encryptedImage,signature,encryptedKey,iv,
                     communicator.userAttributes.getPublicKey(),communicator.userAttributes.getUsername(),true);
             answer = new ReturnProtocol(null,ia);
         }else if(messageReceived.get(fType).equals(fDownload)){
+
             String imageName = (String)messageReceived.get(fImageName);
             String userName = (String)messageReceived.get(fUsername);
             Util.ImageAttributes ia = server.readImageAttributes(imageName,userName);
-
+            logger.info("\nDownload request received from user "+"\""+communicator.userAttributes.getUsername()+"\"\n"+
+                    "for the image \"" + imageName +"\"");
 
             String signature = sign(ia.getHashedImage(),server.getPrivateKey());
             String certified = sign(ia.getUsername(),
@@ -109,7 +114,7 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             answerJSON.put(fSymmetricKey,encryptedKey);
             answerJSON.put(fPublicKey,certified);
             answerJSON.put(fIV,ia.getIv());
-
+            logger.info("\nRequested image is sending to user "+"\""+communicator.userAttributes.getUsername()+"\"\n");
             answer = new ReturnProtocol(answerJSON.toString(),null);
         }
         return answer;
@@ -123,6 +128,5 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
         jsonObject.put(fImageName,parts[1]);
         jsonObject.put(fUsername,parts[0]);
         Util.sendData(jsonObject.toString(),out);
-        System.out.println("Notification Sent");
     }
 }
