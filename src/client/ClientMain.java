@@ -36,16 +36,28 @@ public class ClientMain {
                 ClientMessagingProtocol protocol = new ClientMessagingProtocol(client,logger);
                 terminal = new Terminal(protocol,logger);
                 if(terminal.start() == EXIT){ //if returns false, connect again
-                    terminal.thread.interrupt();
+                    if(terminal.thread != null){
+                        terminal.thread.interrupt();
+                    }
                     client.in.close();
                     client.out.close();
                     client.socket.close();
                     logger.info("\nProgram is closing...\n");
                     System.exit(0);
+                }else{
+                    if(terminal.thread != null){
+                        terminal.thread.interrupt();
+                    }
+                    client.in.close();
+                    client.out.close();
+                    client.socket.close();
                 }
                 
             } catch (IOException e) {
                 cantConnect();
+                if (terminal != null && terminal.thread != null) {
+                    terminal.thread.interrupt();
+                }
             } catch (NoSuchAlgorithmException | InvalidKeyException | ParseException
                     | NoSuchPaddingException | IllegalBlockSizeException | BadPaddingException e) {
                 e.printStackTrace();
@@ -55,9 +67,6 @@ public class ClientMain {
                 e.printStackTrace();
             } catch (InvalidKeySpecException e) {
                 e.printStackTrace();
-            }
-            if (terminal != null && terminal.thread != null) {
-                terminal.thread.interrupt();
             }
         }
     }

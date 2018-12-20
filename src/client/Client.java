@@ -23,6 +23,7 @@ public class Client extends KeyGeneration {
     private PublicKey publicKey;
     private PrivateKey privateKey;
     private String userName;
+    private String password;
     public static PublicKey serverPublicKey;
     private static final String clientImagesDirectory = "ClientImages";
     Client() throws IOException, NoSuchAlgorithmException, InvalidKeySpecException {
@@ -68,5 +69,13 @@ public class Client extends KeyGeneration {
         BufferedImage bufferedImage = ImageIO.read(in);
 
         ImageIO.write(bufferedImage, extension,file);
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }

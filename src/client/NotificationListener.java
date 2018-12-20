@@ -57,8 +57,8 @@ public class NotificationListener implements Runnable{
                 try{
                      message = Util.receiveData(client.getIn());
                 }catch (SocketException s){
+                    System.out.println("Notification listener is closing...");
                     System.out.println(Terminal.lastMessage);
-                    System.out.println("It looks like server is closed... Notification listener is closing...");
                     break;
                 }
 

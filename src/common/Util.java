@@ -1,12 +1,11 @@
 package common;
 
 import client.ClientMain;
-import client.Terminal;
 import server.Server;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
-import java.net.SocketException;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
@@ -89,12 +88,6 @@ public class Util {
 
         return new KeyPair(publicKey,privateKey);
 
-    }
-    public static byte[] concatByteArrays(byte[] a,byte[] b){
-        byte[] result = new byte[a.length+b.length];
-        System.arraycopy(a, 0, result, 0, a.length);
-        System.arraycopy(b, 0, result, a.length, b.length);
-        return result;
     }
     public static PublicKey convertToPublicKey(byte[] publicKey) throws NoSuchAlgorithmException, InvalidKeySpecException {
         //byte[] publicKeyAsBytes = publicKeyAsString.getBytes();//Base64.getDecoder().decode(publicKeyAsString);

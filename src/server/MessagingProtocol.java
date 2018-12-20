@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
 import java.util.Base64;
@@ -53,7 +54,7 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
     }
     ReturnProtocol processInput(String input) throws ParseException, NoSuchAlgorithmException, InvalidKeyException, IOException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException, InvalidKeySpecException, InvalidAlgorithmParameterException, SignatureException {
         ReturnProtocol answer;
-        userRecordsPath = Paths.get("userRecords.txt");
+        userRecordsPath = Paths.get(server.userRecordsPath);
         JSONObject messageReceived = (JSONObject)parser.parse(input);
         answer = interpret(messageReceived);
         return answer;
@@ -67,20 +68,28 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
         JSONObject answerJSON = new JSONObject();
         if(messageReceived.get(fType).equals(fRegister)){
             String username = (String)messageReceived.get(this.fUsername);
+            String encryptedPassword = (String)messageReceived.get(this.fPassword);
+            String password = decryptWithPrivateKeyToString(encryptedPassword,server.getPrivateKey());
             String publicKey = (String)messageReceived.get(this.fPublicKey);
             String certificate  = sign(username,publicKey,server.getPrivateKey());
-            PublicKey pk = Util.convertToPublicKey(Base64.getDecoder().decode(publicKey));
-            communicator.userAttributes = new Server.UserAttributes(username,pk);
-            logger.info("\nRegister request received:\n");
-            logger.info("\n"+messageReceived+"\n");
+            if(server.checkIfValid(username,password,certificate)){
 
-            String recordContent = username+" "+certificate+"\n";
-            Files.write(userRecordsPath,recordContent.getBytes());//Certificate is recorded with fUsername
-            logger.info("\nGenerated Certificate: " + certificate+"\n");
-            answerJSON.put(fType, fRegisterAccepted);
-            answerJSON.put(this.fCertificate,certificate);
-            logger.info("\nMessage is sending to user "+"\""+communicator.userAttributes.getUsername()+"\"\n");
-            logger.info(answerJSON.toString()+"\n");
+                PublicKey pk = Util.convertToPublicKey(Base64.getDecoder().decode(publicKey));
+                communicator.userAttributes = new Server.UserAttributes(username,pk);
+                logger.info("\nRegister request received:\n");
+                logger.info("\n"+messageReceived+"\n");
+
+                logger.info("\nGenerated Certificate: " + certificate+"\n");
+
+                answerJSON.put(fType, fRegisterAccepted);
+                answerJSON.put(this.fCertificate,certificate);
+
+                logger.info("\nMessage is sending to user "+"\""+communicator.userAttributes.getUsername()+"\"\n");
+                logger.info(answerJSON.toString()+"\n");
+            }else{
+                answerJSON.put(fType, fRegisterRejected);
+                answerJSON.put(fMessage,fWrongPassword);
+            }
             answer = new ReturnProtocol(answerJSON.toString(),null);
         }else if(messageReceived.get(fType).equals(fPostImage)){
             String name = (String)messageReceived.get(fImageName),
@@ -106,7 +115,7 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
                     ia.getPublicKeyOfUser(),server.getPrivateKey());
 
             byte[] sk = Base64.getDecoder().decode(ia.getSymmetricKey());
-            String encryptedKey = encrypyWithPublicKey(sk, communicator.userAttributes.getPublicKey());
+            String encryptedKey = encryptWithPublicKey(sk, communicator.userAttributes.getPublicKey());
             answerJSON.put(fType,fPostImage);
             answerJSON.put(fImageName,ia.getName());
             answerJSON.put(fEncryptedImage,ia.getImage());

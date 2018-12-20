@@ -42,7 +42,7 @@ public class CryptoStandarts extends KeyGeneration{
         return sign(data,"",key);
     }
 
-    public String encrypyWithPublicKey(byte[] data, PublicKey key)
+    public String encryptWithPublicKey(byte[] data, PublicKey key)
             throws NoSuchAlgorithmException, InvalidKeyException, NoSuchPaddingException,
             BadPaddingException, IllegalBlockSizeException {
         Cipher cipher = Cipher.getInstance("RSA");
@@ -57,6 +57,14 @@ public class CryptoStandarts extends KeyGeneration{
         byte[] encryptedMessage = Base64.getDecoder().decode(encrypted);
         byte[] decryptedMessage = decrypt.doFinal(encryptedMessage);
         return new SecretKeySpec(decryptedMessage,"AES");
+    }
+    public String decryptWithPrivateKeyToString(String encrypted, PrivateKey privateKey) throws IllegalBlockSizeException,
+    NoSuchPaddingException, BadPaddingException, NoSuchAlgorithmException, InvalidKeyException, InvalidKeySpecException, InvalidAlgorithmParameterException, SignatureException {
+        Cipher decrypt=Cipher.getInstance("RSA/ECB/PKCS1Padding");
+        decrypt.init(Cipher.DECRYPT_MODE, privateKey);
+        byte[] encryptedMessage = Base64.getDecoder().decode(encrypted);
+        byte[] decryptedMessage = decrypt.doFinal(encryptedMessage);
+        return new String(decryptedMessage);
     }
     public CipherTextAttributes encryptData(SecretKey key, byte[] data)
             throws NoSuchPaddingException, NoSuchAlgorithmException,

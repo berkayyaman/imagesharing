@@ -7,11 +7,14 @@ public interface Fields {
     String fPublicKey = "PUBLIC_KEY";
     String fCertificate = "CERTIFICATE";
     String OVER = "OVER";
+    String fMessage = "MESSAGE";
+    String fPassword = "PASSWORD";
 
     //values
     String fPostImage = "POST_IMAGE";
     String fRegister = "REGISTER";
     String fRegisterAccepted = "ACCEPTED";
+    String fRegisterRejected = "REJECTED";
     String fImageName = "IMAGE_NAME";
     String fEncryptedImage = "ENCRYPTED_IMAGE";
     String fSignature = "SIGNATURE";
@@ -20,4 +23,6 @@ public interface Fields {
     String fNewImage = "NEW_IMAGE";
     String fDownload = "DOWNLOAD";
     String fHashedImage = "HASHED_IMAGE";
+    String fWrongPassword = "WRONG_PASSWORD";
+
 }

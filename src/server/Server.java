@@ -11,9 +11,14 @@ import javax.crypto.NoSuchPaddingException;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
@@ -27,6 +32,7 @@ public class Server implements Fields {
     private ServerSocket serverSocket = null;
     private Logger logger;
     private FileHandler logFileHandler;
+    String userRecordsPath = "userRecords.txt";
     private String serverImagesDirectory = "ServerImages";
 
     private int threadNumber = 0;
@@ -67,6 +73,7 @@ public class Server implements Fields {
         serverSocket = new ServerSocket(portNumber);
         logger = Util.generateLogger(consoleHandler,logFileHandler,Server.class.getName());
         communicators = new ArrayList<>();
+        //Files.write(Paths.get(userRecordsPath),"".getBytes(), StandardOpenOption.TRUNCATE_EXISTING);
     }
     void listen() throws IOException, ParseException, InvalidKeyException, NoSuchAlgorithmException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException, InvalidKeySpecException, InvalidAlgorithmParameterException {
         //noinspection InfiniteLoopStatement
@@ -133,5 +140,53 @@ public class Server implements Fields {
                 (String)jsonObject.get(fPublicKey),
                 userName,(String)jsonObject.get(fEncryptedImage),
                 (String)jsonObject.get(fSymmetricKey),(String)jsonObject.get(fIV),(String)jsonObject.get(fHashedImage));
+    }
+    boolean checkIfValid(String username,String password,String certificate){
+        Path path = Paths.get(userRecordsPath);
+        List<String> records;
+        JSONParser parser = new JSONParser();
+        JSONObject jsonObject;
+        String changedRecord;
+        try {
+            String un;
+            records = Files.readAllLines(path);
+            for(String s:records){
+                 jsonObject = (JSONObject)parser.parse(s);
+                 un = (String)jsonObject.get(fUsername);
+                 if(un.equals(username) &&(jsonObject.get(fPassword)).equals(password)){
+                     jsonObject.remove(fCertificate);
+                     jsonObject.put(fCertificate,certificate);
+                     jsonObject.put(fPassword,password);
+                     changedRecord=jsonObject.toString();
+                     records.remove(s);
+                     records.add(changedRecord);
+                     Files.write(path,"".getBytes(),StandardOpenOption.TRUNCATE_EXISTING);
+                     for(String newRecord:records){
+                         Files.write(path,newRecord.getBytes());
+                     }
+                     return true;
+                 }else if(un.equals(username)){
+                     return false;
+                 }
+            }
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+            return false;
+        }
+        saveUserRecords(username,password,certificate,userRecordsPath);
+        return true;
+    }
+    void saveUserRecords(String username,String password,String certificate,String path){
+        JSONObject jo = new JSONObject();
+        jo.put(fUsername,username);
+        jo.put(fPassword,password);
+        jo.put(fCertificate,certificate);
+        String recordContent = jo.toString()+"\n";
+        Path userRecordsPath = Paths.get(path);
+        try {
+            Files.write(userRecordsPath,recordContent.getBytes(),StandardOpenOption.APPEND);//Certificate is recorded with fUsername
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

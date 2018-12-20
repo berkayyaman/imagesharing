@@ -20,10 +20,10 @@ import java.util.logging.Logger;
 public class Terminal implements Fields {
     private Scanner input;
     private ClientMessagingProtocol protocol;
-    public static String lastMessage = "";
+    static String lastMessage = "";
     Thread thread = null;
-    Logger logger;
-    NotificationListener notificationListener;
+    private Logger logger;
+    private NotificationListener notificationListener;
     Terminal(ClientMessagingProtocol protocol,Logger logger){
         this.protocol = protocol;
         input = new Scanner(System.in);
@@ -78,7 +78,7 @@ public class Terminal implements Fields {
                 }
             }else{
                 System.out.println("Certificate is not verified. Initiating new connection.");
-                return ClientMain.EXIT;
+                return ClientMain.REPEAT;
             }
     }
     private static void printMessage(String message){
@@ -91,7 +91,9 @@ public class Terminal implements Fields {
             SignatureException, InvalidKeySpecException {
         printMessage("Please enter a username:");
         protocol.client.setUserName(input.nextLine());
-        Util.sendData(protocol.registration(protocol.client.getUserName()),protocol.client.getOut());
+        printMessage("Please enter your password:");
+        protocol.client.setPassword(input.nextLine());
+        Util.sendData(protocol.registration(protocol.client.getUserName(),protocol.client.getPassword()),protocol.client.getOut());
 
         String in = Util.receiveData(protocol.client.getIn());
         return protocol.verify(in);

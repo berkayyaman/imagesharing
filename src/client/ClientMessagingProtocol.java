@@ -35,11 +35,14 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
 
         return "";
     }
-    String registration(String username) throws IOException {
+    String registration(String username,String password) throws IOException, IllegalBlockSizeException, NoSuchPaddingException, BadPaddingException, NoSuchAlgorithmException, InvalidKeyException {
+
         JSONObject jsonObject = new JSONObject();
         jsonObject.put(this.fType,this.fRegister);
         jsonObject.put(this.fUsername, username);
+        jsonObject.put(this.fPassword,encryptWithPublicKey(password.getBytes(),Client.serverPublicKey));
         jsonObject.put(this.fPublicKey,Util.convertToBase64String(client.getPublicKey().getEncoded()));
+
         logger.info("\nMessage Sent:"+
                 jsonObject.toString()+"\n");
         return jsonObject.toString();
@@ -54,6 +57,14 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
             String cpk = Util.convertToBase64String(client.getPublicKey().getEncoded());
 
             return verifySignature(client.getUserName()+cpk,certificate,Client.serverPublicKey);
+        }else if(messageReceived.get(fType).equals(fRegisterRejected) && messageReceived.get(fMessage).equals(fWrongPassword)){
+            System.out.println("\nWrong Password...\n");
+            try {
+                Thread.sleep(700);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return false;
         }
         return false;
     }
@@ -64,7 +75,7 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
 
         String signature = sign(digest,client.getPrivateKey());
         byte[] sk = secretKey.getEncoded();
-        String encryptedKey = encrypyWithPublicKey(sk, Client.serverPublicKey);
+        String encryptedKey = encryptWithPublicKey(sk, Client.serverPublicKey);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put(fType,fPostImage);
         jsonObject.put(fImageName,name);
