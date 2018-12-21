@@ -2,6 +2,7 @@ package server;
 
 import common.Fields;
 import common.Util;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -141,7 +142,7 @@ public class Server implements Fields {
                 userName,(String)jsonObject.get(fEncryptedImage),
                 (String)jsonObject.get(fSymmetricKey),(String)jsonObject.get(fIV),(String)jsonObject.get(fHashedImage));
     }
-    boolean checkIfValid(String username,String password,String certificate){
+    boolean checkIfValid(String username,String password,String publicKey,String certificate){
         Path path = Paths.get(userRecordsPath);
         List<String> records;
         JSONParser parser = new JSONParser();
@@ -157,6 +158,7 @@ public class Server implements Fields {
                      jsonObject.remove(fCertificate);
                      jsonObject.put(fCertificate,certificate);
                      jsonObject.put(fPassword,password);
+                     jsonObject.put(fPublicKey,publicKey);
                      changedRecord=jsonObject.toString();
                      records.remove(s);
                      records.add(changedRecord);
@@ -173,13 +175,14 @@ public class Server implements Fields {
             e.printStackTrace();
             return false;
         }
-        saveUserRecords(username,password,certificate,userRecordsPath);
+        saveUserRecords(username,password,publicKey,certificate,userRecordsPath);
         return true;
     }
-    void saveUserRecords(String username,String password,String certificate,String path){
+    void saveUserRecords(String username,String password,String publicKey,String certificate,String path){
         JSONObject jo = new JSONObject();
         jo.put(fUsername,username);
         jo.put(fPassword,password);
+        jo.put(fPublicKey,publicKey);
         jo.put(fCertificate,certificate);
         String recordContent = jo.toString()+"\n";
         Path userRecordsPath = Paths.get(path);
@@ -188,5 +191,17 @@ public class Server implements Fields {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public JSONArray giveNotificationMessages(){
+        File folder = new File(serverImagesDirectory);
+        File[] listOfFiles = folder.listFiles();
+        String[] parts;
+        JSONArray jsonArray = new JSONArray();
+        assert listOfFiles != null;
+        for(File file:listOfFiles){
+            parts =  file.getName().split("\\.");
+            jsonArray.add(MessagingProtocol.generateNotificationMessage(parts[0]+"."+parts[1]));
+        }
+        return jsonArray;
     }
 }

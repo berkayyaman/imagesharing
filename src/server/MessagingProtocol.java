@@ -72,7 +72,7 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             String password = decryptWithPrivateKeyToString(encryptedPassword,server.getPrivateKey());
             String publicKey = (String)messageReceived.get(this.fPublicKey);
             String certificate  = sign(username,publicKey,server.getPrivateKey());
-            if(server.checkIfValid(username,password,certificate)){
+            if(server.checkIfValid(username,password,publicKey,certificate)){
 
                 PublicKey pk = Util.convertToPublicKey(Base64.getDecoder().decode(publicKey));
                 communicator.userAttributes = new Server.UserAttributes(username,pk);
@@ -81,6 +81,7 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
 
                 logger.info("\nGenerated Certificate: " + certificate+"\n");
 
+                answerJSON.put(fImages,server.giveNotificationMessages());
                 answerJSON.put(fType, fRegisterAccepted);
                 answerJSON.put(this.fCertificate,certificate);
 
@@ -117,6 +118,7 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             byte[] sk = Base64.getDecoder().decode(ia.getSymmetricKey());
             String encryptedKey = encryptWithPublicKey(sk, communicator.userAttributes.getPublicKey());
             answerJSON.put(fType,fPostImage);
+            answerJSON.put(fUsername,userName);
             answerJSON.put(fImageName,ia.getName());
             answerJSON.put(fEncryptedImage,ia.getImage());
             answerJSON.put(fSignature,signature);
@@ -129,6 +131,10 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
         return answer;
     }
     void notifyUser(String imageName, DataOutputStream out) throws IOException {
+        JSONObject jsonObject = generateNotificationMessage(imageName);
+        Util.sendData(jsonObject.toString(),out);
+    }
+    static JSONObject generateNotificationMessage(String imageName){
         JSONObject jsonObject = new JSONObject();
         jsonObject.put(fType,fNewImage);
 
@@ -136,6 +142,6 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
 
         jsonObject.put(fImageName,parts[1]);
         jsonObject.put(fUsername,parts[0]);
-        Util.sendData(jsonObject.toString(),out);
+        return jsonObject;
     }
 }

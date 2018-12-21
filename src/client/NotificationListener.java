@@ -20,7 +20,7 @@ public class NotificationListener implements Runnable{
     private ClientMessagingProtocol protocol;
     private Client client;
     private Logger logger;
-    ArrayList<NameFormatting> imageList;
+
     static class NameFormatting{
         private final boolean notifyUser;
         private String name;
@@ -44,7 +44,6 @@ public class NotificationListener implements Runnable{
         this.protocol = protocol;
         this.client = client;
         this.logger = logger;
-        imageList = new ArrayList<>();
     }
 
     @Override
@@ -73,7 +72,7 @@ public class NotificationListener implements Runnable{
                         System.out.print(Terminal.lastMessage);
                         logger.info("\nMessage Received: "+message+"\n");
                     }
-                    imageList.add(info);
+                    Terminal.imageList.add(info);
                 }else if((ia=protocol.giveSecureImage(message))!=null){
                     String[] nameParts = ia.getName().split("\\.");
                     client.saveImage(ia.getUsername()+"_"+nameParts[0],nameParts[1],ia.getImage());

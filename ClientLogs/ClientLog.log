@@ -1,0 +1,26 @@
+Dec 21, 2018 9:56:37 PM client.ClientMessagingProtocol registration
+INFO: 
+Message Sent:{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:56:37 PM client.ClientMessagingProtocol verify
+INFO: 
+Message Received: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM client.Terminal start
+INFO: 
+ Certificate is verified.. Notification listener is starting...
+
+Dec 21, 2018 9:56:51 PM client.ClientMessagingProtocol sendImage
+INFO: 
+Image is sent...
+
+Dec 21, 2018 9:57:18 PM client.ClientMessagingProtocol sendDownloadRequest
+INFO: Message is sending: {"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"DOWNLOAD"}
+Dec 21, 2018 9:57:18 PM client.NotificationListener run
+INFO: 
+Image Received with name: color.jpg from berkay
+
+Dec 21, 2018 9:58:01 PM client.ClientMain main
+INFO: 
+Program is closing...
+

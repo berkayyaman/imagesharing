@@ -9,6 +9,7 @@ public interface Fields {
     String OVER = "OVER";
     String fMessage = "MESSAGE";
     String fPassword = "PASSWORD";
+    String fImages = "IMAGES";
 
     //values
     String fPostImage = "POST_IMAGE";

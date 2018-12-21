@@ -1,310 +1,1180 @@
-Dec 21, 2018 2:04:45 AM server.Server listen
+Dec 21, 2018 9:49:36 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 21, 2018 2:04:49 AM server.Server listen
-INFO: Client with IP address /127.0.0.1:51095 is connected.
+Dec 21, 2018 9:49:40 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:53768 is connected.
 
-Dec 21, 2018 2:04:49 AM server.Server listen
+Dec 21, 2018 9:49:40 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 21, 2018 2:04:56 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:50:08 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:04:56 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:50:08 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Y5A9JLySkjH2FPmXGgsRELLpAHimq2upV07K\/8r3bB2da6w3Ozh0AYzHFqjFuBl\/t7G0L\/nnZAjPx1oPs57oKstBRFWmD9Ilb3MjsjN9rVMTFoHOWhlViW1ppTnEnrDsSIG69REP8LSAcdfWrgW+icCJ4PJuBDZg7M3CROKZxjForGCpCAu8G2ET5C6a\/1JTPYHPTvsyTDw27cfn4+EO0KJ1dKyZrwoK8rRKbAWoghf8t4jgF4oHtXPuIiG6ZH7zwvPie9kVLYsyQF\/W6qOQFPcC74ajTV+sjJKGHMetQVl4xvRTbiy7DydeNFnS11Btl0sue9Ct9kfEBQUG1N33mg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs8gsdocx8pSHyyfQ2xRfWj1bR6pyiemzJYYDe2\/cupfw3aMRxL4pljb9NiwAB93iC\/SouyjzeGSH2URu+O\/A+T1zXxLQLSR4crm1uCgEBvRfmFz0OcQJMVkrGeeYwclwBdgQvO8iM0cqAn1cR+ttdC6g+wuHC7A5sF4zebVdgwKLxTymuyZMWtKpxFSNKp\/l3ovsn6oQuem1HxU57mUoD8eV\/DMU7Dne2hoUIQ0fX0mRZOfMYGBrl2VqtZadE0UYQQSPsz8mOunssye\/rhe99ivyQmb7MBPt5FPtEKgb+IxoYMoP+Kp8pK2mV8wmam2MgkY6zXL5pgqqh0koqqvjhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"IC7WTqMFCl7FDT8dm6XTStofZKlofviprJOUGUqZDFFdK2MXQKWRD27Y22lNZWlFNJuYCbQe7zjW7tOvdB2421LuoADB2SEBqbQ9wjuL8zwvIaMrjKuzu2RKUi7uSFTi4mZV5GcWOyeAJ80fa63Ui8dYmH3ij5zt2ywgtP2SEP\/M7dRPJm0goCyYJqsqoDNuIgT7\/1rZMLQAYO1z7xXL8tvXvdTvSG3rA1GafIehU23FO1dU2Dzf8dwgOEUCCrYAb7bgD0XFZY9blv64Eu6oDcGJeS25yKA2Mm12RALgdxpj7wRigod3qx7SsJ2u5mA0PKhNb3VHu09mj4MfDl6zdg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo6XYqHWm8r9M+Boqf5ggNSduqqKin4PaYdszYG2x5bbGWAVts202ljCRc0MB81eWDQ69QVFNXk6Z11\/tLsNKl+abKmXfD66ligTcAF847cqgZVvr2ev0HveFie5kO6sT7wLseZcH9ZDl9+w\/xDr3jHi+GJRuSRm\/WHi1Vz9QsSLHl2Jj4O5V2rJckVSIhXinv92CvEguZNHXc7AhxCppcyQ+ZSvnymMeqTNKKxL9NkqlWRRD81zFAjffhZ3ZWLdHUc1WHA+KFBx\/cvLNUtTQTK8IDLQPp2OI+JRqzU7iBb8zYcbKZa\/W5e2js0vyOOXOHnLPDQBAmS2NJP4vhsj\/xwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:04:56 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:50:08 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: mcGNlF2qJL63NZgefEeAR/0GiaOWJ80a1smVfa8GqlPhKksqfhKteZ5jXA44gTU5wOQb2VpY4gCJdgZkH5c11CQRfPa3QRXTJLQgPTc1xzhNI08WoqfYS2R8zZWLgHM2pl39edPH8atDLFqaGRsfFopySVLigGatha8QR19K4UY1gH/zm1gBvgeMJRN1dXkSm5gE7tiBDsnsJPYFsj4bwUbZj6NSQj6PQNfx8/VTwo9QW/1fJPAQHGR5nV9Y6t+vnmRKP1Nmo31X7AJiLvuNbM+ctE6XoF+tpIrvLjg+Bevl0Xi8OU0YWYin8r16xeQnJsnk770zsBpjU3KDwuiqXw==
+Generated Certificate: AiWnnJExoIZg7vqbRrfnJF5Kbv9F13X0WABgXvXb8W2wX4bvFtZN/Y0Y0XJc7ijqw8hhhgA0KllnqFGUfTtZGbqhsFDwARgVb1+dquG2WI818evO9+IRyeT8/AqMj6IRYgzISwR4LqA9uPF/842PjIAZU4Yt1xt+/W61Qm9+9jVlq7RyQBL0zXaLX7L0ei4Hh8p6M+wvVs1mltucWXQ6rKmgnTRSK1dOJM+3TOoK3whh1Iz+2cyoWnTvSLo/yL9f1X+MKaTm+zh0zVjgzADN+N8VIebE4zMAqmt/Lyd+tk7J/0HI3Xcsu9GYpco3RPuKnmHTdAwWGTBesXx7EasX/Q==
 
-Dec 21, 2018 2:04:56 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:50:08 PM server.MessagingProtocol interpret
 INFO: 
 Message is sending to user "berkay"
 
-Dec 21, 2018 2:04:56 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"mcGNlF2qJL63NZgefEeAR\/0GiaOWJ80a1smVfa8GqlPhKksqfhKteZ5jXA44gTU5wOQb2VpY4gCJdgZkH5c11CQRfPa3QRXTJLQgPTc1xzhNI08WoqfYS2R8zZWLgHM2pl39edPH8atDLFqaGRsfFopySVLigGatha8QR19K4UY1gH\/zm1gBvgeMJRN1dXkSm5gE7tiBDsnsJPYFsj4bwUbZj6NSQj6PQNfx8\/VTwo9QW\/1fJPAQHGR5nV9Y6t+vnmRKP1Nmo31X7AJiLvuNbM+ctE6XoF+tpIrvLjg+Bevl0Xi8OU0YWYin8r16xeQnJsnk770zsBpjU3KDwuiqXw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:50:08 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"AiWnnJExoIZg7vqbRrfnJF5Kbv9F13X0WABgXvXb8W2wX4bvFtZN\/Y0Y0XJc7ijqw8hhhgA0KllnqFGUfTtZGbqhsFDwARgVb1+dquG2WI818evO9+IRyeT8\/AqMj6IRYgzISwR4LqA9uPF\/842PjIAZU4Yt1xt+\/W61Qm9+9jVlq7RyQBL0zXaLX7L0ei4Hh8p6M+wvVs1mltucWXQ6rKmgnTRSK1dOJM+3TOoK3whh1Iz+2cyoWnTvSLo\/yL9f1X+MKaTm+zh0zVjgzADN+N8VIebE4zMAqmt\/Lyd+tk7J\/0HI3Xcsu9GYpco3RPuKnmHTdAwWGTBesXx7EasX\/Q==","TYPE":"ACCEPTED"}
 
-Dec 21, 2018 2:05:02 AM server.Communicator communicate
+Dec 21, 2018 9:50:08 PM server.Communicator communicate
 INFO: 
 
-Client with IP address /127.0.0.1:51095 is disconnected.
+Client with IP address /127.0.0.1:53768 is disconnected.
 
 
-Dec 21, 2018 2:05:05 AM server.Server listen
-INFO: Client with IP address /127.0.0.1:51101 is connected.
+Dec 21, 2018 9:51:24 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:53782 is connected.
 
-Dec 21, 2018 2:05:05 AM server.Server listen
+Dec 21, 2018 9:51:24 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"CX8ftIfGVZDYCMs71fPYOJU53onnFjgwmHvp9iNLrugtaxo0i+LWoGBXhZkPdJ7XJQLgi\/93X8S6qI41ISz3r6NwJC2x60Cq8Kqe3eTbqCS9ZFB18mgoa6svPCcukgsGzVhHNozU34SuDDGAVAg+lyqhrmcp+HNnXcpmSwTRu3E\/re5nLZXBQRTYh5ZC7o6DFL4vizyC+s70MoK1Y0JM4F+PNFiFeYLbPOgp+0aL18FIhHURg7LVuAPovwbBL6u7qXtGTooCRgdI6EQ65aPNY9\/v99nM3W3jfal1dervQe\/vF1WFxeuaLPu1GSqUZG2tIPK9BBevrJET38yJ9s6OCg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk43\/bKghYOJ5okOi+QdvDauDkENjRZEdNSVliONM7ILY\/QxzGc3FVgUjpWuagSAgeVhKCy1+yLQPIAFbugUjzl594L7QInG\/vbzzFYYuxKwG2Q1gpm+jnkM0sempKqCTcwgydvvu7kJJd07gFp9RY7f87LxtO+fWfUuJpCoKvcJxF8rTfgwR9gs7m2QcWoetVDU89McnoOtSQC6FA0Luy5hw+SeuC3\/HdbvUG5PxjfwIRf37pK32PBkkr38qMIrvykq5QHX4qnMaSv9kNTBm05UlAQsk5ijQDcDcWqAZ8dm0cBOZApb8Sjo7oHkQhG+52BcryFIghsXmfrYZVykTfQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"P0UpS+zLjlC79zkBrjv7lDqw1JBvsZ\/GIWAqYHXxw+TRrKhykGduBU96RRzD5MT83M5zEX2vLKFFLGkSrkH8QDsGTIJ2ddzuX\/D3KHyNFUhlPkK6uy4AQqRBRKNyktlpUGhlJH9ziAfnVX9XAyBB5KcCsr\/ZyK68OWXDOWl+4jH03hUnS3bUHF8sMLJBW0LC5R4cVcEPw1ycxNUJEkEgEEfcbpry0iuDL08+Q5\/Hp46s+buKtAmkPLIgUqsF8cucrl029r2AdMCdvu09uHbSJ2bxP3EF3CniLf6VRLgp\/iidczD7a39ayiPVg7fwhK8jntpQXs5+WWbTmO7e400IGg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj5wNFGjltraoxUQDZTNMUfSSK\/fLb2IDpXggfkieFnzVGP1HBUlUbiBeM3VikkLDBu+yK47IMlFF8JPIxjiJaBf\/FoLnMuWUO52CjgvbrJQRphBMH9DzTweblfAhsGmfC34UgwdEXYlomWrOeocapvZ\/KYXHRVBTlcYuiMHeYyFm5yLq\/Axj6RCEninhi01daiOSNI7zz3UJzVWlBZkqasV9BqLQ9Yek3PMUKNimyJHSFgd6hgjHDviDB7VAbeAYv84HFB1iYza\/\/8FxJlEuJlIg95j72K19ygTxr2TVpisQVHXQDbkU2FeqWB+0hZjtcDlpQFVl2m0E\/YuiKsq1KQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"CX8ftIfGVZDYCMs71fPYOJU53onnFjgwmHvp9iNLrugtaxo0i+LWoGBXhZkPdJ7XJQLgi\/93X8S6qI41ISz3r6NwJC2x60Cq8Kqe3eTbqCS9ZFB18mgoa6svPCcukgsGzVhHNozU34SuDDGAVAg+lyqhrmcp+HNnXcpmSwTRu3E\/re5nLZXBQRTYh5ZC7o6DFL4vizyC+s70MoK1Y0JM4F+PNFiFeYLbPOgp+0aL18FIhHURg7LVuAPovwbBL6u7qXtGTooCRgdI6EQ65aPNY9\/v99nM3W3jfal1dervQe\/vF1WFxeuaLPu1GSqUZG2tIPK9BBevrJET38yJ9s6OCg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk43\/bKghYOJ5okOi+QdvDauDkENjRZEdNSVliONM7ILY\/QxzGc3FVgUjpWuagSAgeVhKCy1+yLQPIAFbugUjzl594L7QInG\/vbzzFYYuxKwG2Q1gpm+jnkM0sempKqCTcwgydvvu7kJJd07gFp9RY7f87LxtO+fWfUuJpCoKvcJxF8rTfgwR9gs7m2QcWoetVDU89McnoOtSQC6FA0Luy5hw+SeuC3\/HdbvUG5PxjfwIRf37pK32PBkkr38qMIrvykq5QHX4qnMaSv9kNTBm05UlAQsk5ijQDcDcWqAZ8dm0cBOZApb8Sjo7oHkQhG+52BcryFIghsXmfrYZVykTfQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"P0UpS+zLjlC79zkBrjv7lDqw1JBvsZ\/GIWAqYHXxw+TRrKhykGduBU96RRzD5MT83M5zEX2vLKFFLGkSrkH8QDsGTIJ2ddzuX\/D3KHyNFUhlPkK6uy4AQqRBRKNyktlpUGhlJH9ziAfnVX9XAyBB5KcCsr\/ZyK68OWXDOWl+4jH03hUnS3bUHF8sMLJBW0LC5R4cVcEPw1ycxNUJEkEgEEfcbpry0iuDL08+Q5\/Hp46s+buKtAmkPLIgUqsF8cucrl029r2AdMCdvu09uHbSJ2bxP3EF3CniLf6VRLgp\/iidczD7a39ayiPVg7fwhK8jntpQXs5+WWbTmO7e400IGg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj5wNFGjltraoxUQDZTNMUfSSK\/fLb2IDpXggfkieFnzVGP1HBUlUbiBeM3VikkLDBu+yK47IMlFF8JPIxjiJaBf\/FoLnMuWUO52CjgvbrJQRphBMH9DzTweblfAhsGmfC34UgwdEXYlomWrOeocapvZ\/KYXHRVBTlcYuiMHeYyFm5yLq\/Axj6RCEninhi01daiOSNI7zz3UJzVWlBZkqasV9BqLQ9Yek3PMUKNimyJHSFgd6hgjHDviDB7VAbeAYv84HFB1iYza\/\/8FxJlEuJlIg95j72K19ygTxr2TVpisQVHXQDbkU2FeqWB+0hZjtcDlpQFVl2m0E\/YuiKsq1KQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"CX8ftIfGVZDYCMs71fPYOJU53onnFjgwmHvp9iNLrugtaxo0i+LWoGBXhZkPdJ7XJQLgi\/93X8S6qI41ISz3r6NwJC2x60Cq8Kqe3eTbqCS9ZFB18mgoa6svPCcukgsGzVhHNozU34SuDDGAVAg+lyqhrmcp+HNnXcpmSwTRu3E\/re5nLZXBQRTYh5ZC7o6DFL4vizyC+s70MoK1Y0JM4F+PNFiFeYLbPOgp+0aL18FIhHURg7LVuAPovwbBL6u7qXtGTooCRgdI6EQ65aPNY9\/v99nM3W3jfal1dervQe\/vF1WFxeuaLPu1GSqUZG2tIPK9BBevrJET38yJ9s6OCg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk43\/bKghYOJ5okOi+QdvDauDkENjRZEdNSVliONM7ILY\/QxzGc3FVgUjpWuagSAgeVhKCy1+yLQPIAFbugUjzl594L7QInG\/vbzzFYYuxKwG2Q1gpm+jnkM0sempKqCTcwgydvvu7kJJd07gFp9RY7f87LxtO+fWfUuJpCoKvcJxF8rTfgwR9gs7m2QcWoetVDU89McnoOtSQC6FA0Luy5hw+SeuC3\/HdbvUG5PxjfwIRf37pK32PBkkr38qMIrvykq5QHX4qnMaSv9kNTBm05UlAQsk5ijQDcDcWqAZ8dm0cBOZApb8Sjo7oHkQhG+52BcryFIghsXmfrYZVykTfQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"P0UpS+zLjlC79zkBrjv7lDqw1JBvsZ\/GIWAqYHXxw+TRrKhykGduBU96RRzD5MT83M5zEX2vLKFFLGkSrkH8QDsGTIJ2ddzuX\/D3KHyNFUhlPkK6uy4AQqRBRKNyktlpUGhlJH9ziAfnVX9XAyBB5KcCsr\/ZyK68OWXDOWl+4jH03hUnS3bUHF8sMLJBW0LC5R4cVcEPw1ycxNUJEkEgEEfcbpry0iuDL08+Q5\/Hp46s+buKtAmkPLIgUqsF8cucrl029r2AdMCdvu09uHbSJ2bxP3EF3CniLf6VRLgp\/iidczD7a39ayiPVg7fwhK8jntpQXs5+WWbTmO7e400IGg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj5wNFGjltraoxUQDZTNMUfSSK\/fLb2IDpXggfkieFnzVGP1HBUlUbiBeM3VikkLDBu+yK47IMlFF8JPIxjiJaBf\/FoLnMuWUO52CjgvbrJQRphBMH9DzTweblfAhsGmfC34UgwdEXYlomWrOeocapvZ\/KYXHRVBTlcYuiMHeYyFm5yLq\/Axj6RCEninhi01daiOSNI7zz3UJzVWlBZkqasV9BqLQ9Yek3PMUKNimyJHSFgd6hgjHDviDB7VAbeAYv84HFB1iYza\/\/8FxJlEuJlIg95j72K19ygTxr2TVpisQVHXQDbkU2FeqWB+0hZjtcDlpQFVl2m0E\/YuiKsq1KQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: fOSjqKL/4lW9hNqw1GIAfWWbT2t2rlN3sEGYFW+Ct55nZxIQxgwmqckahchuey/d4QA2IbpH2Xa+ptneg8v/IrVuAncYPnJXU5zWrds5ixenWvJo1BGr7FtR6mAlN3XXdg7lGZQtqvqrjSL/91YnSFY/GswZR6g34e508GsHBeqipFfrL/rQ+DVH1CqPug18067q/sP6l0Ozt/kAKI8xKDFuu9rbunAj2IKH20d02/dIowo2uA170APE5Rk/quOH4oyIRnU9i0VMpF4Do09aKQmH+mVQWpkXBctQBWt0jHy+mvSvYtU2r8NbFj+goAXHUmgofpmsbKxPvQyErEL8lw==
+Generated Certificate: caHcvzoa+cQ9kaADvljglOCiQpwm7b6hEbtcwkod72vrGRl62c29lu55Sz7y/d34nx7GmFFXQ4yjqcyx9AwlsarP0+Cq9GGS2aBmNLhTRIDi9k4M2gCMG9f6jz8g/9fuLdDf56EgY16We0EJepuzCpGYIM+iJGhd1XMSsSj+fcF3pSxKp/V3qJA8AccJiAkrLZNVPz10d0gpjZ4gZZOtjKzLC450XCsz9FmzA9AMqjhJ0C6jJVKcTW7ffJVo/GAdPjz7oH8zNRLpEXMWkNCmkmjsf8Jy8NfXc4c51LRx5GKYdyGf0OfWcNPHu7or5nd1e+5mE16UMHT+5WgSxi4y0Q==
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: fOSjqKL/4lW9hNqw1GIAfWWbT2t2rlN3sEGYFW+Ct55nZxIQxgwmqckahchuey/d4QA2IbpH2Xa+ptneg8v/IrVuAncYPnJXU5zWrds5ixenWvJo1BGr7FtR6mAlN3XXdg7lGZQtqvqrjSL/91YnSFY/GswZR6g34e508GsHBeqipFfrL/rQ+DVH1CqPug18067q/sP6l0Ozt/kAKI8xKDFuu9rbunAj2IKH20d02/dIowo2uA170APE5Rk/quOH4oyIRnU9i0VMpF4Do09aKQmH+mVQWpkXBctQBWt0jHy+mvSvYtU2r8NbFj+goAXHUmgofpmsbKxPvQyErEL8lw==
+Generated Certificate: caHcvzoa+cQ9kaADvljglOCiQpwm7b6hEbtcwkod72vrGRl62c29lu55Sz7y/d34nx7GmFFXQ4yjqcyx9AwlsarP0+Cq9GGS2aBmNLhTRIDi9k4M2gCMG9f6jz8g/9fuLdDf56EgY16We0EJepuzCpGYIM+iJGhd1XMSsSj+fcF3pSxKp/V3qJA8AccJiAkrLZNVPz10d0gpjZ4gZZOtjKzLC450XCsz9FmzA9AMqjhJ0C6jJVKcTW7ffJVo/GAdPjz7oH8zNRLpEXMWkNCmkmjsf8Jy8NfXc4c51LRx5GKYdyGf0OfWcNPHu7or5nd1e+5mE16UMHT+5WgSxi4y0Q==
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: fOSjqKL/4lW9hNqw1GIAfWWbT2t2rlN3sEGYFW+Ct55nZxIQxgwmqckahchuey/d4QA2IbpH2Xa+ptneg8v/IrVuAncYPnJXU5zWrds5ixenWvJo1BGr7FtR6mAlN3XXdg7lGZQtqvqrjSL/91YnSFY/GswZR6g34e508GsHBeqipFfrL/rQ+DVH1CqPug18067q/sP6l0Ozt/kAKI8xKDFuu9rbunAj2IKH20d02/dIowo2uA170APE5Rk/quOH4oyIRnU9i0VMpF4Do09aKQmH+mVQWpkXBctQBWt0jHy+mvSvYtU2r8NbFj+goAXHUmgofpmsbKxPvQyErEL8lw==
+Generated Certificate: caHcvzoa+cQ9kaADvljglOCiQpwm7b6hEbtcwkod72vrGRl62c29lu55Sz7y/d34nx7GmFFXQ4yjqcyx9AwlsarP0+Cq9GGS2aBmNLhTRIDi9k4M2gCMG9f6jz8g/9fuLdDf56EgY16We0EJepuzCpGYIM+iJGhd1XMSsSj+fcF3pSxKp/V3qJA8AccJiAkrLZNVPz10d0gpjZ4gZZOtjKzLC450XCsz9FmzA9AMqjhJ0C6jJVKcTW7ffJVo/GAdPjz7oH8zNRLpEXMWkNCmkmjsf8Jy8NfXc4c51LRx5GKYdyGf0OfWcNPHu7or5nd1e+5mE16UMHT+5WgSxi4y0Q==
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
-INFO: 
-Message is sending to user "berkay"
-
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
 Message is sending to user "berkay"
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
 INFO: 
 Message is sending to user "berkay"
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"fOSjqKL\/4lW9hNqw1GIAfWWbT2t2rlN3sEGYFW+Ct55nZxIQxgwmqckahchuey\/d4QA2IbpH2Xa+ptneg8v\/IrVuAncYPnJXU5zWrds5ixenWvJo1BGr7FtR6mAlN3XXdg7lGZQtqvqrjSL\/91YnSFY\/GswZR6g34e508GsHBeqipFfrL\/rQ+DVH1CqPug18067q\/sP6l0Ozt\/kAKI8xKDFuu9rbunAj2IKH20d02\/dIowo2uA170APE5Rk\/quOH4oyIRnU9i0VMpF4Do09aKQmH+mVQWpkXBctQBWt0jHy+mvSvYtU2r8NbFj+goAXHUmgofpmsbKxPvQyErEL8lw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"fOSjqKL\/4lW9hNqw1GIAfWWbT2t2rlN3sEGYFW+Ct55nZxIQxgwmqckahchuey\/d4QA2IbpH2Xa+ptneg8v\/IrVuAncYPnJXU5zWrds5ixenWvJo1BGr7FtR6mAlN3XXdg7lGZQtqvqrjSL\/91YnSFY\/GswZR6g34e508GsHBeqipFfrL\/rQ+DVH1CqPug18067q\/sP6l0Ozt\/kAKI8xKDFuu9rbunAj2IKH20d02\/dIowo2uA170APE5Rk\/quOH4oyIRnU9i0VMpF4Do09aKQmH+mVQWpkXBctQBWt0jHy+mvSvYtU2r8NbFj+goAXHUmgofpmsbKxPvQyErEL8lw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"caHcvzoa+cQ9kaADvljglOCiQpwm7b6hEbtcwkod72vrGRl62c29lu55Sz7y\/d34nx7GmFFXQ4yjqcyx9AwlsarP0+Cq9GGS2aBmNLhTRIDi9k4M2gCMG9f6jz8g\/9fuLdDf56EgY16We0EJepuzCpGYIM+iJGhd1XMSsSj+fcF3pSxKp\/V3qJA8AccJiAkrLZNVPz10d0gpjZ4gZZOtjKzLC450XCsz9FmzA9AMqjhJ0C6jJVKcTW7ffJVo\/GAdPjz7oH8zNRLpEXMWkNCmkmjsf8Jy8NfXc4c51LRx5GKYdyGf0OfWcNPHu7or5nd1e+5mE16UMHT+5WgSxi4y0Q==","TYPE":"ACCEPTED"}
 
-Dec 21, 2018 2:05:11 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"fOSjqKL\/4lW9hNqw1GIAfWWbT2t2rlN3sEGYFW+Ct55nZxIQxgwmqckahchuey\/d4QA2IbpH2Xa+ptneg8v\/IrVuAncYPnJXU5zWrds5ixenWvJo1BGr7FtR6mAlN3XXdg7lGZQtqvqrjSL\/91YnSFY\/GswZR6g34e508GsHBeqipFfrL\/rQ+DVH1CqPug18067q\/sP6l0Ozt\/kAKI8xKDFuu9rbunAj2IKH20d02\/dIowo2uA170APE5Rk\/quOH4oyIRnU9i0VMpF4Do09aKQmH+mVQWpkXBctQBWt0jHy+mvSvYtU2r8NbFj+goAXHUmgofpmsbKxPvQyErEL8lw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"caHcvzoa+cQ9kaADvljglOCiQpwm7b6hEbtcwkod72vrGRl62c29lu55Sz7y\/d34nx7GmFFXQ4yjqcyx9AwlsarP0+Cq9GGS2aBmNLhTRIDi9k4M2gCMG9f6jz8g\/9fuLdDf56EgY16We0EJepuzCpGYIM+iJGhd1XMSsSj+fcF3pSxKp\/V3qJA8AccJiAkrLZNVPz10d0gpjZ4gZZOtjKzLC450XCsz9FmzA9AMqjhJ0C6jJVKcTW7ffJVo\/GAdPjz7oH8zNRLpEXMWkNCmkmjsf8Jy8NfXc4c51LRx5GKYdyGf0OfWcNPHu7or5nd1e+5mE16UMHT+5WgSxi4y0Q==","TYPE":"ACCEPTED"}
 
-Dec 21, 2018 2:05:14 AM server.Communicator communicate
+Dec 21, 2018 9:51:45 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"caHcvzoa+cQ9kaADvljglOCiQpwm7b6hEbtcwkod72vrGRl62c29lu55Sz7y\/d34nx7GmFFXQ4yjqcyx9AwlsarP0+Cq9GGS2aBmNLhTRIDi9k4M2gCMG9f6jz8g\/9fuLdDf56EgY16We0EJepuzCpGYIM+iJGhd1XMSsSj+fcF3pSxKp\/V3qJA8AccJiAkrLZNVPz10d0gpjZ4gZZOtjKzLC450XCsz9FmzA9AMqjhJ0C6jJVKcTW7ffJVo\/GAdPjz7oH8zNRLpEXMWkNCmkmjsf8Jy8NfXc4c51LRx5GKYdyGf0OfWcNPHu7or5nd1e+5mE16UMHT+5WgSxi4y0Q==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:51:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:51:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:51:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:51:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:51:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:51:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:51:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:51:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:05 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "moon.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:05 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "moon.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:05 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "moon.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:05 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "moon.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:05 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "moon.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:05 PM server.Communicator communicate
+INFO: Image Saved as Base64 String With Name berkay_moon.jpg
+
+Dec 21, 2018 9:52:05 PM server.Communicator notifyUsers
 INFO: 
 
-Client with IP address /127.0.0.1:51101 is disconnected.
+It looks like user "berkay"
+disconnected...
+Notification can't be sent.
 
 
-Dec 21, 2018 2:05:16 AM server.Server listen
-INFO: Client with IP address /127.0.0.1:51107 is connected.
+Dec 21, 2018 9:52:05 PM server.Communicator notifyUsers
+INFO: 
 
-Dec 21, 2018 2:05:16 AM server.Server listen
+Notification has been sent to user "berkay"
+
+
+Dec 21, 2018 9:52:17 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:17 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:17 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:17 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:17 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:17 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:17 PM server.Communicator communicate
+INFO: Image Saved as Base64 String With Name berkay_fjord.jpg
+
+Dec 21, 2018 9:52:17 PM server.Communicator notifyUsers
+INFO: 
+
+Notification has been sent to user "berkay"
+
+
+Dec 21, 2018 9:52:31 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "color.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:31 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "color.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:31 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "color.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:31 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "color.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:31 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "color.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:31 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "color.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:31 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "color.jpg"received from user "berkay"
+
+Dec 21, 2018 9:52:31 PM server.Communicator communicate
+INFO: Image Saved as Base64 String With Name berkay_color.jpg
+
+Dec 21, 2018 9:52:31 PM server.Communicator notifyUsers
+INFO: 
+
+Notification has been sent to user "berkay"
+
+
+Dec 21, 2018 9:52:41 PM server.Communicator communicate
+INFO: 
+
+Client with IP address /127.0.0.1:53782 is disconnected.
+
+
+Dec 21, 2018 9:52:44 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:53789 is connected.
+
+Dec 21, 2018 9:52:44 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 21, 2018 2:05:22 AM server.Communicator communicate
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Register request received:
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+{"PASSWORD":"aBO0npAyur5mKciGovCbbtYRENQdRoYLfg\/klpVT6SNE1qYR3LVUG1uIujHymqArX9fsD+zliO8xT3Y0UCRPzJKBxEm8PW0Kz+UU0hour8TqSqSQmxl7M6VotFOVPA0JWkpGtessu5kNnLKigQBYmtG\/5GQWAKsOzihJWMsREWLPsbRhnofG930Ea8VPMxO1fRLz8xFo798ib7mGeHyGOJsHVmAo2lBaGX0uNlNwUFPvDLO90lTjUD4YDI5euOiXyV19TAJcV7W4wXsD89DmTe26aDqDNNSqdQQd41WQe5p+qGEICeLyj\/D0nMMfMq6e3eUWFnkCIgvoSGKGEkxECw==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqPKwOJlkQvEyWLQfk3KAFPNfd1O\/nN1SH\/ZUsmmDeLA+shgif+7EZACmN7pJd6ZSXPAKlGL1hfQEoOUSHBYDosqQJu9DkItzv4UK9fdn8rWctXVe54tDOv4aeAkhGCwB2DUJiVEm1Yiwu3LgXedH4p8Sv+NXGhXZlcGHqCygDaXJDi2oth+sWjCSE2aLfvqLcCxyaLlob\/qZdN5\/LIOmEp72tTkzxZ1CCYhEwHAJWDSVSKm41PczCHkpCpMRqGgYS85KvUYbjuqXb+Ib+tU0giw3L\/wdmHdYRZu3a+CmW7fzXPHH5M988jabhslX335N+wyIehKVlnALlxjDc+GhhwIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: QERU+QJKwl0/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl/KdhVgitmUrFn67aqyYM/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp/mcfqxPcE4KM0n7fo7+9pVuA==
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "berkay"
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:50 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"QERU+QJKwl0\/H2LLQNEEmkNleN59ApeWXUpiTkeif4YkD6NK1GQT6aU6cUnBaC1vrE4YdqKG65X2YLfgSNx1LGedtOhMQ+5goJYW\/Shtb4GHh53cC7l20FPmWWr7+CYptAkOehmpl\/KdhVgitmUrFn67aqyYM\/IjayiPnFmEETl7VgD5xEmWLRSVjMebLXrY2\/b42j9FbOmbrqBZLt9ZMkyKHQite1Q5OdjPETr2pvdIcRetBoxQVUUEHzRfn+xzYsR5t+ui1d+xqtvtrnUe0BofpfAkyjZlwiw7uCgXOrsYu4ccnAGuyilajzxIKp\/mcfqxPcE4KM0n7fo7+9pVuA==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "mu.png"
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:52:55 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:28 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "berkay"
+for the image "fjord.jpg"
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:53:53 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "berkay"
+
+Dec 21, 2018 9:56:05 PM server.Communicator communicate
 INFO: 
 
-Client with IP address /127.0.0.1:51107 is disconnected.
+Client with IP address /127.0.0.1:53789 is disconnected.
 
 
-Dec 21, 2018 2:05:22 AM server.Server listen
-INFO: Client with IP address /127.0.0.1:51111 is connected.
+Dec 21, 2018 9:56:11 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:53804 is connected.
 
-Dec 21, 2018 2:05:22 AM server.Server listen
+Dec 21, 2018 9:56:11 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 21, 2018 2:05:30 AM server.Communicator communicate
-INFO: 
-
-Client with IP address /127.0.0.1:51111 is disconnected.
-
-
-Dec 21, 2018 2:05:30 AM server.Server listen
-INFO: Client with IP address /127.0.0.1:51112 is connected.
-
-Dec 21, 2018 2:05:30 AM server.Server listen
-INFO: Port 4444 is listening.
-
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+Register request received:
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"Nw2V4f75fZh5cUFgsUSc55VE+RAzch73EMHHm1Jexyf+9mrSkb1KVnG0L+i2vr\/r1LEHsEjLbwrfK7uUrsAswBE+LAjWQzX7HBvhXNGSV0GsyVhv5pKRoqT7k6m+O42XgHMBLNyaVpkrl\/Sjp2KiceHE9epUccq9av9ay3bkf\/x4gkBfJe+cuCnBFLDh7tSwco2sLf+A8jBbupXeUgcjoUlK2jIq\/no0I5btq3Oku2FDfFoYO+sTH51RSflXIhzvep23bDxCRsg0BWnfWkuSQv6kuDOAnmHmw6s+lz7Pzd9canS2WPjoTXseEiC9B8hLuC3cZsxXvBjuJi0U4ZRVaQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmQN52mMPTdgdmEUKD5IPx4\/fSp7+kNnbWZATh6a\/zmqEEeBCklnRYAUHeytViWnEhgFWffrDcmup3nK\/KUGt9JU55cvAPe8T2a057MwABZUPOl3QduW0LHdjykUwymW6\/F\/H6CXTVp+LYUbVUbav4aQcGNHSv9OwzvPJU6gFhfOyBSDLuOIJqQZJqdaKm7tDoFiChhGFZCV03ecj8dSUYEfbcn+EhDCihXlGCVCXV482pdCvIyDjQ2EV9j3CscS3jY0pzzAA07o7M5kFoHNJ4yZTjQvmaPK4J3sXqllnFaSDxPtyfQ3z5I1PR6gPZsAM\/JQHb04NcJNrbV9jbczQhQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p/QqHsGY0A3hZo6F1ADh4UOo6QCTuK/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC/eBw==
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+{"PASSWORD":"VT5qELMvjN9k0Uf8PRvZsu2N9U1U4QmcHv\/9uFM30EzUyjZXpB7xWGDoaS0HiEJQuEDskEB1Gyxu0axHSF15wzo8pJvnNt3wD9fdyK7cXLp2SdFqmpaHisS\/PwgEkEkGkioyfAPaE+5MRQGUEwyVZObbnv5zSZyzZNtVPoiozxA5Xdzf\/BXEP5JFzjJKmeNQXVWDJje8EXFuhGK1SJ3XGkVn+LU7Zjpy\/uXxJ1vRMTYkVygcMnHt6cwE3JCu41wr6z0PRc1C\/qwd3vrcFEas\/S+mv7wdtgrYm5FJz52ZmJ6tNM1wYpUIsFvJmGuxeX0ePffzk73Slu2Gt4w1VKqKpg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2lAtkqiibcYrPcs7AkXx9Q0ri4tFCuYndIl8LsONYYyRiXMq3wqSvSpfVrP7zwSAEYXgHDY5frjX5YpTWemTc7UoS5uH9JgKmVN9p4gnvI29anzlYfodcZKoJ4QFMvshGNJ6zVJuwQi5VNShjKIKIers0w3aopJZrz6kPRn8EhgjH5DBHTPvRWyYW543vOATiTDiqRDfJnr9aROhoEk8zb7y50GAkKpWaSwg1iYdWN4DgY\/Q9ZueFnsMqLZGr3uK7q6LG1Pm+tgwWPVZJLUCnucSA3IeFZZvyqarNIz4kTH+7SSKOeBX\/DAnTdRxeXT9DHth+2XfLqjy6PilHXr0fQIDAQAB","USERNAME":"serkan","TYPE":"REGISTER"}
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "berkay"
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Generated Certificate: XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ/ZYeSh5DG70ym3JT//j3oNz3/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq/3xmGI/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq/Wc2rLQLgI5RCS0Tv+0/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
 
-Dec 21, 2018 2:05:34 AM server.MessagingProtocol interpret
-INFO: {"CERTIFICATE":"SgfYjXBzUsbP68GsdFVqNNGttCZuUrLzHcvHTUAVWyfvCjeImwJS3p\/QqHsGY0A3hZo6F1ADh4UOo6QCTuK\/akBJ3s8EyafweWeo76EB1VmQWUdt8smBYcwieUuXukxBW2v8EaYM7XCZ7jFhoyAMk\/vjOPCkN1YCpDSIUCV32kJKLSTSPI8qTQO3DviWJBqsO99p30h4gbi4B8s68D7Wh7WvBXM5HNqIKi1rrxivr2vwMH4RvBZliF6xao5aCkZgN+xCzPOwpbijUfoYAXV40CX4WC5P9GeIUVukcWQa3EC5atkCr08vUAP11tBAD1gNZcIRgNi7Q37nBOlYiC\/eBw==","TYPE":"ACCEPTED"}
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
 
-Dec 21, 2018 2:05:38 AM server.Communicator communicate
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: 
+Message is sending to user "serkan"
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:37 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"fjord.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"XtMYm8dejzl843Y8Es70uFOekaDLn9DKSPN6ofdNQEPV3FIRPHyk2YIwZMZ\/ZYeSh5DG70ym3JT\/\/j3oNz3\/MCM4ZWbokN384eD6SHuU9xaZDM+zWPERLbBZXLXL4O55a5eFeAgFxpy43cN1eLjVoOFF0XlPrQq\/3xmGI\/K5Az9QhMuFq0GTP2DjBMg7ymOdMKMRbryUrybTjvYwShq\/Wc2rLQLgI5RCS0Tv+0\/sc+0iwzfnDNwvEPoGrZGG1E9GL3YGqot7YVrH\/3RaY276DHPwfuNUmJzsSBgagB5uK5MLLpH5K8oCkyjZD23cslvS5YkXP9+f5CZ2nNYUcDUXLQ==","TYPE":"ACCEPTED"}
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.MessagingProtocol interpret
+INFO: 
+Image with name "fjord.jpg"received from user "serkan"
+
+Dec 21, 2018 9:56:51 PM server.Communicator communicate
+INFO: Image Saved as Base64 String With Name serkan_fjord.jpg
+
+Dec 21, 2018 9:56:51 PM server.Communicator notifyUsers
 INFO: 
 
-Client with IP address /127.0.0.1:51112 is disconnected.
+It looks like user "serkan"
+disconnected...
+Notification can't be sent.
+
+
+Dec 21, 2018 9:56:51 PM server.Communicator notifyUsers
+INFO: 
+
+It looks like user "serkan"
+disconnected...
+Notification can't be sent.
+
+
+Dec 21, 2018 9:56:51 PM server.Communicator notifyUsers
+INFO: 
+
+Notification has been sent to user "serkan"
+
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Download request received from user "serkan"
+for the image "color.jpg"
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:57:18 PM server.MessagingProtocol interpret
+INFO: 
+Requested image is sending to user "serkan"
+
+Dec 21, 2018 9:58:01 PM server.Communicator communicate
+INFO: 
+
+Client with IP address /127.0.0.1:53804 is disconnected.
 
 

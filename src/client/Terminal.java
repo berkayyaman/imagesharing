@@ -14,6 +14,7 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
@@ -22,16 +23,20 @@ public class Terminal implements Fields {
     private ClientMessagingProtocol protocol;
     static String lastMessage = "";
     Thread thread = null;
+    static ArrayList<NotificationListener.NameFormatting> imageList;
     private Logger logger;
     private NotificationListener notificationListener;
     Terminal(ClientMessagingProtocol protocol,Logger logger){
         this.protocol = protocol;
         input = new Scanner(System.in);
         this.logger = logger;
+        imageList = new ArrayList<>();
     }
-    boolean start() throws InvalidKeyException, NoSuchAlgorithmException,
-            ParseException, IOException, NoSuchPaddingException, BadPaddingException,
-            IllegalBlockSizeException, InvalidAlgorithmParameterException, SignatureException, InvalidKeySpecException {
+    boolean start() throws InvalidKeyException,
+            IOException,
+            InvalidAlgorithmParameterException, SignatureException, InvalidKeySpecException, IllegalBlockSizeException, NoSuchPaddingException, BadPaddingException, NoSuchAlgorithmException, ParseException {
+
+
         //noinspection LoopStatementThatDoesntLoop
 
             if(registration()){
@@ -100,7 +105,7 @@ public class Terminal implements Fields {
     }
     private boolean listImages(){
         int i = 0;
-        for(NotificationListener.NameFormatting n:notificationListener.imageList){
+        for(NotificationListener.NameFormatting n:Terminal.imageList){
             System.out.println(i+" Name: "+
                     n.getName()+
                     " Username: "+n.getUsername());
@@ -119,7 +124,7 @@ public class Terminal implements Fields {
         }
         try{
             int index = Integer.parseInt(keyInput);
-            NotificationListener.NameFormatting image = notificationListener.imageList.get(index);
+            NotificationListener.NameFormatting image = Terminal.imageList.get(index);
             protocol.sendDownloadRequest(image.getUsername(),image.getName());
         } catch (NumberFormatException n){
             printMessage("Wrong entry.\n");

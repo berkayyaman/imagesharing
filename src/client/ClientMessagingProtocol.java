@@ -3,6 +3,7 @@ package client;
 import common.CryptoStandarts;
 import common.Fields;
 import common.Util;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -55,8 +56,20 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         if(messageReceived.get(fType).equals(fRegisterAccepted)){
             String certificate = (String)messageReceived.get(this.fCertificate);
             String cpk = Util.convertToBase64String(client.getPublicKey().getEncoded());
+            if(verifySignature(client.getUserName()+cpk,certificate,Client.serverPublicKey)){
+                JSONArray jsonArray = (JSONArray)messageReceived.get(fImages);
+                for(int i=0;i<jsonArray.size();i++){
+                    JSONObject jsonObject = (JSONObject)jsonArray.get(i);
+                    System.out.println(jsonObject.toString());
+                    Terminal.imageList.add(i,
+                            new NotificationListener.NameFormatting((String)jsonObject.get(fImageName),
+                                    (String)jsonObject.get(fUsername),false));
+                }
 
-            return verifySignature(client.getUserName()+cpk,certificate,Client.serverPublicKey);
+                return true;
+            }else{
+                return false;
+            }
         }else if(messageReceived.get(fType).equals(fRegisterRejected) && messageReceived.get(fMessage).equals(fWrongPassword)){
             System.out.println("\nWrong Password...\n");
             try {
