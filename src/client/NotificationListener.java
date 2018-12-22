@@ -1,6 +1,7 @@
 package client;
 
 import common.Util;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 import javax.crypto.BadPaddingException;
@@ -13,7 +14,6 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
-import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class NotificationListener implements Runnable{
@@ -48,7 +48,7 @@ public class NotificationListener implements Runnable{
 
     @Override
     public void run() {
-
+        JSONObject pks;
         //noinspection InfiniteLoopStatement
         while(true){
             try {
@@ -79,6 +79,8 @@ public class NotificationListener implements Runnable{
                     System.out.println("\n\nImage Saved.\n\n");
                     System.out.print(Terminal.lastMessage);
                     logger.info("\nImage Received with name: "+ia.getName()+" from "+ia.getUsername()+"\n");
+                }else if((pks = protocol.checkIfPublicKeyResponse(message))!=null){
+                    protocol.pks = pks;
                 }
             } catch (IOException | ParseException | BadPaddingException |
                     InvalidAlgorithmParameterException | NoSuchAlgorithmException |

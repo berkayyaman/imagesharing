@@ -1,6 +1,7 @@
 package common;
 
 import client.Client;
+import org.json.simple.JSONObject;
 import server.Server;
 
 import javax.crypto.*;
@@ -93,27 +94,28 @@ public class CryptoStandarts extends KeyGeneration{
         return new String(Base64.getEncoder().encode(digest.digest(data)));
     }
     protected Util.ImageAttributes getVerifiedImage(PrivateKey privateKey, String name,
-                                                     String encryptedImage, String signature,
-                                                     String encryptedKey, String iv, PublicKey publicKey,
-                                                     String userName,boolean giveEncryptedImage)
+                                                    String encryptedImage, String signature,
+                                                    String encryptedKey, String iv, PublicKey publicKey,
+                                                    String userName, boolean giveEncryptedImage)
             throws NoSuchAlgorithmException, InvalidKeyException,
             BadPaddingException, NoSuchPaddingException,
             IllegalBlockSizeException, InvalidKeySpecException, InvalidAlgorithmParameterException, SignatureException {
-        SecretKey aesKey = decryptWithPrivateKey(encryptedKey,privateKey);
-        byte[] encryptedImageBytes = Base64.getDecoder().decode(encryptedImage);
-        byte[] decryptedImage = decryptData(aesKey,encryptedImageBytes,iv);
-        String hashedImage = hashData(decryptedImage);
+
+        String hashedImage = hashData(encryptedImage);
         if(verifySignature(hashedImage,signature,publicKey)){
-            String serverSignature = sign(hashedImage,privateKey);
+
             String pk = Base64.getEncoder().encodeToString(publicKey.getEncoded());
             String imageToReturn;
             if(giveEncryptedImage){
                 imageToReturn = encryptedImage;
             }else{
+                byte[] encryptedImageBytes = Base64.getDecoder().decode(encryptedImage);
+                SecretKey aesKey = decryptWithPrivateKey(encryptedKey,privateKey);
+                byte[] decryptedImage = decryptData(aesKey,encryptedImageBytes,iv);
                 imageToReturn = Base64.getEncoder().encodeToString(decryptedImage);
             }
             return new Util.ImageAttributes(name,pk,userName,imageToReturn,
-                    Util.convertToBase64String(aesKey.getEncoded()),iv,hashedImage);
+                    encryptedKey,iv,hashedImage);//Util.convertToBase64String(aesKey.getEncoded())
         }
         else{
             return null;

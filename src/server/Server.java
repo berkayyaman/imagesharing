@@ -19,6 +19,7 @@ import java.nio.file.StandardOpenOption;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
@@ -152,23 +153,25 @@ public class Server implements Fields {
             String un;
             records = Files.readAllLines(path);
             for(String s:records){
-                 jsonObject = (JSONObject)parser.parse(s);
-                 un = (String)jsonObject.get(fUsername);
-                 if(un.equals(username) &&(jsonObject.get(fPassword)).equals(password)){
-                     jsonObject.remove(fCertificate);
-                     jsonObject.put(fCertificate,certificate);
-                     jsonObject.put(fPassword,password);
-                     jsonObject.put(fPublicKey,publicKey);
-                     changedRecord=jsonObject.toString();
-                     records.remove(s);
-                     records.add(changedRecord);
-                     Files.write(path,"".getBytes(),StandardOpenOption.TRUNCATE_EXISTING);
-                     for(String newRecord:records){
-                         Files.write(path,newRecord.getBytes());
+                 if(!s.equals("")){
+                     jsonObject = (JSONObject)parser.parse(s);
+                     un = (String)jsonObject.get(fUsername);
+                     if(un.equals(username) &&(jsonObject.get(fPassword)).equals(password)){
+                         jsonObject.remove(fCertificate);
+                         jsonObject.put(fCertificate,certificate);
+                         jsonObject.put(fPassword,password);
+                         jsonObject.put(fPublicKey,publicKey);
+                         changedRecord=jsonObject.toString();
+                         records.remove(s);
+                         records.add(changedRecord);
+                         Files.write(path,"".getBytes(),StandardOpenOption.TRUNCATE_EXISTING);
+                         for(String newRecord:records){
+                             Files.write(path,newRecord.getBytes());
+                         }
+                         return true;
+                     }else if(un.equals(username)){
+                         return false;
                      }
-                     return true;
-                 }else if(un.equals(username)){
-                     return false;
                  }
             }
         } catch (IOException | ParseException e) {
@@ -178,13 +181,40 @@ public class Server implements Fields {
         saveUserRecords(username,password,publicKey,certificate,userRecordsPath);
         return true;
     }
+    JSONObject giveUserPublicKeys(ArrayList<String> users){
+        JSONParser parser = new JSONParser();
+        JSONObject jsonObject;
+        Path path = Paths.get(userRecordsPath);
+        List<String> records;
+        JSONObject allowedPublicKeys = new JSONObject();
+        String current;
+        try {
+            records = Files.readAllLines(path);
+            for(String record:records){
+                jsonObject = (JSONObject)parser.parse(record);
+                current = (String)jsonObject.get(fPublicKey);
+                for(String user:users){
+                    if(user.equals(jsonObject.get(fUsername))){
+                        System.out.println("PUT");
+                        allowedPublicKeys.put(user,current);
+                        break;
+                    }
+                }
+            }
+            return allowedPublicKeys;
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+            return null;
+        }
+
+    }
     void saveUserRecords(String username,String password,String publicKey,String certificate,String path){
         JSONObject jo = new JSONObject();
         jo.put(fUsername,username);
         jo.put(fPassword,password);
         jo.put(fPublicKey,publicKey);
         jo.put(fCertificate,certificate);
-        String recordContent = jo.toString()+"\n";
+        String recordContent = "\n"+jo.toString()+"\n";
         Path userRecordsPath = Paths.get(path);
         try {
             Files.write(userRecordsPath,recordContent.getBytes(),StandardOpenOption.APPEND);//Certificate is recorded with fUsername
@@ -192,16 +222,34 @@ public class Server implements Fields {
             e.printStackTrace();
         }
     }
-    public JSONArray giveNotificationMessages(){
+    public JSONArray giveNotificationMessages(String username){
         File folder = new File(serverImagesDirectory);
         File[] listOfFiles = folder.listFiles();
+        JSONParser parser = new JSONParser();
         String[] parts;
         JSONArray jsonArray = new JSONArray();
-        assert listOfFiles != null;
-        for(File file:listOfFiles){
-            parts =  file.getName().split("\\.");
-            jsonArray.add(MessagingProtocol.generateNotificationMessage(parts[0]+"."+parts[1]));
+        try{
+            assert listOfFiles != null;
+            for(File file:listOfFiles){
+                parts =  file.getName().split("\\.");
+                BufferedReader reader = new BufferedReader(new FileReader(file));
+                JSONObject ia = (JSONObject) parser.parse(reader.readLine());
+                JSONObject keys = (JSONObject) parser.parse((String)ia.get(fSymmetricKey));
+                if((keys.get(fAll)!=null) || (keys.get(username)!=null)){
+                    jsonArray.add(MessagingProtocol.generateNotificationMessage(parts[0]+"."+parts[1]));
+                }
+            }
+
+            if(jsonArray.size()>0){
+                System.out.println("not exception");
+                return jsonArray;
+            }else{
+                System.out.println("exception");
+                return null;
+            }
+        }catch (IOException | ParseException e){
+
+            return null;
         }
-        return jsonArray;
     }
 }

@@ -10,6 +10,8 @@ public interface Fields {
     String fMessage = "MESSAGE";
     String fPassword = "PASSWORD";
     String fImages = "IMAGES";
+    String fAllowed = "ALLOWED";
+
 
     //values
     String fPostImage = "POST_IMAGE";
@@ -25,5 +27,6 @@ public interface Fields {
     String fDownload = "DOWNLOAD";
     String fHashedImage = "HASHED_IMAGE";
     String fWrongPassword = "WRONG_PASSWORD";
-
+    String fPublicKeyRequest = "PUBLIC_KEY_REQUEST";
+    String fAll = "all";
 }

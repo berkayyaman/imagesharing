@@ -1,6 +1,10 @@
 package common;
 
 import client.ClientMain;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import server.Server;
 
 import javax.imageio.ImageIO;
@@ -64,6 +68,19 @@ public class Util {
         public String getHashedImage() {
             return hashedImage;
         }
+    }
+    public static boolean checkIfInside(String users,String username,String allUsers){
+        try {
+            JSONParser parser = new JSONParser();
+            JSONObject userPks = (JSONObject) parser.parse(users);
+
+            if((userPks.get(username)!=null) || (userPks.get(allUsers)!=null)){
+                return true;
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
     public static Logger generateLogger(ConsoleHandler consoleHandler,FileHandler fileHandler, String name) throws IOException {
         Logger logger = Logger.getLogger(name);
@@ -136,5 +153,19 @@ public class Util {
             message.append(input);
         }//TODO eof hatası alınıyor
         return message.toString();
+    }
+
+    public static String checkIfForAll(String keys,String allUsers){
+        JSONParser parser = new JSONParser();
+        try {
+            JSONObject obj = (JSONObject)parser.parse(keys);
+            String user;
+            if((user = (String)obj.get(allUsers)) != null){
+                return user;
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

@@ -3,6 +3,7 @@ package server;
 import common.CryptoStandarts;
 import common.Fields;
 import common.Util;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -10,6 +11,7 @@ import org.json.simple.parser.ParseException;
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -18,6 +20,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
@@ -72,16 +75,19 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             String password = decryptWithPrivateKeyToString(encryptedPassword,server.getPrivateKey());
             String publicKey = (String)messageReceived.get(this.fPublicKey);
             String certificate  = sign(username,publicKey,server.getPrivateKey());
+            logger.info("\nRegister request received:\n");
+            logger.info("\n"+messageReceived+"\n");
             if(server.checkIfValid(username,password,publicKey,certificate)){
 
                 PublicKey pk = Util.convertToPublicKey(Base64.getDecoder().decode(publicKey));
                 communicator.userAttributes = new Server.UserAttributes(username,pk);
-                logger.info("\nRegister request received:\n");
-                logger.info("\n"+messageReceived+"\n");
 
                 logger.info("\nGenerated Certificate: " + certificate+"\n");
+                JSONArray savedImages;
+                if((savedImages = server.giveNotificationMessages(username))!=null){
+                    answerJSON.put(fImages,savedImages);
+                }
 
-                answerJSON.put(fImages,server.giveNotificationMessages());
                 answerJSON.put(fType, fRegisterAccepted);
                 answerJSON.put(this.fCertificate,certificate);
 
@@ -96,11 +102,12 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             String name = (String)messageReceived.get(fImageName),
                     encryptedImage = (String)messageReceived.get(fEncryptedImage),
                     signature  = (String)messageReceived.get(fSignature),
-                    encryptedKey = (String)messageReceived.get(fSymmetricKey),
                     iv = (String)messageReceived.get(fIV);
+            JSONObject encryptedKeys = (JSONObject)messageReceived.get(fSymmetricKey);//TODO may be checked
             logger.info("\nImage with name \""+ name +"\""+"received from user "+"\""+communicator.userAttributes.getUsername()+"\"\n");
+
             Util.ImageAttributes ia = getVerifiedImage(server.getPrivateKey(),name,
-                    encryptedImage,signature,encryptedKey,iv,
+                    encryptedImage,signature,encryptedKeys.toString(),iv,// TODO be careful
                     communicator.userAttributes.getPublicKey(),communicator.userAttributes.getUsername(),true);
             answer = new ReturnProtocol(null,ia);
         }else if(messageReceived.get(fType).equals(fDownload)){
@@ -115,18 +122,39 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             String certified = sign(ia.getUsername(),
                     ia.getPublicKeyOfUser(),server.getPrivateKey());
 
-            byte[] sk = Base64.getDecoder().decode(ia.getSymmetricKey());
-            String encryptedKey = encryptWithPublicKey(sk, communicator.userAttributes.getPublicKey());
+            String key;
+            if((key=Util.checkIfForAll(ia.getSymmetricKey(),fAll))!=null){
+                byte[] sk = decryptWithPrivateKey(key,server.getPrivateKey()).getEncoded();
+                String encryptedKey = encryptWithPublicKey(sk, communicator.userAttributes.getPublicKey());
+                JSONObject keyFormat = new JSONObject();
+                keyFormat.put(fAll,encryptedKey);
+                answerJSON.put(fSymmetricKey,keyFormat);
+            }else{
+                answerJSON.put(fSymmetricKey,ia.getSymmetricKey());
+            }
             answerJSON.put(fType,fPostImage);
             answerJSON.put(fUsername,userName);
             answerJSON.put(fImageName,ia.getName());
             answerJSON.put(fEncryptedImage,ia.getImage());
             answerJSON.put(fSignature,signature);
-            answerJSON.put(fSymmetricKey,encryptedKey);
+
             answerJSON.put(fPublicKey,certified);
             answerJSON.put(fIV,ia.getIv());
             logger.info("\nRequested image is sending to user "+"\""+communicator.userAttributes.getUsername()+"\"\n");
             answer = new ReturnProtocol(answerJSON.toString(),null);
+        }else if(messageReceived.get(fType).equals(fPublicKeyRequest)){
+            logger.info("\n\nPublic Key Request: " + messageReceived.toString()+"\n\n");
+            JSONArray jsonArray = (JSONArray) messageReceived.get(fAllowed);
+            ArrayList<String> allowedUsers = new ArrayList<>();
+            for(int i=0;i<jsonArray.size();i++){
+                allowedUsers.add((String) jsonArray.get(i));
+            }
+            JSONObject allowedPK = server.giveUserPublicKeys(allowedUsers);
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put(fType,fPublicKey);
+            jsonObject.put(fPublicKey,allowedPK);
+            answer = new ReturnProtocol(jsonObject.toString(),null);
+
         }
         return answer;
     }

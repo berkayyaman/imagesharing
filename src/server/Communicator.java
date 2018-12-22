@@ -1,6 +1,8 @@
 package server;
 
 import common.Util;
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import javax.crypto.BadPaddingException;
@@ -60,7 +62,7 @@ public class Communicator implements Runnable {
                 if(answer.getImageAttributes() != null){
                     String savedImageName = server.saveImage(answer.getImageAttributes());
                     logger.info("Image Saved as Base64 String With Name "+ savedImageName+"\n");
-                    notifyUsers(savedImageName);
+                    notifyUsers(savedImageName,answer.getImageAttributes().getSymmetricKey());
                 }
                 if(answer.getAnswer() != null){
                     Util.sendData(answer.getAnswer(),out);
@@ -75,10 +77,11 @@ public class Communicator implements Runnable {
             }
         }
     }
-    private void notifyUsers(String newImageName) {
+
+    private void notifyUsers(String newImageName,String users) {
         ArrayList<Communicator> toRemove = new ArrayList<>();
         for(Communicator c:Server.communicators){
-            if(c!=null){
+            if((c!=null) && (Util.checkIfInside(users,c.userAttributes.getUsername(),messagingProtocol.fAll))){
                 try {
                     c.messagingProtocol.notifyUser(newImageName,c.out);
                     logger.info("\n\nNotification has been sent to user "+"\""+userAttributes.getUsername()+"\"\n\n");

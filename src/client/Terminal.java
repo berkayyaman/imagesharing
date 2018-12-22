@@ -2,6 +2,7 @@ package client;
 
 import common.Fields;
 import common.Util;
+import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 
 import javax.crypto.BadPaddingException;
@@ -15,6 +16,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SignatureException;
 import java.security.spec.InvalidKeySpecException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
@@ -159,15 +161,18 @@ public class Terminal implements Fields {
                     default:
                         break;
                 }
-
+                printMessage("Please enter which users will be able to see the image(Type \"all\" for no restriction:");
+                String[] users = input.nextLine().split(" ");
                 String extension  = imagePath.split("\\.")[1];
                 File file = new File(imagePath);
                 byte[] imageInBytes = Util.encodeImage(file,extension);
                 try{
-                    protocol.sendImage(file.getName(),imageInBytes);
+                    protocol.sendImage(file.getName(),imageInBytes, users);
                 }catch (IOException i){
                     System.out.println("\n Server is closed... Program is closing...\n");
                     return false;
+                } catch (InvalidKeySpecException e) {
+                    e.printStackTrace();
                 }
                 System.out.println("\nImage Sent.\n");
                 try {
