@@ -158,15 +158,17 @@ public class Server implements Fields {
                      un = (String)jsonObject.get(fUsername);
                      if(un.equals(username) &&(jsonObject.get(fPassword)).equals(password)){
                          jsonObject.remove(fCertificate);
+                         jsonObject.remove(fPublicKey);
                          jsonObject.put(fCertificate,certificate);
-                         jsonObject.put(fPassword,password);
                          jsonObject.put(fPublicKey,publicKey);
                          changedRecord=jsonObject.toString();
                          records.remove(s);
                          records.add(changedRecord);
                          Files.write(path,"".getBytes(),StandardOpenOption.TRUNCATE_EXISTING);
                          for(String newRecord:records){
-                             Files.write(path,newRecord.getBytes());
+                             System.out.println(newRecord);
+                             Files.write(path,("\r\n"+newRecord+"\r\n").getBytes(),StandardOpenOption.APPEND);
+                             //saveUserRecords((String)jsonObject.get(fUsername),(String)jsonObject.get(fPassword),publicKey,certificate,userRecordsPath);
                          }
                          return true;
                      }else if(un.equals(username)){
@@ -180,6 +182,20 @@ public class Server implements Fields {
         }
         saveUserRecords(username,password,publicKey,certificate,userRecordsPath);
         return true;
+    }
+    private void saveUserRecords(String username, String password, String publicKey, String certificate, String path){
+        JSONObject jo = new JSONObject();
+        jo.put(fUsername,username);
+        jo.put(fPassword,password);
+        jo.put(fPublicKey,publicKey);
+        jo.put(fCertificate,certificate);
+        String recordContent = "\r\n"+jo.toString()+"\r\n";
+        Path userRecordsPath = Paths.get(path);
+        try {
+            Files.write(userRecordsPath,recordContent.getBytes(),StandardOpenOption.APPEND);//Certificate is recorded with fUsername
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     JSONObject giveUserPublicKeys(ArrayList<String> users){
         JSONParser parser = new JSONParser();
@@ -208,20 +224,7 @@ public class Server implements Fields {
         }
 
     }
-    void saveUserRecords(String username,String password,String publicKey,String certificate,String path){
-        JSONObject jo = new JSONObject();
-        jo.put(fUsername,username);
-        jo.put(fPassword,password);
-        jo.put(fPublicKey,publicKey);
-        jo.put(fCertificate,certificate);
-        String recordContent = "\n"+jo.toString()+"\n";
-        Path userRecordsPath = Paths.get(path);
-        try {
-            Files.write(userRecordsPath,recordContent.getBytes(),StandardOpenOption.APPEND);//Certificate is recorded with fUsername
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
     public JSONArray giveNotificationMessages(String username){
         File folder = new File(serverImagesDirectory);
         File[] listOfFiles = folder.listFiles();

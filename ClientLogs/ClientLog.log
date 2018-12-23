@@ -1,12 +1,12 @@
-Dec 22, 2018 6:02:21 PM client.ClientMessagingProtocol registration
+Dec 23, 2018 4:39:27 PM client.ClientMessagingProtocol registration
 INFO: 
-Message Sent:{"PASSWORD":"GasOF85oJncgo83\/MREwpRPuKJvfqQdbWSjZw05Zx28h31T6wDOW12mCsgCitp5AJQ+\/DqiWSX8x71jw+pdix8lb7OdoY\/vI0d8r1xhwUTeksmYTA2hl6y2Rf4i8jVkObgy\/9mSQnjnLk9\/kaL4FcKZKZXdyXeoUoC+FRgf0u3rX7Ff+RZartl81x8ZWo5xtGaEuDMFUwc8XGk+oN6CmOGLyiq7VD9hjDViGrlSdMTjaXicDmZU3yqiaLv4C5wqoRX3KcFhOwmLYzSUIVG121xyZwbtIBsG3eLlxwyRX2+hUK6d9qjV7U6U1B5hn4qErohIAXr0UvvZPoKvtKmJALQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhlBDSAmxjNXHgM2bQr1x+WBd6+KCtBK1LFDM8NDAHTPCwUHj+Xk\/zYrqodL6Vydv6Dthhs33cCKNqivOJ25wJkgf\/a3BZ9+6l+M9hfYIc0Grc\/AhhHONGOP8lluDnAn8cDS+mlia6tzsUZ5EmEmqHiMtx7HJgJCxD703rww8fu+AAz8VVmjgL9ZlN5s71pIvUBk4rLsng4pzrE35qSyYRz0b8qMYGSMFwW6ZujPjp+rikLuzWI\/HjdrP8vpZwptORuR9U5A38CECCKFAMKWTIy+Z0JLkI+\/zKRIcfpNawvCIj29wDiFbR8OMUOvEqm36111mZ\/hU7mhh8R1juU90QQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+Message Sent:{"PASSWORD":"iKYfXalyKGAdnc8HaOI7+UMKTeaw5zPNQyH1O03YiJuue4QXZMC+G6QSkE23oCuLZwvRPf16IB6asg8RNWszD5GoHSJAVfwYnlr962fsgJSIGaxIyu7iDxTIe307qEa5qoUW3UjiEJr6oK2Z2w5DLroLjIhr8QVk4Rtip340FTOMB0K0QHt0JOcWGV+A5JtrTq+EV\/ejhAZfgY36J47EEBf9JkKaHOSfxBb9LLxgaS7wvKY98voOeWgcQsQSuAIaYWzu5RgT0b4VypVidE3m+GfT17YsffkMoQzgOAhEj2n8oXpx7hGaYpvDp4+qmQlJLtUrv7v2SG\/BydeuOre5NQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv\/wUwcdvELqNunFQdQAy8q1JsY0DXfw7YqibyQ6WcB2fx461BEBAm0p6bPdClrRd4+DBKNp5N60n4xljEQq9fTuXcNHTZh7Z5vb2xXJdAzSp+x4UMuag+BOCceBdebzSUjfkzISe5RNvOcxoXbb12QriHCCpz2WyVPo93oLRwTqWxxkr6RI5Ww5\/y1eyaWHhWkJfQIwyTGBo10cNZNycRkcxdYARuZ+RqUMkyoRMUiDQ4P9\/kU2o8EcrIIiD4c2qOKq3c0kOTfSgc+uAr5XaaP+MRCF1eHBu6HsT6wKbuzPsas3PV7ikc8qKWcA+gqTXnZzyBxCNbPsylnDARoxV+wIDAQAB","USERNAME":"kara","TYPE":"REGISTER"}
 
-Dec 22, 2018 6:02:21 PM client.ClientMessagingProtocol verify
+Dec 23, 2018 4:39:27 PM client.ClientMessagingProtocol verify
 INFO: 
-Message Received: {"IMAGES":[{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"AmhzvLwIqQxlFa4PLPMBehCauYhC8kiK4zh6dcbbfITQZ0yCp33hGJfmKd5NRQcLMtyCXD873+LU\/4mR1B2OkohNWFCmg0uuaAUVjwyQ2tcPuQEgU9uhtVhD6QFi1iUtFZ4c\/z53Bc2QCGUFWEzV9INE1ymPPDsPt6uh9E3HV+5L+gUtPRyJYSALrzODQoQIpcPUbA4ZyaLzcxcx93wULlxfYKC+tUHCk6MwFLGnjKucCN3G2IOgU6CpCM77d1l\/oqKzYvV1ht09A6QwZrya3mrEpn+34e5IBqe7PoTk1zcU7KeziDGwhVOlHcXao0p3uFMRH0FQwFtL0dTKPbKNNg==","TYPE":"ACCEPTED"}
+Message Received: {"IMAGES":[{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"I5sUgVJw3F02p19irX8KC7nUNswd1c3nzTxtybhr9R5lNsIcfS0laLCvVmqku10Ok9ImaGv\/pEayNra809qiad4kolOo+pIk1U21ch3rTWGlL9Eq6JcvKvsnsuzVuAGsYxb0\/+yvEPmafwooFuEX\/ccNjZ5FmiQhJvdM+Yn\/epN9zr3yBXyHzzn95b8RZEX4wDo3TqPZA9s\/Ru1UMexO+7M9SNydXprkPJBeqU7oS6CCRoSZtFscsOcDxa3lTznIfH2eQ\/pa37DNbYTceHi4ox7cwawxUCfnrV+pM1kXCXa20nFs0LvKa8FcPrIS6r1EhxoNsv5aBjQpbW4LQRwkLQ==","TYPE":"ACCEPTED"}
 
-Dec 22, 2018 6:02:21 PM client.Terminal start
+Dec 23, 2018 4:39:27 PM client.Terminal start
 INFO: 
  Certificate is verified.. Notification listener is starting...
 

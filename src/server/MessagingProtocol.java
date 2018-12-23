@@ -152,7 +152,7 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
             JSONObject allowedPK = server.giveUserPublicKeys(allowedUsers);
             JSONObject jsonObject = new JSONObject();
             jsonObject.put(fType,fPublicKey);
-            jsonObject.put(fPublicKey,allowedPK);
+            jsonObject.put(fAllowed,allowedPK);
             answer = new ReturnProtocol(jsonObject.toString(),null);
 
         }

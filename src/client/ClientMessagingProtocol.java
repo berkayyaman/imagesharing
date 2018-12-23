@@ -15,6 +15,7 @@ import javax.crypto.SecretKey;
 import java.io.IOException;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.logging.Logger;
 
@@ -105,6 +106,7 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         }
         JSONObject jsonObject = new JSONObject();
         JSONObject encryptedKeys = new JSONObject();
+        ArrayList<String> validUsers = new ArrayList<>();
         if(!allUsers){
             publicKeyRequest.put(fType,fPublicKeyRequest);
             publicKeyRequest.put(fAllowed,allowedUsers);
@@ -113,10 +115,16 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
                 if(pks!=null){
                     for(int i=0;i<allowedUsers.size();i++){
                         String username = (String)allowedUsers.get(i);
-                        PublicKey userPublicKey = Util.convertToPublicKey(Base64.getDecoder().decode((String)pks.get(username)));
-                        encryptedKeys.put(username,encryptWithPublicKey(sk,userPublicKey));
-
+                        try{
+                            PublicKey userPublicKey = Util.convertToPublicKey(Base64.getDecoder().decode((String)pks.get(username)));
+                            encryptedKeys.put(username,encryptWithPublicKey(sk,userPublicKey));
+                            validUsers.add(username);
+                            System.out.println("Symmetric key is encrypted for user "+ username);
+                        }catch(NullPointerException e){
+                            System.out.println("There is no user named as "+username);
+                        }
                     }
+                    pks = null;
                     break;
                 }
             }
@@ -124,16 +132,26 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
             encryptedKeys.put(fAll,encryptWithPublicKey(sk, Client.serverPublicKey));
         }
 
-        jsonObject.put(fType,fPostImage);
-        jsonObject.put(fImageName,name);
-        jsonObject.put(fEncryptedImage,cta.getCipherText());
-        jsonObject.put(fSignature,signature);
-        jsonObject.put(fSymmetricKey,encryptedKeys);
-        jsonObject.put(fIV,cta.getIv());
+        if(validUsers.size()>0){
+            jsonObject.put(fType,fPostImage);
+            jsonObject.put(fImageName,name);
+            jsonObject.put(fEncryptedImage,cta.getCipherText());
+            jsonObject.put(fSignature,signature);
+            jsonObject.put(fSymmetricKey,encryptedKeys);
+            jsonObject.put(fIV,cta.getIv());
 
+            logger.info("\nImage is sent for users:\n");
+            System.out.println("\nImage is sent for users:");
+            for(String user:validUsers){
+                logger.info(user+"\n");
+                System.out.println(user);
+            }
+            Util.sendData(jsonObject.toString(),client.getOut());
+        }else{
+            logger.info("\nThere is no valid username entered...\n");
+            System.out.println("There is no valid username entered...");
+        }
 
-        logger.info("\nImage is sent...\n");
-        Util.sendData(jsonObject.toString(),client.getOut());
     }
     Util.ImageAttributes giveSecureImage(String message) throws ParseException,
             BadPaddingException, InvalidAlgorithmParameterException,
@@ -179,14 +197,16 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         return null;
     }
     JSONObject checkIfPublicKeyResponse(String message) throws ParseException {
+        System.out.println(message);
         JSONObject jo;
         JSONParser parser = new JSONParser();
         jo = (JSONObject) parser.parse(message);
         if(jo.get(fType).equals(fPublicKey)){
-            return (JSONObject)jo.get(fAllowed);
-        }else{
-            return null;
+            if(jo.get(fAllowed) != null){
+                return (JSONObject) jo.get(fAllowed);
+            }
         }
+        return new JSONObject();
     }
     void sendDownloadRequest(String userName,String name){
         JSONObject jsonObject = new JSONObject();
