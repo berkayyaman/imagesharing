@@ -104,6 +104,9 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
             }
             allowedUsers.add(user);
         }
+        if(!allUsers){
+            allowedUsers.add(client.getUserName());
+        }
         JSONObject jsonObject = new JSONObject();
         JSONObject encryptedKeys = new JSONObject();
         ArrayList<String> validUsers = new ArrayList<>();

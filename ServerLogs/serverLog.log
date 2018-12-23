@@ -1,103 +1,50 @@
-Dec 23, 2018 4:39:13 PM server.Server listen
+Dec 23, 2018 4:42:18 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 23, 2018 4:39:15 PM server.Server listen
-INFO: Client with IP address /127.0.0.1:50022 is connected.
+Dec 23, 2018 4:42:22 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:50061 is connected.
 
-Dec 23, 2018 4:39:15 PM server.Server listen
+Dec 23, 2018 4:42:22 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 23, 2018 4:39:20 PM server.MessagingProtocol interpret
+Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 23, 2018 4:39:20 PM server.MessagingProtocol interpret
+Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"YjSEzR\/NPkF7v7n34\/HuVEqCL5xPgY2zpfyevngiJl9\/zTmGU0ncPdRgPDBEhTImtVwr0onICKwxf0u8L38BfnkNqkn8EYDJXDcQsyiNToKSK1G\/Mb\/tnfl3BHPFX0ThuQXUBU4PzNibU3xKndyUQ4Fp\/9ukkBX5g2A4z3uJ2+SOWP\/Chv3daJNTPHMgyWpb3ahm82YaJMdzXSg5W7FEdJ22PEvgl6IYUGhA6ESgR\/nkv765MtdRznUnNXNeKSdBzp2j8tVu2lRsx5KY\/KkYTErs6aX5s25HNUqK2QwFnxqOPAvJOb75e6ph7bPRVcXSQe+KQL7V8GHc5hG4zP99mg==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzORL0V9b41vCAIK6uZ\/cAIMyp21RknDBjgMS1VKT3hTGw0gC\/hAp1dE3eOSvfJLZIWyRTSX9Hm\/P0laVi89Iu1UctYB\/dSvzWcy0Zio17vXQ1BRCJrBPFBELFzM5TA6mt9EqS2H5f\/BVSsEFNXeRFFSjy2s0a2KlKd4BZ5qw+VkGc0tKijkplfAniwqwiBqowd478PpBcF69pNNsgAKkL2+nJO1AM8+3KFB23RwfhFFv6TIXzmAwojZg1TgUQvib4UOuQppf7VqsQSNb0gjJRlyWkvY8amVFR8JS6ddv1EDpZzj8E3MsKyIgfVIrP8kQRJa1eA2iQIOySodG7yBTAwIDAQAB","USERNAME":"kara","TYPE":"REGISTER"}
+{"PASSWORD":"iSdT1\/nskfD0rY\/lR6Zq6ygUsTE6JKKxzCxJVRXjZuQPLvl\/0MtS9sGGzNFIRymNJS9vQ9\/pvBDnoyv2cP64Ss57xzC6bBHrYIkpREtEiD+Gp5a0E74KW6duP+wAeMKhzC8+oX9bxdagzBddoIGe+tWUjWIGV8kzJyZAa\/VW3whNVbJZ9mnrqydXilM2r5OD44Iv01+6AqJ9nDx\/F8cmKoij2FPT+V1UMhS8CBLDmFh2TW6rHHLpKAecKR+gzwl4YkCSihpeXuQEgJCeHeH2y0s5\/76XfsxkI1awOqmI2D5uctFWkbr0Bq7eWCVgxiH3hHYMA9oGQfhEtjL0CtyKnA==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyt0YYkIpwITWP04LlVsqZeG0Xw0UB4Ly0EmW9YUcs7F19i2sQCLuMpobi2bxDK+x9nP2LEPGrrFyEBoqszKeH0rmEc394D8WngAbf8XNHmPg1OIreH1Q9JXN2JqWHTpVfazVKsixAiN\/pTD4YLA\/QtVym7WNDvjptM5VvAJvilVvq18210VVsnb9IgQ6u4p6E302B3FvPjeLxWKrbFoqx0TeNaVzea9P5h1VVwrX2etLotL6LXDT03G2SUiAy99EHkNHGDm6nC9g+A\/8mSWo5wx33OtWAq+9TQqHx24arVtQY\/xlbR9l406+8jwNw7NPM4llXbXK2DT323ljk9iMsQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
 
-Dec 23, 2018 4:39:20 PM server.MessagingProtocol interpret
+Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: MmDNQiKyYEa9wjzix53wFqjZchORgUKACVin+KK1wxqkIOhYvay+DuCjO5fBtOBT+AHuavQCOiE6JufGBkfmmORzbARgxCdw+yg6DI8zB1Q03Jus34LCary5oZa7sKZLEJMfp09+gqcgU7r4tOI8LqgdM30YA88XESsOSwayybH4eQS11e2L2jiZMPtve5lsWda0YrVj9eb4ME11spBsdTrvNF5kFb7JNwU8tf4tR/a7NbWsfTJQWeCLDO3EWdWGfvmh9NBb52+SkWnSMZidGtsQAwXxAWSHDeHcDI4SJw2CR+AuBu5cUvNxV0slpu3RjrjxrTA1KlJd3qrIDGI6gw==
+Generated Certificate: ErHvlTenFrFvqquhRlJCvz68tXN6c4xXT2LT5f4/P/IiMzMjG/56QNpptMemsZF+vfwUzTmUtQEz+tovLxP4KJB2ANRGmojXJrZ/8xMjp0120Gpv2u072418SptP52Si9bWI7bd/8Kb4Y85U1l8vzKTU8rvbbc8wtqSZwWsUlvetjNcZnJo85AftRYRcDGX+0DPF8LiY1BAzeYWFOJYrUhr3E6c2Njiq1FJeYpYh9qpt6+4nNWG0BOG6KwxvPFuRvQlAD+CUCGtI1d0vUdeioyfDubcoCTLKIs8/XX+f/FgZPRFvL6v1O0f2ewBvOFM6cf5OBip/Q4wJAcf0zpMkPA==
 
-Dec 23, 2018 4:39:20 PM server.MessagingProtocol interpret
+Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
 INFO: 
-Message is sending to user "kara"
+Message is sending to user "berkay"
 
-Dec 23, 2018 4:39:20 PM server.MessagingProtocol interpret
-INFO: {"IMAGES":[{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"MmDNQiKyYEa9wjzix53wFqjZchORgUKACVin+KK1wxqkIOhYvay+DuCjO5fBtOBT+AHuavQCOiE6JufGBkfmmORzbARgxCdw+yg6DI8zB1Q03Jus34LCary5oZa7sKZLEJMfp09+gqcgU7r4tOI8LqgdM30YA88XESsOSwayybH4eQS11e2L2jiZMPtve5lsWda0YrVj9eb4ME11spBsdTrvNF5kFb7JNwU8tf4tR\/a7NbWsfTJQWeCLDO3EWdWGfvmh9NBb52+SkWnSMZidGtsQAwXxAWSHDeHcDI4SJw2CR+AuBu5cUvNxV0slpu3RjrjxrTA1KlJd3qrIDGI6gw==","TYPE":"ACCEPTED"}
+Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"serkan","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"ErHvlTenFrFvqquhRlJCvz68tXN6c4xXT2LT5f4\/P\/IiMzMjG\/56QNpptMemsZF+vfwUzTmUtQEz+tovLxP4KJB2ANRGmojXJrZ\/8xMjp0120Gpv2u072418SptP52Si9bWI7bd\/8Kb4Y85U1l8vzKTU8rvbbc8wtqSZwWsUlvetjNcZnJo85AftRYRcDGX+0DPF8LiY1BAzeYWFOJYrUhr3E6c2Njiq1FJeYpYh9qpt6+4nNWG0BOG6KwxvPFuRvQlAD+CUCGtI1d0vUdeioyfDubcoCTLKIs8\/XX+f\/FgZPRFvL6v1O0f2ewBvOFM6cf5OBip\/Q4wJAcf0zpMkPA==","TYPE":"ACCEPTED"}
 
-Dec 23, 2018 4:39:21 PM server.Communicator communicate
+Dec 23, 2018 4:42:46 PM server.MessagingProtocol interpret
 INFO: 
-
-Client with IP address /127.0.0.1:50022 is disconnected.
-
-
-Dec 23, 2018 4:39:23 PM server.Server listen
-INFO: Client with IP address /127.0.0.1:50029 is connected.
-
-Dec 23, 2018 4:39:23 PM server.Server listen
-INFO: Port 4444 is listening.
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
+Download request received from user "berkay"
+for the image "moon.jpg"
+Dec 23, 2018 4:42:46 PM server.MessagingProtocol interpret
 INFO: 
-Register request received:
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
+Download request received from user "berkay"
+for the image "moon.jpg"
+Dec 23, 2018 4:42:46 PM server.MessagingProtocol interpret
 INFO: 
-Register request received:
+Requested image is sending to user "berkay"
 
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
+Dec 23, 2018 4:42:46 PM server.MessagingProtocol interpret
 INFO: 
-Register request received:
+Requested image is sending to user "berkay"
 
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-{"PASSWORD":"iKYfXalyKGAdnc8HaOI7+UMKTeaw5zPNQyH1O03YiJuue4QXZMC+G6QSkE23oCuLZwvRPf16IB6asg8RNWszD5GoHSJAVfwYnlr962fsgJSIGaxIyu7iDxTIe307qEa5qoUW3UjiEJr6oK2Z2w5DLroLjIhr8QVk4Rtip340FTOMB0K0QHt0JOcWGV+A5JtrTq+EV\/ejhAZfgY36J47EEBf9JkKaHOSfxBb9LLxgaS7wvKY98voOeWgcQsQSuAIaYWzu5RgT0b4VypVidE3m+GfT17YsffkMoQzgOAhEj2n8oXpx7hGaYpvDp4+qmQlJLtUrv7v2SG\/BydeuOre5NQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv\/wUwcdvELqNunFQdQAy8q1JsY0DXfw7YqibyQ6WcB2fx461BEBAm0p6bPdClrRd4+DBKNp5N60n4xljEQq9fTuXcNHTZh7Z5vb2xXJdAzSp+x4UMuag+BOCceBdebzSUjfkzISe5RNvOcxoXbb12QriHCCpz2WyVPo93oLRwTqWxxkr6RI5Ww5\/y1eyaWHhWkJfQIwyTGBo10cNZNycRkcxdYARuZ+RqUMkyoRMUiDQ4P9\/kU2o8EcrIIiD4c2qOKq3c0kOTfSgc+uAr5XaaP+MRCF1eHBu6HsT6wKbuzPsas3PV7ikc8qKWcA+gqTXnZzyBxCNbPsylnDARoxV+wIDAQAB","USERNAME":"kara","TYPE":"REGISTER"}
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-{"PASSWORD":"iKYfXalyKGAdnc8HaOI7+UMKTeaw5zPNQyH1O03YiJuue4QXZMC+G6QSkE23oCuLZwvRPf16IB6asg8RNWszD5GoHSJAVfwYnlr962fsgJSIGaxIyu7iDxTIe307qEa5qoUW3UjiEJr6oK2Z2w5DLroLjIhr8QVk4Rtip340FTOMB0K0QHt0JOcWGV+A5JtrTq+EV\/ejhAZfgY36J47EEBf9JkKaHOSfxBb9LLxgaS7wvKY98voOeWgcQsQSuAIaYWzu5RgT0b4VypVidE3m+GfT17YsffkMoQzgOAhEj2n8oXpx7hGaYpvDp4+qmQlJLtUrv7v2SG\/BydeuOre5NQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv\/wUwcdvELqNunFQdQAy8q1JsY0DXfw7YqibyQ6WcB2fx461BEBAm0p6bPdClrRd4+DBKNp5N60n4xljEQq9fTuXcNHTZh7Z5vb2xXJdAzSp+x4UMuag+BOCceBdebzSUjfkzISe5RNvOcxoXbb12QriHCCpz2WyVPo93oLRwTqWxxkr6RI5Ww5\/y1eyaWHhWkJfQIwyTGBo10cNZNycRkcxdYARuZ+RqUMkyoRMUiDQ4P9\/kU2o8EcrIIiD4c2qOKq3c0kOTfSgc+uAr5XaaP+MRCF1eHBu6HsT6wKbuzPsas3PV7ikc8qKWcA+gqTXnZzyBxCNbPsylnDARoxV+wIDAQAB","USERNAME":"kara","TYPE":"REGISTER"}
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-{"PASSWORD":"iKYfXalyKGAdnc8HaOI7+UMKTeaw5zPNQyH1O03YiJuue4QXZMC+G6QSkE23oCuLZwvRPf16IB6asg8RNWszD5GoHSJAVfwYnlr962fsgJSIGaxIyu7iDxTIe307qEa5qoUW3UjiEJr6oK2Z2w5DLroLjIhr8QVk4Rtip340FTOMB0K0QHt0JOcWGV+A5JtrTq+EV\/ejhAZfgY36J47EEBf9JkKaHOSfxBb9LLxgaS7wvKY98voOeWgcQsQSuAIaYWzu5RgT0b4VypVidE3m+GfT17YsffkMoQzgOAhEj2n8oXpx7hGaYpvDp4+qmQlJLtUrv7v2SG\/BydeuOre5NQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv\/wUwcdvELqNunFQdQAy8q1JsY0DXfw7YqibyQ6WcB2fx461BEBAm0p6bPdClrRd4+DBKNp5N60n4xljEQq9fTuXcNHTZh7Z5vb2xXJdAzSp+x4UMuag+BOCceBdebzSUjfkzISe5RNvOcxoXbb12QriHCCpz2WyVPo93oLRwTqWxxkr6RI5Ww5\/y1eyaWHhWkJfQIwyTGBo10cNZNycRkcxdYARuZ+RqUMkyoRMUiDQ4P9\/kU2o8EcrIIiD4c2qOKq3c0kOTfSgc+uAr5XaaP+MRCF1eHBu6HsT6wKbuzPsas3PV7ikc8qKWcA+gqTXnZzyBxCNbPsylnDARoxV+wIDAQAB","USERNAME":"kara","TYPE":"REGISTER"}
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-Generated Certificate: I5sUgVJw3F02p19irX8KC7nUNswd1c3nzTxtybhr9R5lNsIcfS0laLCvVmqku10Ok9ImaGv/pEayNra809qiad4kolOo+pIk1U21ch3rTWGlL9Eq6JcvKvsnsuzVuAGsYxb0/+yvEPmafwooFuEX/ccNjZ5FmiQhJvdM+Yn/epN9zr3yBXyHzzn95b8RZEX4wDo3TqPZA9s/Ru1UMexO+7M9SNydXprkPJBeqU7oS6CCRoSZtFscsOcDxa3lTznIfH2eQ/pa37DNbYTceHi4ox7cwawxUCfnrV+pM1kXCXa20nFs0LvKa8FcPrIS6r1EhxoNsv5aBjQpbW4LQRwkLQ==
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-Generated Certificate: I5sUgVJw3F02p19irX8KC7nUNswd1c3nzTxtybhr9R5lNsIcfS0laLCvVmqku10Ok9ImaGv/pEayNra809qiad4kolOo+pIk1U21ch3rTWGlL9Eq6JcvKvsnsuzVuAGsYxb0/+yvEPmafwooFuEX/ccNjZ5FmiQhJvdM+Yn/epN9zr3yBXyHzzn95b8RZEX4wDo3TqPZA9s/Ru1UMexO+7M9SNydXprkPJBeqU7oS6CCRoSZtFscsOcDxa3lTznIfH2eQ/pa37DNbYTceHi4ox7cwawxUCfnrV+pM1kXCXa20nFs0LvKa8FcPrIS6r1EhxoNsv5aBjQpbW4LQRwkLQ==
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-Generated Certificate: I5sUgVJw3F02p19irX8KC7nUNswd1c3nzTxtybhr9R5lNsIcfS0laLCvVmqku10Ok9ImaGv/pEayNra809qiad4kolOo+pIk1U21ch3rTWGlL9Eq6JcvKvsnsuzVuAGsYxb0/+yvEPmafwooFuEX/ccNjZ5FmiQhJvdM+Yn/epN9zr3yBXyHzzn95b8RZEX4wDo3TqPZA9s/Ru1UMexO+7M9SNydXprkPJBeqU7oS6CCRoSZtFscsOcDxa3lTznIfH2eQ/pa37DNbYTceHi4ox7cwawxUCfnrV+pM1kXCXa20nFs0LvKa8FcPrIS6r1EhxoNsv5aBjQpbW4LQRwkLQ==
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-Message is sending to user "kara"
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-Message is sending to user "kara"
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: 
-Message is sending to user "kara"
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: {"IMAGES":[{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"I5sUgVJw3F02p19irX8KC7nUNswd1c3nzTxtybhr9R5lNsIcfS0laLCvVmqku10Ok9ImaGv\/pEayNra809qiad4kolOo+pIk1U21ch3rTWGlL9Eq6JcvKvsnsuzVuAGsYxb0\/+yvEPmafwooFuEX\/ccNjZ5FmiQhJvdM+Yn\/epN9zr3yBXyHzzn95b8RZEX4wDo3TqPZA9s\/Ru1UMexO+7M9SNydXprkPJBeqU7oS6CCRoSZtFscsOcDxa3lTznIfH2eQ\/pa37DNbYTceHi4ox7cwawxUCfnrV+pM1kXCXa20nFs0LvKa8FcPrIS6r1EhxoNsv5aBjQpbW4LQRwkLQ==","TYPE":"ACCEPTED"}
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: {"IMAGES":[{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"I5sUgVJw3F02p19irX8KC7nUNswd1c3nzTxtybhr9R5lNsIcfS0laLCvVmqku10Ok9ImaGv\/pEayNra809qiad4kolOo+pIk1U21ch3rTWGlL9Eq6JcvKvsnsuzVuAGsYxb0\/+yvEPmafwooFuEX\/ccNjZ5FmiQhJvdM+Yn\/epN9zr3yBXyHzzn95b8RZEX4wDo3TqPZA9s\/Ru1UMexO+7M9SNydXprkPJBeqU7oS6CCRoSZtFscsOcDxa3lTznIfH2eQ\/pa37DNbYTceHi4ox7cwawxUCfnrV+pM1kXCXa20nFs0LvKa8FcPrIS6r1EhxoNsv5aBjQpbW4LQRwkLQ==","TYPE":"ACCEPTED"}
-
-Dec 23, 2018 4:39:27 PM server.MessagingProtocol interpret
-INFO: {"IMAGES":[{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"I5sUgVJw3F02p19irX8KC7nUNswd1c3nzTxtybhr9R5lNsIcfS0laLCvVmqku10Ok9ImaGv\/pEayNra809qiad4kolOo+pIk1U21ch3rTWGlL9Eq6JcvKvsnsuzVuAGsYxb0\/+yvEPmafwooFuEX\/ccNjZ5FmiQhJvdM+Yn\/epN9zr3yBXyHzzn95b8RZEX4wDo3TqPZA9s\/Ru1UMexO+7M9SNydXprkPJBeqU7oS6CCRoSZtFscsOcDxa3lTznIfH2eQ\/pa37DNbYTceHi4ox7cwawxUCfnrV+pM1kXCXa20nFs0LvKa8FcPrIS6r1EhxoNsv5aBjQpbW4LQRwkLQ==","TYPE":"ACCEPTED"}
-
-Dec 23, 2018 4:39:28 PM server.Communicator communicate
+Dec 23, 2018 4:42:49 PM server.Communicator communicate
 INFO: 
 
-Client with IP address /127.0.0.1:50029 is disconnected.
+Client with IP address /127.0.0.1:50061 is disconnected.
 
 
