@@ -96,14 +96,39 @@ public class Terminal implements Fields {
             NoSuchAlgorithmException, InvalidKeyException, NoSuchPaddingException,
             BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException,
             SignatureException, InvalidKeySpecException {
+
+        String text;
         printMessage("Please enter a username:");
-        protocol.client.setUserName(input.nextLine());
+        if(isValidInput(text=input.nextLine())){
+            protocol.client.setUserName(text);
+        }else{
+            return false;
+        }
+
+
         printMessage("Please enter your password:");
         protocol.client.setPassword(input.nextLine());
         Util.sendData(protocol.registration(protocol.client.getUserName(),protocol.client.getPassword()),protocol.client.getOut());
 
         String in = Util.receiveData(protocol.client.getIn());
         return protocol.verify(in);
+    }
+    private boolean isValidInput(String text){
+        char[] forbidden = {'{','[',']','}',',','<','>'};
+        int lnt = text.length();
+        if(text.equals("") || text.equals("all")){
+            System.out.println("Forbidden String entered...");
+            return false;
+        }
+        for(char i:forbidden){
+           for(int j=0;j<lnt;j++){
+               if(text.charAt(j)==i){
+                   System.out.println("Forbidden Character Entered...");
+                   return false;
+               }
+           }
+        }
+        return true;
     }
     private boolean listImages(){
         int i = 0;
@@ -151,7 +176,9 @@ public class Terminal implements Fields {
             printMessage("Please Enter the Path of the Image:");
             try {
                 String imagePath = input.nextLine();
-
+                if(!isValidInput(imagePath)){
+                    return true;
+                }
                 //noinspection Duplicates
                 switch (imagePath){
                     case "cancel":
@@ -161,8 +188,14 @@ public class Terminal implements Fields {
                     default:
                         break;
                 }
-                printMessage("Please enter which users will be able to see the image(Type \"all\" for no restriction:");
-                String[] users = input.nextLine().split(" ");
+                printMessage("Please enter which users will be able to see the image\n(Type \"all\" for no restriction, " +
+                        "please enter space between users):");
+                String text = input.nextLine();
+                if(!isValidInput(text)){
+                    return true;
+                }
+
+                String[] users = text.split(" ");
                 String extension  = imagePath.split("\\.")[1];
                 File file = new File(imagePath);
                 byte[] imageInBytes = Util.encodeImage(file,extension);

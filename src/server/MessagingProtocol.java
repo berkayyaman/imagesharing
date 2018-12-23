@@ -105,7 +105,6 @@ class MessagingProtocol extends CryptoStandarts implements Fields {
                     iv = (String)messageReceived.get(fIV);
             JSONObject encryptedKeys = (JSONObject)messageReceived.get(fSymmetricKey);//TODO may be checked
             logger.info("\nImage with name \""+ name +"\""+"received from user "+"\""+communicator.userAttributes.getUsername()+"\"\n");
-
             Util.ImageAttributes ia = getVerifiedImage(server.getPrivateKey(),name,
                     encryptedImage,signature,encryptedKeys.toString(),iv,// TODO be careful
                     communicator.userAttributes.getPublicKey(),communicator.userAttributes.getUsername(),true);

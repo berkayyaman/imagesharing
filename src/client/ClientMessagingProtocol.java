@@ -13,6 +13,7 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.security.*;
 import java.security.spec.InvalidKeySpecException;
 import java.util.ArrayList;
@@ -42,10 +43,17 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
     String registration(String username,String password) throws IOException, IllegalBlockSizeException, NoSuchPaddingException, BadPaddingException, NoSuchAlgorithmException, InvalidKeyException {
 
         JSONObject jsonObject = new JSONObject();
+        String filename = username+".txt";
+        if(Util.checkIfFileExists(filename)){
+            client.updateKeyPair(filename);
+        }else{
+            client.saveKeyPair(filename);
+        }
+        jsonObject.put(this.fPublicKey,Util.convertToBase64String(client.getPublicKey().getEncoded()));
         jsonObject.put(this.fType,this.fRegister);
         jsonObject.put(this.fUsername, username);
         jsonObject.put(this.fPassword,encryptWithPublicKey(password.getBytes(),Client.serverPublicKey));
-        jsonObject.put(this.fPublicKey,Util.convertToBase64String(client.getPublicKey().getEncoded()));
+
 
         logger.info("\nMessage Sent:"+
                 jsonObject.toString()+"\n");
@@ -104,13 +112,11 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
             }
             allowedUsers.add(user);
         }
-        if(!allUsers){
-            allowedUsers.add(client.getUserName());
-        }
         JSONObject jsonObject = new JSONObject();
         JSONObject encryptedKeys = new JSONObject();
         ArrayList<String> validUsers = new ArrayList<>();
         if(!allUsers){
+            allowedUsers.add(client.getUserName());
             publicKeyRequest.put(fType,fPublicKeyRequest);
             publicKeyRequest.put(fAllowed,allowedUsers);
             Util.sendData(publicKeyRequest.toString(),client.getOut());
@@ -135,7 +141,7 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
             encryptedKeys.put(fAll,encryptWithPublicKey(sk, Client.serverPublicKey));
         }
 
-        if(validUsers.size()>0){
+        if(allUsers || (validUsers.size()>0)){
             jsonObject.put(fType,fPostImage);
             jsonObject.put(fImageName,name);
             jsonObject.put(fEncryptedImage,cta.getCipherText());
@@ -169,11 +175,17 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
             String iv = (String)messageReceived.get(fIV);
             String signature = (String)messageReceived.get(fSignature);
             System.out.println(messageReceived.get(fSymmetricKey));
-            JSONObject encryptedKeys = (JSONObject)messageReceived.get(fSymmetricKey);
-            //JSONObject ekJson = (JSONObject)parser.parse(encryptedKeys);
-            String encryptedKey = (String)encryptedKeys.get(fAll);
+            String encryptedKeys;
+            try{
+                 encryptedKeys = (String)messageReceived.get(fSymmetricKey);
+            }catch (ClassCastException e){
+                JSONObject jo = (JSONObject)messageReceived.get(fSymmetricKey);
+                encryptedKeys = jo.toString();
+            }
+            JSONObject ekJson = (JSONObject)parser.parse(encryptedKeys);
+            String encryptedKey = (String)ekJson.get(fAll);
             if(encryptedKey == null){
-                encryptedKey = (String)encryptedKeys.get(client.getUserName());
+                encryptedKey = (String)ekJson.get(client.getUserName());
             }
             System.out.println(encryptedKey);
             return getVerifiedImage(client.getPrivateKey(),imageName,

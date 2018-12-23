@@ -168,4 +168,8 @@ public class Util {
         }
         return null;
     }
+    public static boolean checkIfFileExists(String fileName){
+        File file = new File(fileName);
+        return file.exists();
+    }
 }

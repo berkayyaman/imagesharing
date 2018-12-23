@@ -138,6 +138,7 @@ public class Server implements Fields {
         data =reader.readLine();
         JSONParser parser = new JSONParser();
         JSONObject jsonObject = (JSONObject)parser.parse(data);
+        reader.close();
         return new Util.ImageAttributes(name,
                 (String)jsonObject.get(fPublicKey),
                 userName,(String)jsonObject.get(fEncryptedImage),
@@ -167,7 +168,7 @@ public class Server implements Fields {
                          Files.write(path,"".getBytes(),StandardOpenOption.TRUNCATE_EXISTING);
                          for(String newRecord:records){
                              System.out.println(newRecord);
-                             Files.write(path,("\r\n"+newRecord+"\r\n").getBytes(),StandardOpenOption.APPEND);
+                             Files.write(path,(newRecord+"\r\n").getBytes(),StandardOpenOption.APPEND);
                              //saveUserRecords((String)jsonObject.get(fUsername),(String)jsonObject.get(fPassword),publicKey,certificate,userRecordsPath);
                          }
                          return true;
@@ -189,7 +190,7 @@ public class Server implements Fields {
         jo.put(fPassword,password);
         jo.put(fPublicKey,publicKey);
         jo.put(fCertificate,certificate);
-        String recordContent = "\r\n"+jo.toString()+"\r\n";
+        String recordContent = jo.toString()+"\r\n";
         Path userRecordsPath = Paths.get(path);
         try {
             Files.write(userRecordsPath,recordContent.getBytes(),StandardOpenOption.APPEND);//Certificate is recorded with fUsername

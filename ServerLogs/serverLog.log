@@ -1,50 +1,62 @@
-Dec 23, 2018 4:42:18 PM server.Server listen
+Dec 23, 2018 10:43:21 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 23, 2018 4:42:22 PM server.Server listen
-INFO: Client with IP address /127.0.0.1:50061 is connected.
+Dec 23, 2018 10:43:24 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:54132 is connected.
 
-Dec 23, 2018 4:42:22 PM server.Server listen
+Dec 23, 2018 10:43:24 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
+Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
 INFO: 
 Register request received:
 
-Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
+Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
 INFO: 
-{"PASSWORD":"iSdT1\/nskfD0rY\/lR6Zq6ygUsTE6JKKxzCxJVRXjZuQPLvl\/0MtS9sGGzNFIRymNJS9vQ9\/pvBDnoyv2cP64Ss57xzC6bBHrYIkpREtEiD+Gp5a0E74KW6duP+wAeMKhzC8+oX9bxdagzBddoIGe+tWUjWIGV8kzJyZAa\/VW3whNVbJZ9mnrqydXilM2r5OD44Iv01+6AqJ9nDx\/F8cmKoij2FPT+V1UMhS8CBLDmFh2TW6rHHLpKAecKR+gzwl4YkCSihpeXuQEgJCeHeH2y0s5\/76XfsxkI1awOqmI2D5uctFWkbr0Bq7eWCVgxiH3hHYMA9oGQfhEtjL0CtyKnA==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyt0YYkIpwITWP04LlVsqZeG0Xw0UB4Ly0EmW9YUcs7F19i2sQCLuMpobi2bxDK+x9nP2LEPGrrFyEBoqszKeH0rmEc394D8WngAbf8XNHmPg1OIreH1Q9JXN2JqWHTpVfazVKsixAiN\/pTD4YLA\/QtVym7WNDvjptM5VvAJvilVvq18210VVsnb9IgQ6u4p6E302B3FvPjeLxWKrbFoqx0TeNaVzea9P5h1VVwrX2etLotL6LXDT03G2SUiAy99EHkNHGDm6nC9g+A\/8mSWo5wx33OtWAq+9TQqHx24arVtQY\/xlbR9l406+8jwNw7NPM4llXbXK2DT323ljk9iMsQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
+{"PASSWORD":"LaVBNgAtIRHs1gVBACtjgxnUKBlHEFXPDKR3MKqIBR0iquX3\/sykFFDEPNCsRG9ouDP\/PXhwnFQOPMGAC4ycwfFQPrKC3aYc83cOdIjJw0KdpXo9f6HmTzkvSAAVqt3atEpUdSlQnTDGB2Qnb3Ul7tVmURPeiLF\/\/FIZsuclB4Sbg\/NM+aHLHOm9aI7sdnjQwm67R7NAco2iob+1WjJ\/iS2CCJ92YIt8O6gjQWSCtM44Qatke8Dbs81c9KCJoUR9DWGesjZa4WbrZ8NW6vFYMAABQFjUqVBKi7uKzOm\/TBnp6kPsqFLG+EwhaMwk577Mnj4aUFxkJabWnZsP+qnHMQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkptOrwO99OCykC9KwuYrrTTWhSoSrjJLAHxxfzJIsGjA8GPICOy9cFSGpEkDXxoVqbq\/yX0qEX02soaSR7Cg5dUAGV0X+PEc0udr4FmPT\/TIgQqh2y5G0uh+ZV4iwNPZoVeBkvvAMNoy3MjbCWWFKP0bxWJ4lvrjSMUhoxSLNIMmXC9QikZNHCOMRCKpGqU0drXAqVAHJwblK6IdLkkEifi8MZIrj76VtKh7TVgf\/khIJTmbNOHGmpW8PN0L6slDXLvZiLEpPrrlopT6zoKabc6OF3nMvqins6F4ZjCMBKTCAQlBJlyJvwXAki2nGb4lCzo9Tij+kZwe9GqY6PaozQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
 
-Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
+Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
 INFO: 
-Generated Certificate: ErHvlTenFrFvqquhRlJCvz68tXN6c4xXT2LT5f4/P/IiMzMjG/56QNpptMemsZF+vfwUzTmUtQEz+tovLxP4KJB2ANRGmojXJrZ/8xMjp0120Gpv2u072418SptP52Si9bWI7bd/8Kb4Y85U1l8vzKTU8rvbbc8wtqSZwWsUlvetjNcZnJo85AftRYRcDGX+0DPF8LiY1BAzeYWFOJYrUhr3E6c2Njiq1FJeYpYh9qpt6+4nNWG0BOG6KwxvPFuRvQlAD+CUCGtI1d0vUdeioyfDubcoCTLKIs8/XX+f/FgZPRFvL6v1O0f2ewBvOFM6cf5OBip/Q4wJAcf0zpMkPA==
+Generated Certificate: j1rWeSxxk6aEfUd1qG2ESMFESO8/amHn16XTscoOsBNTbMea5/kM9NqhAwmxxh7NWpjnWiOMj5xgjf8YP9IyceBMmT38HDHZj2+FzDZjWZGcFDyjyA6utsBGM568LxrOWixuZ0GBliFF1ajGzFF/NbsCy3iBK6Vxzf5Wk3MKGNphQDqdVzbDaf6lGtErGxtM3resR4CMrJ3P/fBgBnDp8/UBXDX9pRzdwn+Q+N449lK77E7xf5OYjA3FK7WMyFJSk8rx9Lgvkcn4LJ2vqD0ekgJe6XtP6XwlMnQam9GfYyZxDVD1KrH94GiCDg0YKHKhnp31P0MuMMQhDX/Qhvh2rw==
 
-Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
+Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
 INFO: 
 Message is sending to user "berkay"
 
-Dec 23, 2018 4:42:28 PM server.MessagingProtocol interpret
-INFO: {"IMAGES":[{"IMAGE_NAME":"moon.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"serkan","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"ErHvlTenFrFvqquhRlJCvz68tXN6c4xXT2LT5f4\/P\/IiMzMjG\/56QNpptMemsZF+vfwUzTmUtQEz+tovLxP4KJB2ANRGmojXJrZ\/8xMjp0120Gpv2u072418SptP52Si9bWI7bd\/8Kb4Y85U1l8vzKTU8rvbbc8wtqSZwWsUlvetjNcZnJo85AftRYRcDGX+0DPF8LiY1BAzeYWFOJYrUhr3E6c2Njiq1FJeYpYh9qpt6+4nNWG0BOG6KwxvPFuRvQlAD+CUCGtI1d0vUdeioyfDubcoCTLKIs8\/XX+f\/FgZPRFvL6v1O0f2ewBvOFM6cf5OBip\/Q4wJAcf0zpMkPA==","TYPE":"ACCEPTED"}
+Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
+INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"selim","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon1.jpg","USERNAME":"selim","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"selim","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"j1rWeSxxk6aEfUd1qG2ESMFESO8\/amHn16XTscoOsBNTbMea5\/kM9NqhAwmxxh7NWpjnWiOMj5xgjf8YP9IyceBMmT38HDHZj2+FzDZjWZGcFDyjyA6utsBGM568LxrOWixuZ0GBliFF1ajGzFF\/NbsCy3iBK6Vxzf5Wk3MKGNphQDqdVzbDaf6lGtErGxtM3resR4CMrJ3P\/fBgBnDp8\/UBXDX9pRzdwn+Q+N449lK77E7xf5OYjA3FK7WMyFJSk8rx9Lgvkcn4LJ2vqD0ekgJe6XtP6XwlMnQam9GfYyZxDVD1KrH94GiCDg0YKHKhnp31P0MuMMQhDX\/Qhvh2rw==","TYPE":"ACCEPTED"}
 
-Dec 23, 2018 4:42:46 PM server.MessagingProtocol interpret
+Dec 23, 2018 10:43:35 PM server.MessagingProtocol interpret
 INFO: 
 Download request received from user "berkay"
-for the image "moon.jpg"
-Dec 23, 2018 4:42:46 PM server.MessagingProtocol interpret
+for the image "color.jpg"
+Dec 23, 2018 10:43:35 PM server.MessagingProtocol interpret
 INFO: 
 Download request received from user "berkay"
-for the image "moon.jpg"
-Dec 23, 2018 4:42:46 PM server.MessagingProtocol interpret
+for the image "color.jpg"
+Dec 23, 2018 10:43:35 PM server.MessagingProtocol interpret
 INFO: 
 Requested image is sending to user "berkay"
 
-Dec 23, 2018 4:42:46 PM server.MessagingProtocol interpret
+Dec 23, 2018 10:43:35 PM server.MessagingProtocol interpret
 INFO: 
 Requested image is sending to user "berkay"
 
-Dec 23, 2018 4:42:49 PM server.Communicator communicate
+Dec 23, 2018 10:44:30 PM server.Communicator communicate
 INFO: 
 
-Client with IP address /127.0.0.1:50061 is disconnected.
+Client with IP address /127.0.0.1:54132 is disconnected.
+
+
+Dec 23, 2018 10:44:33 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:54153 is connected.
+
+Dec 23, 2018 10:44:33 PM server.Server listen
+INFO: Port 4444 is listening.
+
+Dec 23, 2018 10:45:01 PM server.Communicator communicate
+INFO: 
+
+Client with IP address /127.0.0.1:54153 is disconnected.
 
 
