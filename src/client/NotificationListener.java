@@ -70,7 +70,7 @@ public class NotificationListener implements Runnable{
                                 +info.getName()+"\"\n\n";
                         System.out.println(print);
                         System.out.print(Terminal.lastMessage);
-                        logger.info("\nMessage Received: "+message+"\n");
+                        logger.info("\r\nMessage Received: "+message+"\r\n");
                     }
                     Terminal.imageList.add(info);
                 }else if((ia=protocol.giveSecureImage(message))!=null){
@@ -78,7 +78,7 @@ public class NotificationListener implements Runnable{
                     client.saveImage(ia.getUsername()+"_"+nameParts[0],nameParts[1],ia.getImage());
                     System.out.println("\n\nImage Saved.\n\n");
                     System.out.print(Terminal.lastMessage);
-                    logger.info("\nImage Received with name: "+ia.getName()+" from "+ia.getUsername()+"\n");
+                    logger.info("\r\nImage Received with name: "+ia.getName()+" from "+ia.getUsername()+"\r\n");
                 }else if((pks = protocol.checkIfPublicKeyResponse(message))!=null){
                     protocol.pks = pks;
                 }

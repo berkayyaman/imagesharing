@@ -55,15 +55,15 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         jsonObject.put(this.fPassword,encryptWithPublicKey(password.getBytes(),Client.serverPublicKey));
 
 
-        logger.info("\nMessage Sent:"+
-                jsonObject.toString()+"\n");
+        logger.info("\r\nMessage Sent:"+
+                jsonObject.toString()+"\r\n");
         return jsonObject.toString();
     }
     boolean verify(String input) throws ParseException, InvalidKeyException,
             NoSuchAlgorithmException, NoSuchPaddingException, BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException, SignatureException, IOException, InvalidKeySpecException {
 
         JSONObject messageReceived = (JSONObject)parser.parse(input);
-        logger.info("\nMessage Received: "+input+"\n");
+        logger.info("\r\nMessage Received: "+input+"\r\n");
         if(messageReceived.get(fType).equals(fRegisterAccepted)){
             String certificate = (String)messageReceived.get(this.fCertificate);
             String cpk = Util.convertToBase64String(client.getPublicKey().getEncoded());
@@ -228,7 +228,7 @@ public class ClientMessagingProtocol extends CryptoStandarts implements Fields{
         jsonObject.put(fType,fDownload);
         jsonObject.put(fUsername,userName);
         jsonObject.put(fImageName,name);
-        logger.info("Message is sending: "+jsonObject.toString());
+        logger.info("\r\nMessage is sending: "+jsonObject.toString()+"\r\n");
         try {
             Util.sendData(jsonObject.toString(),client.getOut());
         } catch (IOException e) {

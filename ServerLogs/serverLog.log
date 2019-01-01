@@ -1,62 +1,9 @@
-Dec 23, 2018 10:43:21 PM server.Server listen
+Dec 23, 2018 11:51:16 PM server.Server listen
 INFO: Port 4444 is listening.
 
-Dec 23, 2018 10:43:24 PM server.Server listen
-INFO: Client with IP address /127.0.0.1:54132 is connected.
+Dec 23, 2018 11:51:16 PM server.Server listen
+INFO: Client with IP address /127.0.0.1:55217 is connected.
 
-Dec 23, 2018 10:43:24 PM server.Server listen
+Dec 23, 2018 11:51:16 PM server.Server listen
 INFO: Port 4444 is listening.
-
-Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
-INFO: 
-Register request received:
-
-Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
-INFO: 
-{"PASSWORD":"LaVBNgAtIRHs1gVBACtjgxnUKBlHEFXPDKR3MKqIBR0iquX3\/sykFFDEPNCsRG9ouDP\/PXhwnFQOPMGAC4ycwfFQPrKC3aYc83cOdIjJw0KdpXo9f6HmTzkvSAAVqt3atEpUdSlQnTDGB2Qnb3Ul7tVmURPeiLF\/\/FIZsuclB4Sbg\/NM+aHLHOm9aI7sdnjQwm67R7NAco2iob+1WjJ\/iS2CCJ92YIt8O6gjQWSCtM44Qatke8Dbs81c9KCJoUR9DWGesjZa4WbrZ8NW6vFYMAABQFjUqVBKi7uKzOm\/TBnp6kPsqFLG+EwhaMwk577Mnj4aUFxkJabWnZsP+qnHMQ==","PUBLIC_KEY":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkptOrwO99OCykC9KwuYrrTTWhSoSrjJLAHxxfzJIsGjA8GPICOy9cFSGpEkDXxoVqbq\/yX0qEX02soaSR7Cg5dUAGV0X+PEc0udr4FmPT\/TIgQqh2y5G0uh+ZV4iwNPZoVeBkvvAMNoy3MjbCWWFKP0bxWJ4lvrjSMUhoxSLNIMmXC9QikZNHCOMRCKpGqU0drXAqVAHJwblK6IdLkkEifi8MZIrj76VtKh7TVgf\/khIJTmbNOHGmpW8PN0L6slDXLvZiLEpPrrlopT6zoKabc6OF3nMvqins6F4ZjCMBKTCAQlBJlyJvwXAki2nGb4lCzo9Tij+kZwe9GqY6PaozQIDAQAB","USERNAME":"berkay","TYPE":"REGISTER"}
-
-Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
-INFO: 
-Generated Certificate: j1rWeSxxk6aEfUd1qG2ESMFESO8/amHn16XTscoOsBNTbMea5/kM9NqhAwmxxh7NWpjnWiOMj5xgjf8YP9IyceBMmT38HDHZj2+FzDZjWZGcFDyjyA6utsBGM568LxrOWixuZ0GBliFF1ajGzFF/NbsCy3iBK6Vxzf5Wk3MKGNphQDqdVzbDaf6lGtErGxtM3resR4CMrJ3P/fBgBnDp8/UBXDX9pRzdwn+Q+N449lK77E7xf5OYjA3FK7WMyFJSk8rx9Lgvkcn4LJ2vqD0ekgJe6XtP6XwlMnQam9GfYyZxDVD1KrH94GiCDg0YKHKhnp31P0MuMMQhDX/Qhvh2rw==
-
-Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
-INFO: 
-Message is sending to user "berkay"
-
-Dec 23, 2018 10:43:29 PM server.MessagingProtocol interpret
-INFO: {"IMAGES":[{"IMAGE_NAME":"color.jpg","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"berkay","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon.jpg","USERNAME":"selim","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"moon1.jpg","USERNAME":"selim","TYPE":"NEW_IMAGE"},{"IMAGE_NAME":"mu.png","USERNAME":"selim","TYPE":"NEW_IMAGE"}],"CERTIFICATE":"j1rWeSxxk6aEfUd1qG2ESMFESO8\/amHn16XTscoOsBNTbMea5\/kM9NqhAwmxxh7NWpjnWiOMj5xgjf8YP9IyceBMmT38HDHZj2+FzDZjWZGcFDyjyA6utsBGM568LxrOWixuZ0GBliFF1ajGzFF\/NbsCy3iBK6Vxzf5Wk3MKGNphQDqdVzbDaf6lGtErGxtM3resR4CMrJ3P\/fBgBnDp8\/UBXDX9pRzdwn+Q+N449lK77E7xf5OYjA3FK7WMyFJSk8rx9Lgvkcn4LJ2vqD0ekgJe6XtP6XwlMnQam9GfYyZxDVD1KrH94GiCDg0YKHKhnp31P0MuMMQhDX\/Qhvh2rw==","TYPE":"ACCEPTED"}
-
-Dec 23, 2018 10:43:35 PM server.MessagingProtocol interpret
-INFO: 
-Download request received from user "berkay"
-for the image "color.jpg"
-Dec 23, 2018 10:43:35 PM server.MessagingProtocol interpret
-INFO: 
-Download request received from user "berkay"
-for the image "color.jpg"
-Dec 23, 2018 10:43:35 PM server.MessagingProtocol interpret
-INFO: 
-Requested image is sending to user "berkay"
-
-Dec 23, 2018 10:43:35 PM server.MessagingProtocol interpret
-INFO: 
-Requested image is sending to user "berkay"
-
-Dec 23, 2018 10:44:30 PM server.Communicator communicate
-INFO: 
-
-Client with IP address /127.0.0.1:54132 is disconnected.
-
-
-Dec 23, 2018 10:44:33 PM server.Server listen
-INFO: Client with IP address /127.0.0.1:54153 is connected.
-
-Dec 23, 2018 10:44:33 PM server.Server listen
-INFO: Port 4444 is listening.
-
-Dec 23, 2018 10:45:01 PM server.Communicator communicate
-INFO: 
-
-Client with IP address /127.0.0.1:54153 is disconnected.
-
 

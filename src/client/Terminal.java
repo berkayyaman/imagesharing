@@ -100,6 +100,10 @@ public class Terminal implements Fields {
         String text;
         printMessage("Please enter a username:");
         if(isValidInput(text=input.nextLine())){
+            if(text.equals("all")){
+                System.out.println("\"all\" is not allowed for username");
+                return false;
+            }
             protocol.client.setUserName(text);
         }else{
             return false;
@@ -116,7 +120,7 @@ public class Terminal implements Fields {
     private boolean isValidInput(String text){
         char[] forbidden = {'{','[',']','}',',','<','>'};
         int lnt = text.length();
-        if(text.equals("") || text.equals("all")){
+        if(text.equals("")){
             System.out.println("Forbidden String entered...");
             return false;
         }

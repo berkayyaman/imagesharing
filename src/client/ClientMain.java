@@ -42,7 +42,7 @@ public class ClientMain {
                     client.in.close();
                     client.out.close();
                     client.socket.close();
-                    logger.info("\nProgram is closing...\n");
+                    logger.info("\r\nProgram is closing...\r\n");
                     System.exit(0);
                 }else{
                     if(terminal.thread != null){

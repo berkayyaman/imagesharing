@@ -1,0 +1,12 @@
+ClientImages/
+ClientLogs/
+out/
+ServerImages/
+ServerLogs/
+src/META-INF/
+
+
+*.png
+*.jpg
+*.class
+*.log
